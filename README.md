@@ -40,13 +40,5 @@ Este proyecto está diseñado para ser "Drag & Drop".
 
 **Hosting recomendado**: InfinityFree, GitHub Pages, Vercel, o Netlify.
 
-## 👤 Autor
-
-**Roman Velasco Moctezuma**
-*Ingeniero en Sistemas*
-
-- **WhatsApp**: [+52 33 2044 7688](https://wa.me/523320447688)
-- **Email**: [contacto@pedagogiaviva.com](mailto:contacto@pedagogiaviva.com)
-
 ---
 *© 2024 Roman Velasco. Todos los derechos reservados.*
