@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -1997,7 +1997,7 @@
             </ul>
             <div class="nav-actions">
                 <div class="lang-switch" role="group" aria-label="Idioma / Language">
-                    <button type="button" class="lang-btn active" data-lang-btn="es" aria-label="Español">
+                    <button type="button" class="lang-btn" data-lang-btn="es" aria-label="Español">
                         <svg class="lang-globe-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -2006,7 +2006,7 @@
                         <span>ES</span>
                     </button>
                     <span class="lang-divider">/</span>
-                    <button type="button" class="lang-btn" data-lang-btn="en" aria-label="English">
+                    <button type="button" class="lang-btn active" data-lang-btn="en" aria-label="English">
                         <span>EN</span>
                     </button>
                 </div>
@@ -3373,7 +3373,7 @@
             } else if (savedLang && (savedLang === 'en' || savedLang === 'es')) {
                 setLanguage(savedLang);
             } else {
-                setLanguage('es');
+                setLanguage('en');
             }
 
 
