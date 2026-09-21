@@ -40,4 +40,5 @@ Este proyecto está diseñado para ser "Drag & Drop".
 
 **Hosting recomendado**: InfinityFree, GitHub Pages, Vercel, o Netlify.
 
-
+---
+*© 2024 Roman Velasco. Todos los derechos reservados.*
