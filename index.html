@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roman Velasco | Web & Mobile Developer (Android, Flutter, APIs & Fullstack)</title>
-    <meta name="description"
-        content="Portafolio de Roman Velasco Moctezuma, Web & Mobile Developer especializado en aplicaciones móviles Android y multiplataforma, desarrollo web, APIs REST y soluciones completas frontend + backend.">
+    <title>Roman Velasco | Software &amp; Web Developer (C#/.NET, WPF, Mobile, APIs &amp; Fullstack)</title>
+    <meta name="description" content="Portafolio de Roman Velasco Moctezuma, Ingeniero de Software y Desarrollador Web Fullstack especializado en software empresarial C#/.NET, WPF, IoT/Modbus, aplicaciones móviles Android y plataformas web integrales.">
     <link rel="icon" type="image/png" href="images/icons8-dev-16.png">
 
     <!-- Fonts -->
@@ -39,9 +38,7 @@
             /* Fallback to default if JS fails custom cursor */
         }
 
-*/
-
-        html {
+html {
             scroll-behavior: smooth;
         }
 
@@ -149,6 +146,18 @@
             /* Hidden by default until JS moves it */
         }
 
+        
+        /* Hide custom cursor on mobile & touch devices */
+        @media (max-width: 992px), (pointer: coarse) {
+            .cursor,
+            .cursor-follower {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+        }
+    
         .cursor-follower {
             width: 40px;
             height: 40px;
@@ -1287,21 +1296,19 @@
             transition-delay: var(--reveal-delay, 0ms);
         }
 
-        /* JS will add this class to hide elements initially */
+                /* JS will add this class to hide elements initially for smooth scroll reveal */
         .js-hidden {
             opacity: 0 !important;
-            transform: translateY(30px);
-            filter: blur(10px);
-            clip-path: inset(0 0 18% 0 round 8px);
-            will-change: opacity, transform, filter, clip-path;
+            transform: translateY(26px) !important;
+            will-change: opacity, transform;
         }
 
-        .visible {
+        .fade-on-scroll.visible {
             opacity: 1 !important;
             transform: translateY(0) !important;
-            filter: blur(0);
-            clip-path: inset(0 0 0 0 round 8px);
         }
+
+        
 
         /* Hero Capsules */
         .hero-capsules {
@@ -1974,6 +1981,1266 @@
                 }
             }
         }
+
+        /* --- TOTAL MONITOR: Software Empresarial & SCADA Styles --- */
+        :root {
+            --tm-red: #ff334b;
+            --tm-red-dark: #b81427;
+            --tm-red-glow: rgba(255, 51, 75, 0.35);
+            --tm-cyan: #00f2fe;
+            --tm-blue: #4facfe;
+            --tm-green: #27c93f;
+            --tm-yellow: #ffbd2e;
+        }
+
+        .software-showcase {
+            position: relative;
+        }
+
+        .tm-lead-card {
+            background: linear-gradient(135deg, rgba(17, 34, 64, 0.95), rgba(10, 25, 47, 0.98));
+            border: 1px solid rgba(255, 51, 75, 0.32);
+            border-radius: 14px;
+            padding: 44px 36px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 30px 60px -15px rgba(2, 12, 27, 0.85), 0 0 30px rgba(255, 51, 75, 0.08);
+        }
+
+        .tm-lead-card::before {
+            content: "";
+            position: absolute;
+            top: -40%;
+            right: -15%;
+            width: 550px;
+            height: 550px;
+            background: radial-gradient(circle, rgba(255, 51, 75, 0.12), transparent 70%);
+            pointer-events: none;
+        }
+
+        .software-lead-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--tm-red);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 14px;
+            background: rgba(255, 51, 75, 0.12);
+            border: 1px solid rgba(255, 51, 75, 0.38);
+            border-radius: 20px;
+            margin-bottom: 22px;
+            box-shadow: 0 0 16px rgba(255, 51, 75, 0.18);
+        }
+
+        .tm-case-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .tm-brand-title {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .tm-brand-icon {
+            width: 62px;
+            height: 62px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #1f0b11, #2d0d16);
+            border: 2px solid var(--tm-red);
+            box-shadow: 0 0 24px var(--tm-red-glow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--tm-red);
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .tm-brand-icon-sub {
+            font-size: 8px;
+            color: var(--white);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: -2px;
+        }
+
+        .tm-case-title {
+            font-size: clamp(28px, 4.2vw, 42px);
+            color: var(--white);
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .tm-case-title span {
+            color: var(--tm-red);
+        }
+
+        .tm-case-headline {
+            font-family: var(--font-mono);
+            color: var(--accent-color);
+            font-size: 15px;
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .tm-brand-owner {
+            display: inline-block;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-family: var(--font-mono);
+            margin-top: 2px;
+        }
+
+        .tm-brand-owner strong {
+            color: #ffffff;
+        }
+
+        .tm-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .tm-tag {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            background: rgba(255, 51, 75, 0.1);
+            color: #ff8595;
+            border: 1px solid rgba(255, 51, 75, 0.25);
+            transition: var(--transition);
+        }
+
+        .tm-tag:hover {
+            background: rgba(255, 51, 75, 0.2);
+            color: var(--white);
+            border-color: var(--tm-red);
+        }
+
+        .tm-tag-accent {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent-color);
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+
+        /* 1 & 2: Problem & Solution Split Cards */
+        .tm-problem-solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin: 32px 0 36px;
+        }
+
+        .tm-ps-card {
+            background: rgba(17, 34, 64, 0.7);
+            border-radius: 12px;
+            padding: 26px 22px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tm-problem-card {
+            border: 1px solid rgba(255, 87, 87, 0.25);
+            border-left: 4px solid #ff4d4d;
+        }
+
+        .tm-problem-card:hover {
+            border-color: rgba(255, 87, 87, 0.45);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(255, 77, 77, 0.12);
+        }
+
+        .tm-solution-card {
+            border: 1px solid rgba(100, 255, 218, 0.25);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .tm-solution-card:hover {
+            border-color: rgba(100, 255, 218, 0.45);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(100, 255, 218, 0.12);
+        }
+
+        .tm-ps-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .tm-ps-icon {
+            font-size: 26px;
+            line-height: 1;
+        }
+
+        .tm-ps-badge {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 4px;
+        }
+
+        .tm-problem-card .tm-ps-badge {
+            color: #ff7878;
+        }
+
+        .tm-solution-card .tm-ps-badge {
+            color: var(--accent-color);
+        }
+
+        .tm-ps-title {
+            font-size: 19px;
+            color: var(--white);
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .tm-ps-text {
+            font-size: 14.5px;
+            color: var(--text-primary);
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .tm-ps-text strong {
+            color: var(--white);
+        }
+
+        .tm-ps-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tm-ps-tags span {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: rgba(2, 12, 27, 0.6);
+            color: var(--text-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* 3: Architecture Diagram */
+        .tm-arch-flow {
+            border-color: rgba(255, 51, 75, 0.28);
+            box-shadow: inset 0 0 35px rgba(255, 51, 75, 0.06), 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .tm-arch-badge {
+            color: var(--tm-red);
+        }
+
+        .tm-arch-node-core {
+            border-color: var(--tm-red);
+            background: linear-gradient(180deg, rgba(35, 12, 20, 0.95), rgba(17, 34, 64, 0.95));
+            box-shadow: 0 0 30px rgba(255, 51, 75, 0.22);
+        }
+
+        .tm-arch-node-core .arch-node-tech {
+            color: #ff8595;
+        }
+
+        .tm-arch-connector .arch-connector-arrows {
+            color: var(--tm-red);
+        }
+
+        /* 4: Technologies Matrix */
+        .tm-tech-matrix-section {
+            margin: 36px 0;
+        }
+
+        .tm-section-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tm-section-heading-icon {
+            font-size: 20px;
+        }
+
+        .tm-section-heading-title {
+            font-size: 20px;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .tm-section-heading-badge {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.25);
+            padding: 3px 8px;
+            border-radius: 12px;
+        }
+
+        .tm-tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .tm-tech-card {
+            background: rgba(17, 34, 64, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 18px;
+            transition: var(--transition);
+        }
+
+        .tm-tech-card:hover {
+            border-color: var(--tm-red);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(2, 12, 27, 0.5);
+        }
+
+        .tm-tech-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .tm-tech-card-icon {
+            font-size: 20px;
+        }
+
+        .tm-tech-card-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .tm-tech-card-role {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: #ff8595;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .tm-tech-card-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        /* 5: Features Grid */
+        .tm-features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 24px 0 36px;
+        }
+
+        .tm-feature-card {
+            background: rgba(17, 34, 64, 0.65);
+            border: 1px solid rgba(255, 51, 75, 0.18);
+            border-radius: 10px;
+            padding: 22px 18px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .tm-feature-card:hover {
+            border-color: var(--tm-red);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(2, 12, 27, 0.6), 0 0 20px rgba(255, 51, 75, 0.15);
+        }
+
+        .tm-feature-icon {
+            font-size: 26px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .tm-feature-title {
+            font-size: 17px;
+            color: var(--white);
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        .tm-feature-desc {
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .tm-feature-highlight {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--accent-color);
+            background: rgba(100, 255, 218, 0.08);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            padding: 2px 7px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* 6: Interactive Gallery & Evidence Viewer */
+        .tm-gallery-container {
+            background: #020c1b;
+            border: 1px solid rgba(255, 51, 75, 0.35);
+            border-radius: 14px;
+            overflow: hidden;
+            margin: 36px 0 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 51, 75, 0.1);
+        }
+
+        .tm-gallery-tabs-bar {
+            display: flex;
+            background: #0a192f;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            overflow-x: auto;
+            padding: 10px 14px;
+            gap: 8px;
+            scrollbar-width: thin;
+        }
+
+        .tm-gallery-tab {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 12px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .tm-gallery-tab:hover {
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 51, 75, 0.4);
+        }
+
+        .tm-gallery-tab.active {
+            background: rgba(255, 51, 75, 0.18);
+            border-color: var(--tm-red);
+            color: var(--white);
+            font-weight: 700;
+            box-shadow: 0 0 12px rgba(255, 51, 75, 0.3);
+        }
+
+        .tm-screen-window {
+            position: relative;
+            background: #010814;
+        }
+
+        .tm-screen-window-header {
+            background: #0a1424;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 51, 75, 0.18);
+            gap: 12px;
+        }
+
+        .tm-window-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tm-window-btn {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .tm-btn-close { background: #ff5f56; }
+        .tm-btn-min { background: #ffbd2e; }
+        .tm-btn-max { background: #27c93f; }
+
+        .tm-window-title {
+            font-family: var(--font-mono);
+            font-size: 11.5px;
+            color: var(--text-primary);
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            letter-spacing: 0.5px;
+        }
+
+        .tm-window-status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            color: #27c93f;
+            background: rgba(39, 201, 63, 0.1);
+            border: 1px solid rgba(39, 201, 63, 0.3);
+            padding: 3px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+        }
+
+        .tm-screen-view {
+            position: relative;
+            cursor: zoom-in;
+            display: block;
+            overflow: hidden;
+        }
+
+        .tm-screen-view img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+
+        .tm-screen-view:hover img {
+            transform: scale(1.012);
+        }
+
+        .tm-screen-hint {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(2, 12, 27, 0.88);
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--accent-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+            pointer-events: none;
+            transition: opacity 0.25s ease;
+        }
+
+        .tm-live-metrics-bar {
+            background: #061122;
+            padding: 14px 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tm-live-metrics-title {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: #ff8595;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: 6px;
+        }
+
+        .tm-metric-chip {
+            background: rgba(17, 34, 64, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--text-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tm-metric-chip strong {
+            color: var(--white);
+        }
+
+        .tm-metric-chip.accent {
+            border-color: rgba(100, 255, 218, 0.35);
+            color: var(--accent-color);
+        }
+
+        .tm-thumbnails-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            padding: 16px;
+            background: #0a192f;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .tm-thumb {
+            border: 2px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            background: #020c1b;
+            transition: var(--transition);
+            position: relative;
+            aspect-ratio: 16 / 10;
+        }
+
+        .tm-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            opacity: 0.65;
+            transition: var(--transition);
+        }
+
+        .tm-thumb:hover {
+            border-color: rgba(255, 51, 75, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .tm-thumb:hover img {
+            opacity: 0.95;
+        }
+
+        .tm-thumb.active {
+            border-color: var(--tm-red);
+            box-shadow: 0 0 14px rgba(255, 51, 75, 0.45);
+        }
+
+        .tm-thumb.active img {
+            opacity: 1;
+        }
+
+        .tm-thumb-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(2, 12, 27, 0.88);
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+            color: var(--text-primary);
+            padding: 3px 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+
+        /* 7: Developer Role */
+        .tm-dev-card {
+            background: linear-gradient(135deg, rgba(17, 34, 64, 0.85), rgba(12, 28, 52, 0.95));
+            border: 1px solid rgba(100, 255, 218, 0.28);
+            border-radius: 12px;
+            padding: 30px 24px;
+            margin-top: 36px;
+        }
+
+        .tm-dev-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tm-dev-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .tm-dev-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(100, 255, 218, 0.12);
+            border: 2px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .tm-dev-title {
+            font-size: 20px;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .tm-dev-subtitle {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--accent-color);
+            margin: 2px 0 0;
+        }
+
+        .tm-dev-badge {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--tm-red);
+            background: rgba(255, 51, 75, 0.1);
+            border: 1px solid rgba(255, 51, 75, 0.3);
+            padding: 4px 12px;
+            border-radius: 14px;
+        }
+
+        .tm-dev-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .tm-dev-item {
+            background: rgba(2, 12, 27, 0.55);
+            border-radius: 8px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .tm-dev-item-title {
+            font-family: var(--font-mono);
+            font-size: 13.5px;
+            color: var(--white);
+            margin: 0 0 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tm-dev-item-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Lightbox Modal */
+        .tm-lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 12, 27, 0.94);
+            backdrop-filter: blur(10px);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+
+        .tm-lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .tm-lightbox-content {
+            max-width: 95vw;
+            max-height: 92vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tm-lightbox-img {
+            max-width: 100%;
+            max-height: 84vh;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 51, 75, 0.4);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(255, 51, 75, 0.2);
+            object-fit: contain;
+        }
+
+        .tm-lightbox-caption {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--white);
+            margin-top: 12px;
+            text-align: center;
+            background: rgba(10, 25, 47, 0.85);
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(100, 255, 218, 0.25);
+        }
+
+        .tm-lightbox-close {
+            position: absolute;
+            top: -18px;
+            right: -18px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--tm-red);
+            color: #ffffff;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease;
+        }
+
+        .tm-lightbox-close:hover {
+            transform: scale(1.15);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .tm-problem-solution-grid {
+                grid-template-columns: 1fr;
+            }
+            .tm-tech-grid,
+            .tm-features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .tm-dev-grid {
+                grid-template-columns: 1fr;
+            }
+            .tm-thumbnails-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tm-lead-card {
+                padding: 28px 18px;
+            }
+            .tm-tech-grid,
+            .tm-features-grid {
+                grid-template-columns: 1fr;
+            }
+            .tm-thumbnails-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .tm-live-metrics-bar {
+                font-size: 10px;
+            }
+            .tm-screen-window-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+
+        /* --- Mobile Responsiveness & Full Visibility Fixes --- */
+        @media (max-width: 768px) {
+            
+
+            .container {
+                width: 92%;
+            }
+
+            /* Mobile Navigation Drawer Scrolling Fix */
+            .nav-links {
+                height: 100vh;
+                max-height: 100vh;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                padding-bottom: 3.5rem;
+            }
+
+            .nav-link {
+                padding: 0.75rem 0.25rem;
+                font-size: 14.5px;
+            }
+
+            /* Hero Actions Stack on Mobile */
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                width: 100%;
+            }
+
+            .hero-actions .btn-primary,
+            .hero-actions .btn-secondary {
+                text-align: center;
+                width: 100%;
+                padding: 0.9rem 1.2rem;
+            }
+
+            /* Total Monitor Mobile Optimizations */
+            .tm-lead-card {
+                padding: 22px 14px;
+                margin-bottom: 35px;
+                border-radius: 12px;
+            }
+
+            .tm-case-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+                margin-bottom: 20px;
+            }
+
+            .tm-brand-title {
+                gap: 12px;
+                width: 100%;
+            }
+
+            .tm-brand-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+
+            .tm-brand-icon-sub {
+                font-size: 7px;
+            }
+
+            .tm-case-title {
+                font-size: clamp(22px, 6vw, 30px);
+                line-height: 1.15;
+            }
+
+            .tm-case-headline {
+                font-size: 13.5px;
+                line-height: 1.35;
+            }
+
+            .tm-brand-owner {
+                font-size: 12px;
+            }
+
+            .tm-tags {
+                gap: 6px;
+                width: 100%;
+            }
+
+            .tm-tag {
+                font-size: 11px;
+                padding: 3px 8px;
+            }
+
+            .tm-problem-solution-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                margin: 22px 0 26px;
+            }
+
+            .tm-ps-card {
+                padding: 18px 14px;
+            }
+
+            .tm-ps-title {
+                font-size: 16.5px;
+            }
+
+            .tm-ps-text {
+                font-size: 13.5px;
+                line-height: 1.55;
+            }
+
+            /* Architecture Flow Diagram on Mobile */
+            .arch-flow-container.tm-arch-flow {
+                padding: 20px 14px;
+                margin: 24px 0;
+            }
+
+            .arch-flow-title {
+                font-size: 16px;
+                line-height: 1.35;
+            }
+
+            .arch-flow-diagram {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .arch-node {
+                padding: 16px 12px;
+            }
+
+            .arch-node-name {
+                font-size: 16px;
+            }
+
+            .arch-connector {
+                padding: 6px 0;
+            }
+
+            .arch-connector-arrows {
+                transform: rotate(90deg);
+                font-size: 22px;
+            }
+
+            .arch-connector-label {
+                font-size: 10px;
+            }
+
+            /* Tech & Features Grids */
+            .tm-tech-matrix-section {
+                margin: 24px 0;
+            }
+
+            .tm-tech-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .tm-tech-card {
+                padding: 14px;
+            }
+
+            .tm-features-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+                margin: 18px 0 28px;
+            }
+
+            .tm-feature-card {
+                padding: 18px 14px;
+            }
+
+            /* Interactive Gallery */
+            .tm-gallery-container {
+                margin: 24px 0 28px;
+                border-radius: 10px;
+            }
+
+            .tm-gallery-tabs-bar {
+                padding: 8px 10px;
+                gap: 6px;
+            }
+
+            .tm-gallery-tab {
+                flex-shrink: 0;
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+
+            .tm-screen-window-header {
+                padding: 8px 12px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .tm-window-title {
+                font-size: 10.5px;
+                white-space: normal;
+                text-align: left;
+                line-height: 1.3;
+            }
+
+            .tm-window-status-pill {
+                font-size: 9.5px;
+                padding: 2px 7px;
+            }
+
+            .tm-live-metrics-bar {
+                padding: 10px 12px;
+                gap: 6px;
+            }
+
+            .tm-live-metrics-title {
+                width: 100%;
+                font-size: 10px;
+                margin-bottom: 2px;
+            }
+
+            .tm-metric-chip {
+                font-size: 10px;
+                padding: 3px 7px;
+            }
+
+            /* Horizontal Swiper for Thumbnails on Mobile */
+            .tm-thumbnails-grid {
+                display: flex;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding: 10px 12px;
+                gap: 8px;
+                scrollbar-width: thin;
+            }
+
+            .tm-thumb {
+                width: 120px;
+                flex-shrink: 0;
+            }
+
+            /* Developer Card */
+            .tm-dev-card {
+                padding: 20px 14px;
+                margin-top: 24px;
+            }
+
+            .tm-dev-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .tm-dev-title {
+                font-size: 17px;
+            }
+
+            .tm-dev-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .tm-dev-item {
+                padding: 14px 12px;
+            }
+
+            /* Skills Wide List on Mobile */
+            .skills-items-list-wide {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+
+        /* Guarantee 100% visibility on mobile and tablets (no delayed scroll-trigger, clipping, or stuck opacity) */
+        @media (max-width: 992px) {
+            
+        }
+    
+
+        /* ==========================================================================
+           Floating Back To Top Button
+           ========================================================================== */
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 98px;
+            right: 35px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(10, 25, 47, 0.92);
+            border: 1px solid rgba(100, 255, 218, 0.35);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 9989;
+            box-shadow: 0 8px 24px rgba(2, 12, 27, 0.65), 0 0 16px rgba(100, 255, 218, 0.12);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateY(18px) scale(0.85);
+            pointer-events: none;
+            transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                        background-color 0.25s ease,
+                        border-color 0.25s ease,
+                        box-shadow 0.25s ease;
+            outline: none;
+            padding: 0;
+        }
+
+        .back-to-top-btn.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
+        }
+
+        .back-to-top-btn:hover {
+            background: rgba(17, 34, 64, 0.95);
+            border-color: var(--accent-color);
+            color: var(--white);
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 28px rgba(2, 12, 27, 0.8), 0 0 24px rgba(100, 255, 218, 0.35);
+        }
+
+        .back-to-top-btn:active {
+            transform: scale(0.96) translateY(0);
+        }
+
+        .back-to-top-icon {
+            width: 22px;
+            height: 22px;
+            stroke: currentColor;
+            stroke-width: 2.5;
+            transition: transform 0.25s ease;
+        }
+
+        .back-to-top-btn:hover .back-to-top-icon {
+            transform: translateY(-2px);
+        }
+
+        /* Tooltip */
+        .back-to-top-tooltip {
+            position: absolute;
+            right: 60px;
+            background: rgba(10, 25, 47, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 255, 218, 0.35);
+            border-radius: 8px;
+            padding: 6px 12px;
+            white-space: nowrap;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--accent-color);
+            box-shadow: 0 8px 24px rgba(2, 12, 27, 0.7);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(8px);
+            transition: all 0.22s ease;
+            pointer-events: none;
+        }
+
+        .back-to-top-btn:hover .back-to-top-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        @media (max-width: 768px) {
+            .back-to-top-btn {
+                bottom: 82px;
+                right: 24px;
+                width: 44px;
+                height: 44px;
+            }
+            .back-to-top-icon {
+                width: 20px;
+                height: 20px;
+            }
+            .back-to-top-tooltip {
+                display: none; /* cleaner on touch screens */
+            }
+        }
+
     </style>
 </head>
 
@@ -1988,12 +3255,13 @@
             <a href="#" class="logo">&lt;Roman/&gt;</a>
             <ul class="nav-links" id="main-nav">
                 <li><a href="#home" class="nav-link" data-i18n="nav_home">01. Inicio</a></li>
-                <li><a href="#mobile" class="nav-link" data-i18n="nav_mobile">02. Mobile</a></li>
-                <li><a href="#work" class="nav-link" data-i18n="nav_work">03. Proyectos</a></li>
-                <li><a href="#about" class="nav-link" data-i18n="nav_about">04. Sobre Mí</a></li>
-                <li><a href="#packages" class="nav-link" data-i18n="nav_packages">05. Paquetes</a></li>
-                <li><a href="#engineering" class="nav-link" data-i18n="nav_engineering">06. Ingeniería</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">07. Contacto</a></li>
+                <li><a href="#software" class="nav-link" data-i18n="nav_software">02. Software</a></li>
+                <li><a href="#mobile" class="nav-link" data-i18n="nav_mobile">03. Mobile</a></li>
+                <li><a href="#work" class="nav-link" data-i18n="nav_work">04. Proyectos</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">05. Sobre Mí</a></li>
+                <li><a href="#packages" class="nav-link" data-i18n="nav_packages">06. Paquetes</a></li>
+                <li><a href="#engineering" class="nav-link" data-i18n="nav_engineering">07. Ingeniería</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">08. Contacto</a></li>
             </ul>
             <div class="nav-actions">
                 <div class="lang-switch" role="group" aria-label="Idioma / Language">
@@ -2027,17 +3295,19 @@
             <div class="hero-content">
                 <span class="subtitle fade-in-up" data-i18n="hero_subtitle">Hola, mi nombre es</span>
                 <h1 class="glitch fade-in-up delay-1" data-text="Roman Velasco">Roman Velasco</h1>
-                <h2 class="fade-in-up delay-2" data-i18n="hero_role">Web & Mobile Developer</h2>
+                <h2 class="fade-in-up delay-2" data-i18n="hero_role">Software & Web Developer</h2>
                 <div class="hero-capsules fade-in-up delay-2">
+                    <span class="hero-capsule" style="border-color: rgba(255, 51, 75, 0.4); color: #ff8595; background: rgba(255, 51, 75, 0.1);" data-i18n="hero_capsule_software">🖥️ Software Empresarial & C#/.NET</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_1">📱 Apps Android & Multiplataforma</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_2">💻 Aplicaciones Web</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_3">⚡ APIs REST & Backend</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_4">🛒 Marketplaces & Pagos</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_5">📍 Geolocalización & Notificaciones</span>
                 </div>
-                <p class="fade-in-up delay-3" data-i18n="hero_desc">Soy Ingeniero en Sistemas y Licenciado en Tecnologías de la Información. Construyo <strong>soluciones digitales completas</strong>: desde aplicaciones móviles en Android y multiplataforma con Flutter, hasta plataformas web marketplace y backends con APIs robustas que conectan todo el ecosistema.</p>
+                <p class="fade-in-up delay-3" data-i18n="hero_desc">Soy Ingeniero en Sistemas y Licenciado en Tecnologías de la Información. Construyo <strong>software empresarial y soluciones digitales completas</strong>: desde aplicaciones de escritorio de misión crítica con C#/.NET, WPF y protocolos industriales (Modbus, LoRaWAN), hasta plataformas web marketplace y apps móviles conectadas a APIs robustas.</p>
                 <div class="hero-actions fade-in-up delay-4">
-                    <a href="#mobile" class="btn-primary" data-i18n="hero_btn_mobile">Ver Desarrollo Mobile</a>
+                    <a href="#software" class="btn-primary" data-i18n="hero_btn_software">Ver Software Empresarial</a>
+                    <a href="#mobile" class="btn-secondary" data-i18n="hero_btn_mobile">Desarrollo Mobile</a>
                     <a href="#work" class="btn-secondary" data-i18n="hero_btn_projects">Explorar otros proyectos</a>
                 </div>
             </div>
@@ -2046,16 +3316,19 @@
                     <pre><code class="language-javascript"><span class="keyword">const</span> <span class="variable">desarrollador</span> = {
   <span class="property">nombre</span>: <span class="string">'Roman'</span>,
   <span class="property">apellidos</span>: <span class="string">'Velasco Moctezuma'</span>,
-  <span class="property">perfil</span>: <span class="string">'Web & Mobile Developer'</span>,
+  <span class="property">perfil</span>: <span class="string">'Software & Web Developer'</span>,
   <span class="property">capacidades</span>: {
+    <span class="property">software</span>: [<span class="string">'C# / .NET'</span>, <span class="string">'WPF'</span>, <span class="string">'Windows Service'</span>, <span class="string">'Modbus RTU'</span>, <span class="string">'LoRaWAN'</span>],
     <span class="property">mobile</span>: [<span class="string">'Flutter'</span>, <span class="string">'Android Nativo'</span>, <span class="string">'Google Play'</span>],
     <span class="property">web</span>: [<span class="string">'Marketplaces'</span>, <span class="string">'React'</span>, <span class="string">'Vue'</span>, <span class="string">'Paneles Admin'</span>],
-    <span class="property">backend</span>: [<span class="string">'APIs REST'</span>, <span class="string">'Laravel'</span>, <span class="string">'.NET'</span>, <span class="string">'MySQL'</span>],
-    <span class="property">servicios</span>: [<span class="string">'Mercado Pago'</span>, <span class="string">'Geolocalización'</span>, <span class="string">'Notificaciones'</span>, <span class="string">'KYC'</span>]
+    <span class="property">backend</span>: [<span class="string">'APIs REST'</span>, <span class="string">'ASP.NET Core'</span>, <span class="string">'Laravel'</span>, <span class="string">'MySQL / SQL Server'</span>]
   },
-  <span class="property">casoEstudioInsignia</span>: <span class="string">'Chambapp (Web + Mobile + API)'</span>,
-  <span class="function">arquitecturaIntegral</span>: <span class="keyword">function</span>() {
-    <span class="keyword">return</span> <span class="string">'WEB ↕ API/BACKEND ↕ APP ANDROID'</span>;
+  <span class="property">proyectosInsignia</span>: [
+    <span class="string">'Total Monitor (Power Quality & IoT Industrial)'</span>,
+    <span class="string">'Chambapp (Web + Mobile + API)'</span>
+  ],
+  <span class="function">enfoque</span>: <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="string">'SOFTWARE EMPRESARIAL ↕ WEB ↕ MOBILE'</span>;
   }
 };</code></pre>
                 </div>
@@ -2073,12 +3346,387 @@
         </div>
     </header>
 
+
+    <!-- Software Empresarial Section: TOTAL MONITOR -->
+    <section id="software" class="section software-showcase">
+        <div class="container">
+            <h2 class="section-title fade-on-scroll" data-i18n="software_section_title">02. Software Empresarial &amp; SCADA</h2>
+
+            <div class="software-lead-card tm-lead-card">
+                <span class="software-lead-badge" data-i18n="tm_lead_badge">⚡ Proyecto Insignia · Power Quality Platform v2.0</span>
+
+                <div class="tm-case-header">
+                    <div class="tm-brand-title">
+                        <div class="tm-brand-icon">
+                            <span>⚡TM</span>
+                            <span class="tm-brand-icon-sub">v2.0</span>
+                        </div>
+                        <div>
+                            <h3 class="tm-case-title">TOTAL <span>MONITOR</span></h3>
+                            <p class="tm-case-headline" data-i18n="tm_case_headline">Sistema Operativo de Calidad de Energía &amp; Telemetría Industrial</p>
+                            <span class="tm-brand-owner" data-i18n="tm_brand_owner">Desarrollado para <strong>Total Ground</strong> · An Electrical Company</span>
+                        </div>
+                    </div>
+                    <div class="tm-tags">
+                        <span class="tm-tag">C# / .NET</span>
+                        <span class="tm-tag">WPF (XAML)</span>
+                        <span class="tm-tag">Modbus RTU / RS485</span>
+                        <span class="tm-tag">LoRaWAN · TTN</span>
+                        <span class="tm-tag">Windows Service</span>
+                        <span class="tm-tag">Power Quality (THD)</span>
+                        <span class="tm-tag tm-tag-accent">Hardware Real COM3</span>
+                    </div>
+                </div>
+
+                <!-- 1 & 2: Problema y Solución -->
+                <div class="tm-problem-solution-grid fade-on-scroll">
+                    <!-- Problema -->
+                    <div class="tm-ps-card tm-problem-card">
+                        <div class="tm-ps-header">
+                            <span class="tm-ps-icon">⚠️</span>
+                            <div>
+                                <span class="tm-ps-badge" data-i18n="tm_prob_badge">01. El Problema</span>
+                                <h4 class="tm-ps-title" data-i18n="tm_prob_title">Pérdidas Críticas por Distorsión y Falta de Visibilidad en Tiempo Real</h4>
+                            </div>
+                        </div>
+                        <p class="tm-ps-text" data-i18n="tm_prob_desc">
+                            En instalaciones eléctricas industriales, los disturbios y la <strong>distorsión armónica (THD)</strong> degradan transformadores, sobrecalientan conductores y provocan paros de línea imprevistos. Se requería una plataforma robusta capaz de comunicarse en campo con medidores heterogéneos mediante <strong>buses seriales RS485</strong> y <strong>enlaces inalámbricos LoRaWAN</strong>, procesando hasta 68 variables eléctricas en milisegundos con total confiabilidad y cero congelamiento de interfaz.
+                        </p>
+                        <div class="tm-ps-tags">
+                            <span data-i18n="tm_prob_tag1">Infraestructura Eléctrica Crítica</span>
+                            <span data-i18n="tm_prob_tag2">Distorsión Armónica (THD)</span>
+                            <span data-i18n="tm_prob_tag3">Adquisición Multi-dispositivo</span>
+                        </div>
+                    </div>
+
+                    <!-- Solución -->
+                    <div class="tm-ps-card tm-solution-card">
+                        <div class="tm-ps-header">
+                            <span class="tm-ps-icon">🛡️</span>
+                            <div>
+                                <span class="tm-ps-badge" data-i18n="tm_sol_badge">02. La Solución</span>
+                                <h4 class="tm-ps-title" data-i18n="tm_sol_title">Total Monitor v2.0: Sistema de Adquisición y Diagnóstico Eléctrico</h4>
+                            </div>
+                        </div>
+                        <p class="tm-ps-text" data-i18n="tm_sol_desc">
+                            Desarrollo de un <strong>software empresarial de escritorio en C# / .NET y WPF</strong> con arquitectura desacoplada cliente-servidor. Cuenta con un motor de adquisición en segundo plano para lectura directa por <strong>RS485 / Modbus RTU</strong> e ingesta IoT inalámbrica vía <strong>LoRaWAN / The Things Network (TTN)</strong>. Despliega telemetría continua de hasta 68 variables eléctricas en vivo, matrices espectrales de armónicos, dashboard centralizado y enlace seguro de servidor.
+                        </p>
+                        <div class="tm-ps-tags">
+                            <span data-i18n="tm_sol_tag1">Cliente WPF Nativo</span>
+                            <span data-i18n="tm_sol_tag2">Adquisición Híbrida Serial + IoT</span>
+                            <span data-i18n="tm_sol_tag3">68 Variables en Vivo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3: Arquitectura del Sistema -->
+                <div class="arch-flow-container tm-arch-flow fade-on-scroll">
+                    <div class="arch-flow-header">
+                        <span class="arch-flow-badge tm-arch-badge" data-i18n="tm_arch_badge">03. Arquitectura del Sistema</span>
+                        <h4 class="arch-flow-title" data-i18n="tm_arch_title">HARDWARE EN CAMPO &nbsp;⇄&nbsp; MOTOR DE INGESTA &amp; SERVIDOR &nbsp;⇄&nbsp; CLIENTE WPF</h4>
+                    </div>
+
+                    <div class="arch-flow-diagram">
+                        <!-- Node 1: Hardware -->
+                        <div class="arch-node">
+                            <span class="arch-node-icon">🔌</span>
+                            <div class="arch-node-name" data-i18n="tm_arch_node1_name">Hardware &amp; Medidores</div>
+                            <span class="arch-node-tech">TOTAL VIEW TOV453 / TOV500</span>
+                            <p class="arch-node-desc" data-i18n="tm_arch_node1_desc">Medición continua de parámetros eléctricos: voltajes trifásicos, corrientes, frecuencia de red, energías Ep+/Ep- y componentes armónicas.</p>
+                        </div>
+
+                        <!-- Connector 1 -->
+                        <div class="arch-connector tm-arch-connector">
+                            <span class="arch-connector-arrows">⇄</span>
+                            <span class="arch-connector-label" data-i18n="tm_arch_conn1">RS485 Modbus RTU<br>(COM3 · 9600 bps)<br>LoRaWAN / TTN Uplinks</span>
+                        </div>
+
+                        <!-- Node 2: Core Ingestion & Backend -->
+                        <div class="arch-node arch-node-core tm-arch-node-core">
+                            <span class="arch-node-icon">⚙️</span>
+                            <div class="arch-node-name" data-i18n="tm_arch_node2_name">Motor de Ingesta &amp; Servidor</div>
+                            <span class="arch-node-tech">C# .NET · Windows Service · Parsing Engine</span>
+                            <p class="arch-node-desc" data-i18n="tm_arch_node2_desc">Sondeo multihilo a registros Modbus, decodificación de tramas binarias, deserialización de payloads TTN, verificación de enlace de servidor y validación de datos brutos.</p>
+                        </div>
+
+                        <!-- Connector 2 -->
+                        <div class="arch-connector tm-arch-connector">
+                            <span class="arch-connector-arrows">⇄</span>
+                            <span class="arch-connector-label" data-i18n="tm_arch_conn2">Data Binding Reactivo<br>Telemetría en Vivo<br>Control de Sesión</span>
+                        </div>
+
+                        <!-- Node 3: Desktop Client UI -->
+                        <div class="arch-node">
+                            <span class="arch-node-icon">🖥️</span>
+                            <div class="arch-node-name" data-i18n="tm_arch_node3_name">Cliente de Escritorio WPF</div>
+                            <span class="arch-node-tech">WPF · XAML · Hilos Desacoplados</span>
+                            <p class="arch-node-desc" data-i18n="tm_arch_node3_desc">Experiencia nativa para operadores: tableros en vivo de 68 variables eléctricas, matriz de armónicos, KPIs de conexión, selector de dispositivos y login empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4: Tecnologías Utilizadas -->
+                <div class="tm-tech-matrix-section fade-on-scroll">
+                    <div class="tm-section-heading">
+                        <span class="tm-section-heading-icon">🛠️</span>
+                        <h4 class="tm-section-heading-title" data-i18n="tm_tech_title">04. Tecnologías Utilizadas</h4>
+                        <span class="tm-section-heading-badge" data-i18n="tm_tech_badge">Stack Industrial .NET</span>
+                    </div>
+
+                    <div class="tm-tech-grid">
+                        <div class="tm-tech-card">
+                            <div class="tm-tech-card-header">
+                                <span class="tm-tech-card-icon">💻</span>
+                                <h5 class="tm-tech-card-name">C# / .NET</h5>
+                            </div>
+                            <span class="tm-tech-card-role" data-i18n="tm_tech1_role">Lenguaje &amp; Runtime de Alto Rendimiento</span>
+                            <p class="tm-tech-card-desc" data-i18n="tm_tech1_desc">Motor robusto multihilo para procesamiento en tiempo real, deserialización de tramas binarias y lógica de cálculo eléctrico sin latencia.</p>
+                        </div>
+
+                        <div class="tm-tech-card">
+                            <div class="tm-tech-card-header">
+                                <span class="tm-tech-card-icon">🖥️</span>
+                                <h5 class="tm-tech-card-name">WPF &amp; XAML</h5>
+                            </div>
+                            <span class="tm-tech-card-role" data-i18n="tm_tech2_role">Interfaz de Escritorio de Grado Industrial</span>
+                            <p class="tm-tech-card-desc" data-i18n="tm_tech2_desc">Diseño gráfico en modo oscuro industrial con aceleración por hardware DirectX, enlace de datos bidireccional reactivo y alta densidad de métricas.</p>
+                        </div>
+
+                        <div class="tm-tech-card">
+                            <div class="tm-tech-card-header">
+                                <span class="tm-tech-card-icon">🔌</span>
+                                <h5 class="tm-tech-card-name">Modbus RTU / RS485</h5>
+                            </div>
+                            <span class="tm-tech-card-role" data-i18n="tm_tech3_role">Comunicación Serial con Hardware en Campo</span>
+                            <p class="tm-tech-card-desc" data-i18n="tm_tech3_desc">Protocolo industrial directo sobre puertos COM físicos (9600 bps), mapeo de holding registers y validación por sumas de verificación CRC16.</p>
+                        </div>
+
+                        <div class="tm-tech-card">
+                            <div class="tm-tech-card-header">
+                                <span class="tm-tech-card-icon">📡</span>
+                                <h5 class="tm-tech-card-name">LoRaWAN &amp; The Things Network</h5>
+                            </div>
+                            <span class="tm-tech-card-role" data-i18n="tm_tech4_role">Telemetría Inalámbrica de Largo Alcance (IoT)</span>
+                            <p class="tm-tech-card-desc" data-i18n="tm_tech4_desc">Recepción remota de paquetes con identificadores DevEUI, procesamiento de uplinks en vivo y decodificación de payloads de campo.</p>
+                        </div>
+
+                        <div class="tm-tech-card">
+                            <div class="tm-tech-card-header">
+                                <span class="tm-tech-card-icon">⚙️</span>
+                                <h5 class="tm-tech-card-name">Windows Service &amp; Background Workers</h5>
+                            </div>
+                            <span class="tm-tech-card-role" data-i18n="tm_tech5_role">Motor de Adquisición Persistente</span>
+                            <p class="tm-tech-card-desc" data-i18n="tm_tech5_desc">Servicio en segundo plano dedicado a la adquisición continua e ininterrumpida de telemetría sin bloquear el hilo principal de la interfaz.</p>
+                        </div>
+
+                        <div class="tm-tech-card">
+                            <div class="tm-tech-card-header">
+                                <span class="tm-tech-card-icon">📊</span>
+                                <h5 class="tm-tech-card-name">Power Quality &amp; THD</h5>
+                            </div>
+                            <span class="tm-tech-card-role" data-i18n="tm_tech6_role">Análisis Eléctrico &amp; Desglose Armónico</span>
+                            <p class="tm-tech-card-desc" data-i18n="tm_tech6_desc">Medición de Distorsión Armónica Total en tensión y corriente, descomposición espectral por fases (11°, 12°, 13°, etc.) y registro de energía.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5: Funcionalidades Principales -->
+                <div class="fade-on-scroll">
+                    <div class="tm-section-heading">
+                        <span class="tm-section-heading-icon">⚡</span>
+                        <h4 class="tm-section-heading-title" data-i18n="tm_feat_title">05. Funcionalidades Principales</h4>
+                        <span class="tm-section-heading-badge" data-i18n="tm_feat_badge">Operación Empresarial</span>
+                    </div>
+
+                    <div class="tm-features-grid">
+                        <article class="tm-feature-card">
+                            <span class="tm-feature-icon">📈</span>
+                            <h5 class="tm-feature-title" data-i18n="tm_feat1_title">Telemetría Eléctrica en Tiempo Real</h5>
+                            <p class="tm-feature-desc" data-i18n="tm_feat1_desc">Monitoreo en vivo de hasta 68 variables eléctricas por medidor: voltajes de fase (V1, V2, V3), voltajes de línea (Vab, Vbc, Vca), corrientes de carga (I1, I2), frecuencia (60.03 Hz) y energía acumulada.</p>
+                            <span class="tm-feature-highlight" data-i18n="tm_feat1_hl">68 Variables / Medidor</span>
+                        </article>
+
+                        <article class="tm-feature-card">
+                            <span class="tm-feature-icon">🔄</span>
+                            <h5 class="tm-feature-title" data-i18n="tm_feat2_title">Adquisición Híbrida Serial &amp; LoRaWAN</h5>
+                            <p class="tm-feature-desc" data-i18n="tm_feat2_desc">Compatibilidad simultánea con medidores conectados por bus serial físico RS485 (ej. TOV453 en puerto COM3) y nodos inalámbricos remotos vía LoRaWAN / The Things Network (ej. TOV500).</p>
+                            <span class="tm-feature-highlight" data-i18n="tm_feat2_hl">RS485 + LoRaWAN</span>
+                        </article>
+
+                        <article class="tm-feature-card">
+                            <span class="tm-feature-icon">📊</span>
+                            <h5 class="tm-feature-title" data-i18n="tm_feat3_title">Matriz Espectral de Armónicos &amp; THD</h5>
+                            <p class="tm-feature-desc" data-i18n="tm_feat3_desc">Supervisión continua de Distorsión Armónica Total en tensión (THD-Ua 7.73%, THD-Ub 6.88%) y corriente (THD-Ia 37.17%), con análisis individual de armónicos por fases (11°, 12°, 13°, etc.).</p>
+                            <span class="tm-feature-highlight" data-i18n="tm_feat3_hl">Análisis THD &amp; Espectral</span>
+                        </article>
+
+                        <article class="tm-feature-card">
+                            <span class="tm-feature-icon">🎛️</span>
+                            <h5 class="tm-feature-title" data-i18n="tm_feat4_title">Dashboard Centralizado &amp; Estado de Red</h5>
+                            <p class="tm-feature-desc" data-i18n="tm_feat4_desc">Panel de control con indicadores KPI en tiempo real: dispositivos totales, medidores conectados en vivo, en espera/desconectados, contador de errores y timestamp exacto de sincronización.</p>
+                            <span class="tm-feature-highlight" data-i18n="tm_feat4_hl">Control de Conexión en Vivo</span>
+                        </article>
+
+                        <article class="tm-feature-card">
+                            <span class="tm-feature-icon">🔐</span>
+                            <h5 class="tm-feature-title" data-i18n="tm_feat5_title">Autenticación &amp; Seguridad de Acceso</h5>
+                            <p class="tm-feature-desc" data-i18n="tm_feat5_desc">Módulo de inicio de sesión corporativo para administradores y operadores, protección de credenciales, persistencia de usuario y verificación del enlace seguro con el servidor central.</p>
+                            <span class="tm-feature-highlight" data-i18n="tm_feat5_hl">Control de Acceso Seguro</span>
+                        </article>
+
+                        <article class="tm-feature-card">
+                            <span class="tm-feature-icon">📋</span>
+                            <h5 class="tm-feature-title" data-i18n="tm_feat6_title">Históricos, Reportes &amp; Configuración</h5>
+                            <p class="tm-feature-desc" data-i18n="tm_feat6_desc">Navegación lateral estructurada para consulta de históricos, generación de reportes y configuración dinámica de variables visibles (ej. 31/57 variables activas) según el tipo de auditoría.</p>
+                            <span class="tm-feature-highlight" data-i18n="tm_feat6_hl">Auditoría &amp; Diagnóstico</span>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 6: Capturas Reales del Sistema (Interactive Gallery) -->
+                <div class="fade-on-scroll">
+                    <div class="tm-section-heading">
+                        <span class="tm-section-heading-icon">📸</span>
+                        <h4 class="tm-section-heading-title" data-i18n="tm_gallery_title">06. Capturas Reales del Sistema</h4>
+                        <span class="tm-section-heading-badge" data-i18n="tm_gallery_badge">Evidencia Verificada</span>
+                    </div>
+
+                    <div class="tm-gallery-container">
+                        <!-- Navigation Tabs Bar -->
+                        <div class="tm-gallery-tabs-bar" role="tablist">
+                            <button type="button" class="tm-gallery-tab active" data-tm-tab="0">
+                                <span data-i18n="tm_tab_0">⚡ 1. Telemetría RS485 / Modbus</span>
+                            </button>
+                            <button type="button" class="tm-gallery-tab" data-tm-tab="1">
+                                <span data-i18n="tm_tab_1">📊 2. Matriz de Armónicos &amp; THD</span>
+                            </button>
+                            <button type="button" class="tm-gallery-tab" data-tm-tab="2">
+                                <span data-i18n="tm_tab_2">📡 3. IoT LoRaWAN / TTN</span>
+                            </button>
+                            <button type="button" class="tm-gallery-tab" data-tm-tab="3">
+                                <span data-i18n="tm_tab_3">🔐 4. Autenticación Segura</span>
+                            </button>
+                            <button type="button" class="tm-gallery-tab" data-tm-tab="4">
+                                <span data-i18n="tm_tab_4">🚀 5. Splash Screen &amp; Servidor</span>
+                            </button>
+                        </div>
+
+                        <!-- Active Screenshot Frame -->
+                        <div class="tm-screen-window">
+                            <div class="tm-screen-window-header">
+                                <div class="tm-window-controls">
+                                    <span class="tm-window-btn tm-btn-close"></span>
+                                    <span class="tm-window-btn tm-btn-min"></span>
+                                    <span class="tm-window-btn tm-btn-max"></span>
+                                </div>
+                                <div class="tm-window-title" id="tm-window-title">
+                                    TOTAL MONITOR . SISTEMA OPERATIVO - POWER QUALITY PLATFORM (Hardware Real TOV453)
+                                </div>
+                                <div class="tm-window-status-pill">
+                                    <span data-i18n="tm_window_status">● ADQUISICIÓN ACTIVA</span>
+                                </div>
+                            </div>
+
+                            <a href="#" id="tm-screen-link" class="tm-screen-view" title="Clic para ampliar captura en alta resolución">
+                                <img id="tm-screen-img" src="images/totalmonitor/totalmonitor-dashboard-modbus.jpg" alt="TOTAL MONITOR - Dashboard de Telemetría Eléctrica en Vivo con Hardware Real Modbus RTU">
+                                <span class="tm-screen-hint" data-i18n="tm_screen_hint">🔍 Clic para ampliar captura</span>
+                            </a>
+
+                            <!-- Live Evidence Metrics Bar -->
+                            <div class="tm-live-metrics-bar" id="tm-live-metrics">
+                                <span class="tm-live-metrics-title" data-i18n="tm_metrics_label">Evidencia Real:</span>
+                                <span class="tm-metric-chip accent">Dispositivo: <strong>TOV453 Principal</strong></span>
+                                <span class="tm-metric-chip accent">Protocolo: <strong>RS485 / Modbus RTU</strong></span>
+                                <span class="tm-metric-chip">Puerto: <strong>COM3 · 9600 bps</strong></span>
+                                <span class="tm-metric-chip">Variables: <strong>31 de 68 en vivo</strong></span>
+                                <span class="tm-metric-chip">Frecuencia: <strong>60.03 Hz</strong></span>
+                                <span class="tm-metric-chip">Tensión Fase A: <strong>116.8 V</strong></span>
+                                <span class="tm-metric-chip">Estado: <strong>• Adquisición Activa</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Grid -->
+                        <div class="tm-thumbnails-grid">
+                            <div class="tm-thumb active" data-tm-thumb="0">
+                                <img src="images/totalmonitor/totalmonitor-dashboard-modbus.jpg" alt="Dashboard Modbus RTU">
+                                <span class="tm-thumb-caption" data-i18n="tm_thumb_0">1. Telemetría RS485</span>
+                            </div>
+                            <div class="tm-thumb" data-tm-thumb="1">
+                                <img src="images/totalmonitor/totalmonitor-harmonics.jpg" alt="Matriz de Armónicos">
+                                <span class="tm-thumb-caption" data-i18n="tm_thumb_1">2. Armónicos &amp; THD</span>
+                            </div>
+                            <div class="tm-thumb" data-tm-thumb="2">
+                                <img src="images/totalmonitor/totalmonitor-dashboard-lorawan.jpg" alt="IoT LoRaWAN TTN">
+                                <span class="tm-thumb-caption" data-i18n="tm_thumb_2">3. LoRaWAN / TTN</span>
+                            </div>
+                            <div class="tm-thumb" data-tm-thumb="3">
+                                <img src="images/totalmonitor/totalmonitor-login.jpg" alt="Login Seguro">
+                                <span class="tm-thumb-caption" data-i18n="tm_thumb_3">4. Login de Acceso</span>
+                            </div>
+                            <div class="tm-thumb" data-tm-thumb="4">
+                                <img src="images/totalmonitor/totalmonitor-splash.jpg" alt="Splash Screen">
+                                <span class="tm-thumb-caption" data-i18n="tm_thumb_4">5. Splash &amp; Enlace</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7: Mi Participación como Desarrollador -->
+                <div class="tm-dev-card fade-on-scroll">
+                    <div class="tm-dev-header">
+                        <div class="tm-dev-title-wrap">
+                            <div class="tm-dev-avatar">👨‍💻</div>
+                            <div>
+                                <h4 class="tm-dev-title" data-i18n="tm_dev_title">07. Mi Participación como Desarrollador</h4>
+                                <p class="tm-dev-subtitle" data-i18n="tm_dev_author_sub">Roman Velasco Moctezuma · Ingeniero en Sistemas &amp; Licenciado en TI</p>
+                            </div>
+                        </div>
+                        <span class="tm-dev-badge" data-i18n="tm_dev_role_badge">Desarrollador de Software · Ingeniería de Sistemas</span>
+                    </div>
+
+                    <div class="tm-dev-grid">
+                        <div class="tm-dev-item">
+                            <h5 class="tm-dev-item-title" data-i18n="tm_dev_item1_title">🖥️ Arquitectura de Software en C# / .NET</h5>
+                            <p class="tm-dev-item-desc" data-i18n="tm_dev_item1_desc">Diseño estructural de la aplicación de escritorio bajo patrones modulares orientados a eventos, desacoplando los hilos de adquisición continua del hilo principal de interfaz (UI Thread) para evitar cualquier congelamiento.</p>
+                        </div>
+
+                        <div class="tm-dev-item">
+                            <h5 class="tm-dev-item-title" data-i18n="tm_dev_item2_title">🔌 Stack Serial Industrial (Modbus RTU / RS485)</h5>
+                            <p class="tm-dev-item-desc" data-i18n="tm_dev_item2_desc">Desarrollo del driver de comunicación serial para medidores Total Ground (TOV453), control de temporizadores de sondeo, sumas de verificación CRC16 y mapeo de registros de retención y entrada física.</p>
+                        </div>
+
+                        <div class="tm-dev-item">
+                            <h5 class="tm-dev-item-title" data-i18n="tm_dev_item3_title">📡 Integración IoT LoRaWAN (The Things Network)</h5>
+                            <p class="tm-dev-item-desc" data-i18n="tm_dev_item3_desc">Implementación del conector con la red The Things Network (TTN) para ingesta de telemetría remota de medidores TOV500, decodificación de payloads de uplink, filtrado de datos brutos y administración de DevEUIs.</p>
+                        </div>
+
+                        <div class="tm-dev-item">
+                            <h5 class="tm-dev-item-title" data-i18n="tm_dev_item4_title">🎨 Interfaz WPF (XAML) de Alto Rendimiento</h5>
+                            <p class="tm-dev-item-desc" data-i18n="tm_dev_item4_desc">Construcción de la interfaz gráfica empresarial con tema oscuro de alta visibilidad, tableros de instrumentos responsivos, selectores de dispositivos y renderizado acelerado de 68 variables eléctricas en vivo.</p>
+                        </div>
+
+                        <div class="tm-dev-item">
+                            <h5 class="tm-dev-item-title" data-i18n="tm_dev_item5_title">📊 Métricas Eléctricas, Armónicos &amp; THD</h5>
+                            <p class="tm-dev-item-desc" data-i18n="tm_dev_item5_desc">Lógica matemática para procesamiento de Distorsión Armónica Total (THD), descomposición espectral de armónicos de corriente y tensión por fases (11°, 12°, 13°), cálculo de factores de potencia y acumuladores de energía.</p>
+                        </div>
+
+                        <div class="tm-dev-item">
+                            <h5 class="tm-dev-item-title" data-i18n="tm_dev_item6_title">🛡️ Enlace Servidor &amp; Seguridad de Acceso</h5>
+                            <p class="tm-dev-item-desc" data-i18n="tm_dev_item6_desc">Módulo de autenticación corporativa, persistencia segura de credenciales, control de roles de operador y monitoreo activo del estado de enlace con el servidor central durante la inicialización del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Mobile Section -->
     <section id="mobile" class="section mobile-showcase">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="mobile_section_title">02. Desarrollo Mobile</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="mobile_section_title">03. Desarrollo Mobile</h2>
 
-            <div class="mobile-lead-card fade-on-scroll">
+            <div class="mobile-lead-card">
                 <span class="mobile-lead-badge" data-i18n="mobile_lead_badge">📱 Proyecto Insignia · Arquitectura Completa</span>
                 <div class="mobile-case-header">
                     <div class="mobile-brand-title">
@@ -2223,7 +3871,7 @@
     <!-- Work Section -->
     <section id="work" class="section">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="projects_title">03. Otros Proyectos Web &amp; Sistemas</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="projects_title">04. Otros Proyectos Web &amp; Sistemas</h2>
 
             <!-- Category Filter Bar -->
             <div class="projects-filter-wrapper fade-on-scroll">
@@ -2735,7 +4383,7 @@
     <!-- About / Skills Section -->
     <section id="about" class="section bg-dim">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="about_title">04. Sobre Mí &amp; Habilidades</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="about_title">05. Sobre Mí &amp; Habilidades</h2>
             <div class="about-content fade-on-scroll">
                 <div class="about-text">
                     <p data-i18n="about_p1">¡Hola! Mi nombre es <strong>Roman Velasco Moctezuma</strong> y me especializo en construir soluciones digitales integrales y de alto rendimiento. Cuento con formación académica de doble titulación: <strong>Ingeniería en Sistemas en el ITESO</strong> y <strong>Licenciatura en Tecnologías de la Información en la UDG</strong>.</p>
@@ -2744,6 +4392,25 @@
 
                     <!-- Categorized Skills Grid -->
                     <div class="skills-categories-grid">
+                        <!-- Category 0: Software Empresarial & Desktop -->
+                        <div class="skills-category-box" style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(25, 14, 25, 0.7), rgba(17, 34, 64, 0.7)); border-color: rgba(255, 51, 75, 0.3);">
+                            <div class="skills-category-header">
+                                <h4 data-i18n="skills_soft_title">🖥️ Software Empresarial &amp; Desktop</h4>
+                                <span class="skills-category-badge" data-i18n="skills_soft_badge" style="color: var(--tm-red); border-color: rgba(255, 51, 75, 0.35); background: rgba(255, 51, 75, 0.1);">C# / .NET &amp; IoT Industrial</span>
+                            </div>
+                            <ul class="skills-items-list skills-items-list-wide" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+                                <li>C# &amp; Ecosistema .NET</li>
+                                <li>WPF (Windows Presentation Foundation)</li>
+                                <li>Windows Services &amp; Daemons</li>
+                                <li>Modbus RTU / RS485 (Serial)</li>
+                                <li>LoRaWAN &amp; The Things Network (TTN)</li>
+                                <li>Telemetría &amp; Calidad de Energía (Power Quality)</li>
+                                <li>Análisis de Armónicos (THD)</li>
+                                <li>Multithreading &amp; Concurrencia de Alta Velocidad</li>
+                                <li>Arquitectura Cliente-Servidor Desacoplada</li>
+                                <li>Supervisión Industrial &amp; SCADA</li>
+                            </ul>
+                        </div>
                         <!-- Category 1: Mobile -->
                         <div class="skills-category-box">
                             <div class="skills-category-header">
@@ -2832,7 +4499,7 @@
     <!-- Packages Section -->
     <section id="packages" class="section">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="packages_title">05. Paquetes</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="packages_title">06. Paquetes</h2>
             <p class="packages-subtitle fade-on-scroll" data-i18n="packages_subtitle">Paquetes transparentes para el desarrollo de sitios web y aplicaciones a la medida. Precios en MXN y ajustables según el alcance final.</p>
 
             <div class="packages-grid">
@@ -2930,7 +4597,7 @@
     <!-- Engineering Section -->
     <section id="engineering" class="section bg-dim">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="eng_title">06. Ingeniería Web &amp; Software</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="eng_title">07. Ingeniería Web &amp; Software</h2>
             <p class="engineering-intro fade-on-scroll" data-i18n="eng_intro">Trabajo con enfoque de ingeniería para que tus plataformas y aplicaciones vendan mejor,
                 carguen rápido y sean fáciles de mantener. Sin complicarte con términos técnicos innecesarios.</p>
 
@@ -3014,15 +4681,118 @@
             // --- i18n Translation Engine ---
             const translations = {
                 es: {
-                    page_title: "Roman Velasco | Web & Mobile Developer (Android, Flutter, APIs & Fullstack)",
-                    meta_desc: "Portafolio de Roman Velasco Moctezuma, Web & Mobile Developer especializado en aplicaciones móviles Android y multiplataforma, desarrollo web, APIs REST y soluciones completas frontend + backend.",
                     nav_home: "01. Inicio",
-                    nav_mobile: "02. Mobile",
-                    nav_work: "03. Proyectos",
-                    nav_about: "04. Sobre Mí",
-                    nav_packages: "05. Paquetes",
-                    nav_engineering: "06. Ingeniería",
-                    nav_contact: "07. Contacto",
+                    nav_software: "02. Software",
+                    nav_mobile: "03. Mobile",
+                    nav_work: "04. Proyectos",
+                    nav_about: "05. Sobre Mí",
+                    nav_packages: "06. Paquetes",
+                    nav_engineering: "07. Ingeniería",
+                    nav_contact: "08. Contacto",
+                                        // Total Monitor & Software Positioning
+                    software_section_title: "02. Software Empresarial & SCADA",
+                    tm_brand_owner: "Desarrollado para <strong>Total Ground</strong> · An Electrical Company",
+                    tm_prob_tag1: "Infraestructura Eléctrica Crítica",
+                    tm_prob_tag2: "Distorsión Armónica (THD)",
+                    tm_prob_tag3: "Adquisición Multi-dispositivo",
+                    tm_sol_tag1: "Cliente WPF Nativo",
+                    tm_sol_tag2: "Adquisición Híbrida Serial + IoT",
+                    tm_sol_tag3: "68 Variables en Vivo",
+                    tm_arch_conn1: "RS485 Modbus RTU<br>(COM3 · 9600 bps)<br>LoRaWAN / TTN Uplinks",
+                    tm_arch_conn2: "Data Binding Reactivo<br>Telemetría en Vivo<br>Control de Sesión",
+                    tm_tech_badge: "Stack Industrial .NET",
+                    tm_tech1_role: "Lenguaje & Runtime de Alto Rendimiento",
+                    tm_tech1_desc: "Motor robusto multihilo para procesamiento en tiempo real, deserialización de tramas binarias y lógica de cálculo eléctrico sin latencia.",
+                    tm_tech2_role: "Interfaz de Escritorio de Grado Industrial",
+                    tm_tech2_desc: "Diseño gráfico en modo oscuro industrial con aceleración por hardware DirectX, enlace de datos bidireccional reactivo y alta densidad de métricas.",
+                    tm_tech3_role: "Comunicación Serial con Hardware en Campo",
+                    tm_tech3_desc: "Protocolo industrial directo sobre puertos COM físicos (9600 bps), mapeo de holding registers y validación por sumas de verificación CRC16.",
+                    tm_tech4_role: "Telemetría Inalámbrica de Largo Alcance (IoT)",
+                    tm_tech4_desc: "Recepción remota de paquetes con identificadores DevEUI, procesamiento de uplinks en vivo y decodificación de payloads de campo.",
+                    tm_tech5_role: "Motor de Adquisición Persistente",
+                    tm_tech5_desc: "Servicio en segundo plano dedicado a la adquisición continua e ininterrumpida de telemetría sin bloquear el hilo principal de la interfaz.",
+                    tm_tech6_role: "Análisis Eléctrico & Desglose Armónico",
+                    tm_tech6_desc: "Medición de Distorsión Armónica Total en tensión y corriente, descomposición espectral por fases (11°, 12°, 13°, etc.) y registro de energía.",
+                    tm_feat_badge: "Operación Empresarial",
+                    tm_feat1_hl: "68 Variables / Medidor",
+                    tm_feat2_hl: "RS485 + LoRaWAN",
+                    tm_feat3_hl: "Análisis THD & Espectral",
+                    tm_feat4_hl: "Control de Conexión en Vivo",
+                    tm_feat5_hl: "Control de Acceso Seguro",
+                    tm_feat6_hl: "Auditoría & Diagnóstico",
+                    tm_gallery_badge: "Evidencia Verificada",
+                    tm_tab_0: "⚡ 1. Telemetría RS485 / Modbus",
+                    tm_tab_1: "📊 2. Matriz de Armónicos & THD",
+                    tm_tab_2: "📡 3. IoT LoRaWAN / TTN",
+                    tm_tab_3: "🔐 4. Autenticación Segura",
+                    tm_tab_4: "🚀 5. Splash Screen & Servidor",
+                    tm_window_status: "● ADQUISICIÓN ACTIVA",
+                    tm_screen_hint: "🔍 Clic para ampliar captura",
+                    tm_thumb_0: "1. Telemetría RS485",
+                    tm_thumb_1: "2. Armónicos & THD",
+                    tm_thumb_2: "3. LoRaWAN / TTN",
+                    tm_thumb_3: "4. Login de Acceso",
+                    tm_thumb_4: "5. Splash & Enlace",
+                    tm_dev_author_sub: "Roman Velasco Moctezuma · Ingeniero en Sistemas & Licenciado en TI",
+                    mobile_section_title: "03. Desarrollo Mobile",
+                    projects_title: "04. Otros Proyectos Web & Sistemas",
+                    about_title: "05. Sobre Mí & Habilidades",
+                    packages_title: "06. Paquetes",
+                    eng_title: "07. Ingeniería Web & Software",
+                    contact_subtitle: "08. ¿Qué sigue?",
+                    hero_capsule_software: "🖥️ Software Empresarial & C#/.NET",
+                    hero_btn_software: "Ver Software Empresarial",
+                    skills_soft_title: "🖥️ Software Empresarial & Desktop",
+                    skills_soft_badge: "C# / .NET & IoT Industrial",
+                    tm_lead_badge: "⚡ Proyecto Insignia · Power Quality Platform v2.0",
+                    tm_case_headline: "Sistema Operativo de Calidad de Energía & Telemetría Industrial",
+                    tm_prob_badge: "01. El Problema",
+                    tm_prob_title: "Pérdidas Críticas por Distorsión y Falta de Visibilidad en Tiempo Real",
+                    tm_prob_desc: "En entornos industriales, los disturbios eléctricos y la <strong>distorsión armónica (THD)</strong> generan sobrecalentamiento, fallas de aislamiento y paros no programados. Se requería un sistema capaz de comunicar hardware de medición en campo mediante <strong>buses seriales RS485</strong> y <strong>redes IoT de largo alcance</strong>, capturando decenas de variables eléctricas por segundo sin pérdidas de paquetes ni congelamiento de la interfaz.",
+                    tm_sol_badge: "02. La Solución",
+                    tm_sol_title: "Total Monitor v2.0: Sistema de Adquisición y Diagnóstico Eléctrico",
+                    tm_sol_desc: "Desarrollo de un <strong>software empresarial de escritorio en C# / .NET y WPF</strong> con arquitectura desacoplada cliente-servidor. Cuenta con un motor de adquisición en segundo plano para lectura directa por <strong>RS485 / Modbus RTU</strong> e ingesta IoT inalámbrica vía <strong>LoRaWAN / The Things Network (TTN)</strong>. Despliega telemetría continua de hasta 68 variables eléctricas en vivo, matrices espectrales de armónicos, dashboard centralizado y enlace seguro de servidor.",
+                    tm_arch_badge: "03. Arquitectura del Sistema",
+                    tm_arch_title: "HARDWARE EN CAMPO ⇄ MOTOR DE INGESTA & SERVIDOR ⇄ CLIENTE WPF",
+                    tm_arch_node1_name: "Hardware & Medidores",
+                    tm_arch_node1_desc: "Medición continua de parámetros eléctricos: voltajes trifásicos, corrientes, frecuencia de red, energías Ep+/Ep- y componentes armónicas.",
+                    tm_arch_node2_name: "Motor de Ingesta & Servidor",
+                    tm_arch_node2_desc: "Sondeo multihilo a registros Modbus, decodificación de tramas binarias, deserialización de payloads TTN, verificación de enlace de servidor y validación de datos brutos.",
+                    tm_arch_node3_name: "Cliente de Escritorio WPF",
+                    tm_arch_node3_desc: "Experiencia nativa para operadores: tableros en vivo de 68 variables eléctricas, matriz de armónicos, KPIs de conexión, selector de dispositivos y login empresarial.",
+                    tm_tech_title: "04. Tecnologías Utilizadas",
+                    tm_feat_title: "05. Funcionalidades Principales",
+                    tm_gallery_title: "06. Capturas Reales del Sistema",
+                    tm_metrics_label: "Evidencia Real:",
+                    tm_dev_title: "07. Mi Participación como Desarrollador",
+                    tm_dev_role_badge: "Desarrollador de Software · Ingeniería de Sistemas",
+                    tm_feat1_title: "Telemetría Eléctrica en Tiempo Real",
+                    tm_feat1_desc: "Monitoreo en vivo de hasta 68 variables eléctricas por medidor: voltajes de fase (V1, V2, V3), voltajes de línea (Vab, Vbc, Vca), corrientes de carga (I1, I2), frecuencia (60.03 Hz) y energía acumulada.",
+                    tm_feat2_title: "Adquisición Híbrida Serial & LoRaWAN",
+                    tm_feat2_desc: "Compatibilidad simultánea con medidores conectados por bus serial físico RS485 (ej. TOV453 en puerto COM3) y nodos inalámbricos remotos vía LoRaWAN / The Things Network (ej. TOV500).",
+                    tm_feat3_title: "Matriz Espectral de Armónicos & THD",
+                    tm_feat3_desc: "Supervisión continua de Distorsión Armónica Total en tensión (THD-Ua 7.73%, THD-Ub 6.88%) y corriente (THD-Ia 37.17%), con análisis individual de armónicos por fases (11°, 12°, 13°, etc.).",
+                    tm_feat4_title: "Dashboard Centralizado & Estado de Red",
+                    tm_feat4_desc: "Panel de control con indicadores KPI en tiempo real: dispositivos totales, medidores conectados en vivo, en espera/desconectados, contador de errores y timestamp exacto de sincronización.",
+                    tm_feat5_title: "Autenticación & Seguridad de Acceso",
+                    tm_feat5_desc: "Módulo de inicio de sesión corporativo para administradores y operadores, protección de credenciales, persistencia de usuario y verificación del enlace seguro con el servidor central.",
+                    tm_feat6_title: "Históricos, Reportes & Configuración",
+                    tm_feat6_desc: "Navegación lateral estructurada para consulta de históricos, generación de reportes y configuración dinámica de variables visibles (ej. 31/57 variables activas) según el tipo de auditoría.",
+                    tm_dev_item1_title: "🖥️ Arquitectura de Software en C# / .NET",
+                    tm_dev_item1_desc: "Diseño estructural de la aplicación de escritorio bajo patrones modulares orientados a eventos, desacoplando los hilos de adquisición continua del hilo principal de interfaz (UI Thread) para evitar cualquier congelamiento.",
+                    tm_dev_item2_title: "🔌 Stack Serial Industrial (Modbus RTU / RS485)",
+                    tm_dev_item2_desc: "Desarrollo del driver de comunicación serial para medidores Total Ground (TOV453), control de temporizadores de sondeo, sumas de verificación CRC16 y mapeo de registros de retención y entrada física.",
+                    tm_dev_item3_title: "📡 Integración IoT LoRaWAN (The Things Network)",
+                    tm_dev_item3_desc: "Implementación del conector con la red The Things Network (TTN) para ingesta de telemetría remota de medidores TOV500, decodificación de payloads de uplink, filtrado de datos brutos y administración de DevEUIs.",
+                    tm_dev_item4_title: "🎨 Interfaz WPF (XAML) de Alto Rendimiento",
+                    tm_dev_item4_desc: "Construcción de la interfaz gráfica empresarial con tema oscuro de alta visibilidad, tableros de instrumentos responsivos, selectores de dispositivos y renderizado acelerado de 68 variables eléctricas en vivo.",
+                    tm_dev_item5_title: "📊 Métricas Eléctricas, Armónicos & THD",
+                    tm_dev_item5_desc: "Lógica matemática para procesamiento de Distorsión Armónica Total (THD), descomposición espectral de armónicos de corriente y tensión por fases (11°, 12°, 13°), cálculo de factores de potencia y acumuladores de energía.",
+                    tm_dev_item6_title: "🛡️ Enlace Servidor & Seguridad de Acceso",
+                    tm_dev_item6_desc: "Módulo de autenticación corporativa, persistencia segura de credenciales, control de roles de operador y monitoreo activo del estado de enlace con el servidor central durante la inicialización del sistema.",
+
+                    page_title: "Roman Velasco | Software & Web Developer (Android, Flutter, APIs & Fullstack)",
+                    meta_desc: "Portafolio de Roman Velasco Moctezuma, Web & Mobile Developer especializado en aplicaciones móviles Android y multiplataforma, desarrollo web, APIs REST y soluciones completas frontend + backend.",
                     hero_subtitle: "Hola, mi nombre es",
                     hero_role: "Web & Mobile Developer",
                     hero_capsule_1: "📱 Apps Android & Multiplataforma",
@@ -3157,18 +4927,122 @@
                     footer_credit: "Diseñado & Construido por Roman Velasco Moctezuma",
                     wa_tooltip_title: "¿Tienes un proyecto?",
                     wa_tooltip_sub: "Hablemos por WhatsApp",
-                    wa_msg: "Hola Roman, vi tu portafolio y me gustaría platicar sobre un proyecto"
+                    wa_msg: "Hola Roman, vi tu portafolio y me gustaría platicar sobre un proyecto",
+                    back_to_top: "Subir al inicio"
                 },
                 en: {
-                    page_title: "Roman Velasco | Web & Mobile Developer (Android, Flutter, APIs & Fullstack)",
-                    meta_desc: "Portfolio of Roman Velasco Moctezuma, Web & Mobile Developer specializing in Android and cross-platform mobile apps, web engineering, REST APIs, and fullstack solutions.",
                     nav_home: "01. Home",
-                    nav_mobile: "02. Mobile",
-                    nav_work: "03. Projects",
-                    nav_about: "04. About Me",
-                    nav_packages: "05. Packages",
-                    nav_engineering: "06. Engineering",
-                    nav_contact: "07. Contact",
+                    nav_software: "02. Software",
+                    nav_mobile: "03. Mobile",
+                    nav_work: "04. Projects",
+                    nav_about: "05. About Me",
+                    nav_packages: "06. Packages",
+                    nav_engineering: "07. Engineering",
+                    nav_contact: "08. Contact",
+                                        // Total Monitor & Software Positioning
+                    software_section_title: "02. Software Empresarial & SCADA",
+                    tm_brand_owner: "Desarrollado para <strong>Total Ground</strong> · An Electrical Company",
+                    tm_prob_tag1: "Infraestructura Eléctrica Crítica",
+                    tm_prob_tag2: "Distorsión Armónica (THD)",
+                    tm_prob_tag3: "Adquisición Multi-dispositivo",
+                    tm_sol_tag1: "Cliente WPF Nativo",
+                    tm_sol_tag2: "Adquisición Híbrida Serial + IoT",
+                    tm_sol_tag3: "68 Variables en Vivo",
+                    tm_arch_conn1: "RS485 Modbus RTU<br>(COM3 · 9600 bps)<br>LoRaWAN / TTN Uplinks",
+                    tm_arch_conn2: "Data Binding Reactivo<br>Telemetría en Vivo<br>Control de Sesión",
+                    tm_tech_badge: "Stack Industrial .NET",
+                    tm_tech1_role: "Lenguaje & Runtime de Alto Rendimiento",
+                    tm_tech1_desc: "Motor robusto multihilo para procesamiento en tiempo real, deserialización de tramas binarias y lógica de cálculo eléctrico sin latencia.",
+                    tm_tech2_role: "Interfaz de Escritorio de Grado Industrial",
+                    tm_tech2_desc: "Diseño gráfico en modo oscuro industrial con aceleración por hardware DirectX, enlace de datos bidireccional reactivo y alta densidad de métricas.",
+                    tm_tech3_role: "Comunicación Serial con Hardware en Campo",
+                    tm_tech3_desc: "Protocolo industrial directo sobre puertos COM físicos (9600 bps), mapeo de holding registers y validación por sumas de verificación CRC16.",
+                    tm_tech4_role: "Telemetría Inalámbrica de Largo Alcance (IoT)",
+                    tm_tech4_desc: "Recepción remota de paquetes con identificadores DevEUI, procesamiento de uplinks en vivo y decodificación de payloads de campo.",
+                    tm_tech5_role: "Motor de Adquisición Persistente",
+                    tm_tech5_desc: "Servicio en segundo plano dedicado a la adquisición continua e ininterrumpida de telemetría sin bloquear el hilo principal de la interfaz.",
+                    tm_tech6_role: "Análisis Eléctrico & Desglose Armónico",
+                    tm_tech6_desc: "Medición de Distorsión Armónica Total en tensión y corriente, descomposición espectral por fases (11°, 12°, 13°, etc.) y registro de energía.",
+                    tm_feat_badge: "Operación Empresarial",
+                    tm_feat1_hl: "68 Variables / Medidor",
+                    tm_feat2_hl: "RS485 + LoRaWAN",
+                    tm_feat3_hl: "Análisis THD & Espectral",
+                    tm_feat4_hl: "Control de Conexión en Vivo",
+                    tm_feat5_hl: "Control de Acceso Seguro",
+                    tm_feat6_hl: "Auditoría & Diagnóstico",
+                    tm_gallery_badge: "Evidencia Verificada",
+                    tm_tab_0: "⚡ 1. Telemetría RS485 / Modbus",
+                    tm_tab_1: "📊 2. Matriz de Armónicos & THD",
+                    tm_tab_2: "📡 3. IoT LoRaWAN / TTN",
+                    tm_tab_3: "🔐 4. Autenticación Segura",
+                    tm_tab_4: "🚀 5. Splash Screen & Servidor",
+                    tm_window_status: "● ADQUISICIÓN ACTIVA",
+                    tm_screen_hint: "🔍 Clic para ampliar captura",
+                    tm_thumb_0: "1. Telemetría RS485",
+                    tm_thumb_1: "2. Armónicos & THD",
+                    tm_thumb_2: "3. LoRaWAN / TTN",
+                    tm_thumb_3: "4. Login de Acceso",
+                    tm_thumb_4: "5. Splash & Enlace",
+                    tm_dev_author_sub: "Roman Velasco Moctezuma · Ingeniero en Sistemas & Licenciado en TI",
+                    mobile_section_title: "03. Desarrollo Mobile",
+                    projects_title: "04. Otros Proyectos Web & Sistemas",
+                    about_title: "05. Sobre Mí & Habilidades",
+                    packages_title: "06. Paquetes",
+                    eng_title: "07. Ingeniería Web & Software",
+                    contact_subtitle: "08. ¿Qué sigue?",
+                    hero_capsule_software: "🖥️ Software Empresarial & C#/.NET",
+                    hero_btn_software: "Ver Software Empresarial",
+                    skills_soft_title: "🖥️ Software Empresarial & Desktop",
+                    skills_soft_badge: "C# / .NET & IoT Industrial",
+                    tm_lead_badge: "⚡ Proyecto Insignia · Power Quality Platform v2.0",
+                    tm_case_headline: "Sistema Operativo de Calidad de Energía & Telemetría Industrial",
+                    tm_prob_badge: "01. El Problema",
+                    tm_prob_title: "Pérdidas Críticas por Distorsión y Falta de Visibilidad en Tiempo Real",
+                    tm_prob_desc: "En entornos industriales, los disturbios eléctricos y la <strong>distorsión armónica (THD)</strong> generan sobrecalentamiento, fallas de aislamiento y paros no programados. Se requería un sistema capaz de comunicar hardware de medición en campo mediante <strong>buses seriales RS485</strong> y <strong>redes IoT de largo alcance</strong>, capturando decenas de variables eléctricas por segundo sin pérdidas de paquetes ni congelamiento de la interfaz.",
+                    tm_sol_badge: "02. La Solución",
+                    tm_sol_title: "Total Monitor v2.0: Sistema de Adquisición y Diagnóstico Eléctrico",
+                    tm_sol_desc: "Desarrollo de un <strong>software empresarial de escritorio en C# / .NET y WPF</strong> con arquitectura desacoplada cliente-servidor. Cuenta con un motor de adquisición en segundo plano para lectura directa por <strong>RS485 / Modbus RTU</strong> e ingesta IoT inalámbrica vía <strong>LoRaWAN / The Things Network (TTN)</strong>. Despliega telemetría continua de hasta 68 variables eléctricas en vivo, matrices espectrales de armónicos, dashboard centralizado y enlace seguro de servidor.",
+                    tm_arch_badge: "03. Arquitectura del Sistema",
+                    tm_arch_title: "HARDWARE EN CAMPO ⇄ MOTOR DE INGESTA & SERVIDOR ⇄ CLIENTE WPF",
+                    tm_arch_node1_name: "Hardware & Medidores",
+                    tm_arch_node1_desc: "Medición continua de parámetros eléctricos: voltajes trifásicos, corrientes, frecuencia de red, energías Ep+/Ep- y componentes armónicas.",
+                    tm_arch_node2_name: "Motor de Ingesta & Servidor",
+                    tm_arch_node2_desc: "Sondeo multihilo a registros Modbus, decodificación de tramas binarias, deserialización de payloads TTN, verificación de enlace de servidor y validación de datos brutos.",
+                    tm_arch_node3_name: "Cliente de Escritorio WPF",
+                    tm_arch_node3_desc: "Experiencia nativa para operadores: tableros en vivo de 68 variables eléctricas, matriz de armónicos, KPIs de conexión, selector de dispositivos y login empresarial.",
+                    tm_tech_title: "04. Tecnologías Utilizadas",
+                    tm_feat_title: "05. Funcionalidades Principales",
+                    tm_gallery_title: "06. Capturas Reales del Sistema",
+                    tm_metrics_label: "Evidencia Real:",
+                    tm_dev_title: "07. Mi Participación como Desarrollador",
+                    tm_dev_role_badge: "Desarrollador de Software · Ingeniería de Sistemas",
+                    tm_feat1_title: "Telemetría Eléctrica en Tiempo Real",
+                    tm_feat1_desc: "Monitoreo en vivo de hasta 68 variables eléctricas por medidor: voltajes de fase (V1, V2, V3), voltajes de línea (Vab, Vbc, Vca), corrientes de carga (I1, I2), frecuencia (60.03 Hz) y energía acumulada.",
+                    tm_feat2_title: "Adquisición Híbrida Serial & LoRaWAN",
+                    tm_feat2_desc: "Compatibilidad simultánea con medidores conectados por bus serial físico RS485 (ej. TOV453 en puerto COM3) y nodos inalámbricos remotos vía LoRaWAN / The Things Network (ej. TOV500).",
+                    tm_feat3_title: "Matriz Espectral de Armónicos & THD",
+                    tm_feat3_desc: "Supervisión continua de Distorsión Armónica Total en tensión (THD-Ua 7.73%, THD-Ub 6.88%) y corriente (THD-Ia 37.17%), con análisis individual de armónicos por fases (11°, 12°, 13°, etc.).",
+                    tm_feat4_title: "Dashboard Centralizado & Estado de Red",
+                    tm_feat4_desc: "Panel de control con indicadores KPI en tiempo real: dispositivos totales, medidores conectados en vivo, en espera/desconectados, contador de errores y timestamp exacto de sincronización.",
+                    tm_feat5_title: "Autenticación & Seguridad de Acceso",
+                    tm_feat5_desc: "Módulo de inicio de sesión corporativo para administradores y operadores, protección de credenciales, persistencia de usuario y verificación del enlace seguro con el servidor central.",
+                    tm_feat6_title: "Históricos, Reportes & Configuración",
+                    tm_feat6_desc: "Navegación lateral estructurada para consulta de históricos, generación de reportes y configuración dinámica de variables visibles (ej. 31/57 variables activas) según el tipo de auditoría.",
+                    tm_dev_item1_title: "🖥️ Arquitectura de Software en C# / .NET",
+                    tm_dev_item1_desc: "Diseño estructural de la aplicación de escritorio bajo patrones modulares orientados a eventos, desacoplando los hilos de adquisición continua del hilo principal de interfaz (UI Thread) para evitar cualquier congelamiento.",
+                    tm_dev_item2_title: "🔌 Stack Serial Industrial (Modbus RTU / RS485)",
+                    tm_dev_item2_desc: "Desarrollo del driver de comunicación serial para medidores Total Ground (TOV453), control de temporizadores de sondeo, sumas de verificación CRC16 y mapeo de registros de retención y entrada física.",
+                    tm_dev_item3_title: "📡 Integración IoT LoRaWAN (The Things Network)",
+                    tm_dev_item3_desc: "Implementación del conector con la red The Things Network (TTN) para ingesta de telemetría remota de medidores TOV500, decodificación de payloads de uplink, filtrado de datos brutos y administración de DevEUIs.",
+                    tm_dev_item4_title: "🎨 Interfaz WPF (XAML) de Alto Rendimiento",
+                    tm_dev_item4_desc: "Construcción de la interfaz gráfica empresarial con tema oscuro de alta visibilidad, tableros de instrumentos responsivos, selectores de dispositivos y renderizado acelerado de 68 variables eléctricas en vivo.",
+                    tm_dev_item5_title: "📊 Métricas Eléctricas, Armónicos & THD",
+                    tm_dev_item5_desc: "Lógica matemática para procesamiento de Distorsión Armónica Total (THD), descomposición espectral de armónicos de corriente y tensión por fases (11°, 12°, 13°), cálculo de factores de potencia y acumuladores de energía.",
+                    tm_dev_item6_title: "🛡️ Enlace Servidor & Seguridad de Acceso",
+                    tm_dev_item6_desc: "Módulo de autenticación corporativa, persistencia segura de credenciales, control de roles de operador y monitoreo activo del estado de enlace con el servidor central durante la inicialización del sistema.",
+
+                    page_title: "Roman Velasco | Software & Web Developer (Android, Flutter, APIs & Fullstack)",
+                    meta_desc: "Portfolio of Roman Velasco Moctezuma, Web & Mobile Developer specializing in Android and cross-platform mobile apps, web engineering, REST APIs, and fullstack solutions.",
                     hero_subtitle: "Hi, my name is",
                     hero_role: "Web & Mobile Developer",
                     hero_capsule_1: "📱 Android & Cross-Platform Apps",
@@ -3303,7 +5177,8 @@
                     footer_credit: "Designed & Built by Roman Velasco Moctezuma",
                     wa_tooltip_title: "Have a project in mind?",
                     wa_tooltip_sub: "Let's talk on WhatsApp",
-                    wa_msg: "Hi Roman, I saw your portfolio and would like to discuss a project"
+                    wa_msg: "Hi Roman, I saw your portfolio and would like to discuss a project",
+                    back_to_top: "Back to top"
                 }
             };
 
@@ -3360,6 +5235,9 @@
                 btn.addEventListener('click', () => {
                     const chosenLang = btn.getAttribute('data-lang-btn');
                     setLanguage(chosenLang);
+                    if (typeof switchTmScreenshot === 'function') {
+                        switchTmScreenshot(tmActiveIndex);
+                    }
                 });
             });
 
@@ -3409,32 +5287,50 @@
 
 
             // --- Scroll Animations ---
+            const isMobileView = window.innerWidth <= 768;
             const observerOptions = {
-                threshold: 0.1,
-                rootMargin: "0px 0px -50px 0px"
+                threshold: isMobileView ? 0.02 : 0.08,
+                // On mobile, pre-reveal 60px before hitting screen bottom so animations flow effortlessly
+                rootMargin: isMobileView ? "0px 0px 60px 0px" : "0px 0px -30px 0px"
             };
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
+                        entry.target.classList.remove('js-hidden');
                         entry.target.classList.add('visible');
                         observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Apply js-hidden to fade elements so they hide ONLY if JS is running
+            // Apply smooth scroll reveal to fade elements across BOTH mobile and desktop
             const fadeElements = document.querySelectorAll('.fade-on-scroll, .fade-in-up, .fade-in');
             let revealIndex = 0;
             fadeElements.forEach(el => {
                 if (el.classList.contains('fade-on-scroll')) {
-                    const delay = Math.min(revealIndex * 55, 330);
+                    const delay = Math.min((revealIndex % 4) * 70, 280);
                     el.style.setProperty('--reveal-delay', `${delay}ms`);
                     revealIndex += 1;
                 }
-                el.classList.add('js-hidden'); // Hide them now that we know JS is ready to reveal them
+                el.classList.add('js-hidden');
                 observer.observe(el);
             });
+
+            // Instant viewport safeguard: immediately reveal elements already on screen or near fold
+            const revealVisibleImmediate = () => {
+                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                fadeElements.forEach(el => {
+                    const rect = el.getBoundingClientRect ? el.getBoundingClientRect() : { top: 0, bottom: 0 };
+                    if (rect.top <= viewportHeight + 40 && rect.bottom >= -40) {
+                        el.classList.remove('js-hidden');
+                        el.classList.add('visible');
+                        observer.unobserve(el);
+                    }
+                });
+            };
+            setTimeout(revealVisibleImmediate, 50);
+            window.addEventListener('load', revealVisibleImmediate);
 
 
             // --- Navbar Scroll Effect ---
@@ -3519,6 +5415,264 @@
                     if (!document.hidden) startGlitchLoop();
                 });
             }
+
+
+            // --- TOTAL MONITOR: Interactive Screenshot Viewer (Bilingual ES/EN) ---
+            const tmScreenshots = [
+                {
+                    id: 'modbus',
+                    image: 'images/totalmonitor/totalmonitor-dashboard-modbus.jpg',
+                    title: {
+                        es: 'Dashboard de Telemetría Eléctrica en Vivo (RS485 / Modbus RTU)',
+                        en: 'Live Electrical Telemetry Dashboard (RS485 / Modbus RTU)'
+                    },
+                    windowTitle: {
+                        es: 'TOTAL MONITOR . SISTEMA OPERATIVO - POWER QUALITY PLATFORM (Hardware Real TOV453)',
+                        en: 'TOTAL MONITOR . OPERATING SYSTEM - POWER QUALITY PLATFORM (Real Hardware TOV453)'
+                    },
+                    metrics: {
+                        es: [
+                            { label: 'Dispositivo', value: 'TOV453 Principal' },
+                            { label: 'Protocolo', value: 'RS485 / Modbus RTU' },
+                            { label: 'Puerto', value: 'COM3 · 9600 bps' },
+                            { label: 'Variables', value: '31 de 68 en vivo' },
+                            { label: 'Frecuencia', value: '60.03 Hz' },
+                            { label: 'Tensión Fase A', value: '116.8 V' },
+                            { label: 'Estado', value: '• Adquisición Activa' }
+                        ],
+                        en: [
+                            { label: 'Device', value: 'TOV453 Main' },
+                            { label: 'Protocol', value: 'RS485 / Modbus RTU' },
+                            { label: 'Port', value: 'COM3 · 9600 bps' },
+                            { label: 'Variables', value: '31 of 68 live' },
+                            { label: 'Frequency', value: '60.03 Hz' },
+                            { label: 'Phase A Voltage', value: '116.8 V' },
+                            { label: 'Status', value: '• Active Acquisition' }
+                        ]
+                    }
+                },
+                {
+                    id: 'harmonics',
+                    image: 'images/totalmonitor/totalmonitor-harmonics.jpg',
+                    title: {
+                        es: 'Matriz Espectral de Armónicos & THD (Calidad de Energía)',
+                        en: 'Harmonics & THD Spectral Matrix (Power Quality)'
+                    },
+                    windowTitle: {
+                        es: 'TOTAL MONITOR - ANÁLISIS DE DISTORSIÓN ARMÓNICA Y CALIDAD DE ENERGÍA',
+                        en: 'TOTAL MONITOR - HARMONIC DISTORTION & POWER QUALITY ANALYSIS'
+                    },
+                    metrics: {
+                        es: [
+                            { label: 'Frecuencia de Red', value: '60.03 Hz' },
+                            { label: 'Energía Forward (Ep+)', value: '31,771.70 kWh' },
+                            { label: 'THD Tensión (Ua/Ub/Uc)', value: '7.73% / 6.88% / 6.33%' },
+                            { label: 'THD Corriente (Ia)', value: '37.17%' },
+                            { label: 'Armónicos Individuales', value: '11°, 12°, 13° por Fase' },
+                            { label: 'Monitoreo', value: 'Calidad de Energía Continua' }
+                        ],
+                        en: [
+                            { label: 'Grid Frequency', value: '60.03 Hz' },
+                            { label: 'Forward Energy (Ep+)', value: '31,771.70 kWh' },
+                            { label: 'Voltage THD (Ua/Ub/Uc)', value: '7.73% / 6.88% / 6.33%' },
+                            { label: 'Current THD (Ia)', value: '37.17%' },
+                            { label: 'Discrete Harmonics', value: '11th, 12th, 13th per Phase' },
+                            { label: 'Monitoring', value: 'Continuous Power Quality' }
+                        ]
+                    }
+                },
+                {
+                    id: 'lorawan',
+                    image: 'images/totalmonitor/totalmonitor-dashboard-lorawan.jpg',
+                    title: {
+                        es: 'Integración IoT LoRaWAN con The Things Network (TTN)',
+                        en: 'LoRaWAN IoT Integration with The Things Network (TTN)'
+                    },
+                    windowTitle: {
+                        es: 'TOTAL MONITOR - TELEMETRÍA IOT INALÁMBRICA LORAWAN / THE THINGS NETWORK',
+                        en: 'TOTAL MONITOR - WIRELESS LORAWAN IOT TELEMETRY / THE THINGS NETWORK'
+                    },
+                    metrics: {
+                        es: [
+                            { label: 'Dispositivo', value: 'TOV500 LoRaWAN' },
+                            { label: 'Red IoT', value: 'The Things Network (TTN)' },
+                            { label: 'DevEUI', value: '0004A30B010648FC' },
+                            { label: 'Variables Visibles', value: '57 de 68' },
+                            { label: 'Uplink', value: '17:30:26 en vivo' },
+                            { label: 'Enlace', value: '• Conectado' }
+                        ],
+                        en: [
+                            { label: 'Device', value: 'TOV500 LoRaWAN' },
+                            { label: 'IoT Network', value: 'The Things Network (TTN)' },
+                            { label: 'DevEUI', value: '0004A30B010648FC' },
+                            { label: 'Visible Variables', value: '57 of 68' },
+                            { label: 'Uplink', value: '17:30:26 live' },
+                            { label: 'Link', value: '• Connected' }
+                        ]
+                    }
+                },
+                {
+                    id: 'login',
+                    image: 'images/totalmonitor/totalmonitor-login.jpg',
+                    title: {
+                        es: 'Módulo de Autenticación Segura y Control de Acceso',
+                        en: 'Secure Authentication & Operator Access Control'
+                    },
+                    windowTitle: {
+                        es: 'TOTAL MONITOR - INICIAR SESIÓN (Versión 2.0)',
+                        en: 'TOTAL MONITOR - LOGIN (Version 2.0)'
+                    },
+                    metrics: {
+                        es: [
+                            { label: 'Seguridad', value: 'Acceso Seguro al Sistema' },
+                            { label: 'Cifrado', value: 'Credenciales Protegidas' },
+                            { label: 'Sesiones', value: 'Recordar Usuario' },
+                            { label: 'Versión', value: 'v2.0' },
+                            { label: 'Branding', value: 'Total Ground - An Electrical Company' }
+                        ],
+                        en: [
+                            { label: 'Security', value: 'Secure System Access' },
+                            { label: 'Encryption', value: 'Protected Credentials' },
+                            { label: 'Sessions', value: 'Remember User' },
+                            { label: 'Version', value: 'v2.0' },
+                            { label: 'Branding', value: 'Total Ground - An Electrical Company' }
+                        ]
+                    }
+                },
+                {
+                    id: 'splash',
+                    image: 'images/totalmonitor/totalmonitor-splash.jpg',
+                    title: {
+                        es: 'Splash Screen & Verificación de Enlace con Servidor',
+                        en: 'Splash Screen & Server Link Verification'
+                    },
+                    windowTitle: {
+                        es: 'TOTAL MONITOR - CARGA DEL SISTEMA Y ENLACE DE RED',
+                        en: 'TOTAL MONITOR - SYSTEM BOOT & SERVER NETWORK LINK'
+                    },
+                    metrics: {
+                        es: [
+                            { label: 'Enlace con Servidor', value: '85% Verificado' },
+                            { label: 'Plataforma', value: 'Power Quality Platform' },
+                            { label: 'Propósito', value: 'Monitoreo · Control · Confianza' },
+                            { label: 'Arquitectura', value: 'Datos en Tiempo Real' }
+                        ],
+                        en: [
+                            { label: 'Server Link', value: '85% Verified' },
+                            { label: 'Platform', value: 'Power Quality Platform' },
+                            { label: 'Purpose', value: 'Monitoring · Control · Trust' },
+                            { label: 'Architecture', value: 'Real-Time Data Engine' }
+                        ]
+                    }
+                }
+            ];
+
+            let tmActiveIndex = 0;
+            const tmTabs = document.querySelectorAll('.tm-gallery-tab');
+            const tmThumbs = document.querySelectorAll('.tm-thumb');
+            const tmScreenImg = document.getElementById('tm-screen-img');
+            const tmScreenLink = document.getElementById('tm-screen-link');
+            const tmWindowTitle = document.getElementById('tm-window-title');
+            const tmMetricsContainer = document.getElementById('tm-live-metrics');
+
+            function getCurrentLanguage() {
+                return document.documentElement.lang === 'en' ? 'en' : 'es';
+            }
+
+            function switchTmScreenshot(index) {
+                if (index < 0 || index >= tmScreenshots.length) return;
+                tmActiveIndex = index;
+                const lang = getCurrentLanguage();
+                const data = tmScreenshots[index];
+                const activeTitle = (data.title && data.title[lang]) ? data.title[lang] : data.title.es;
+                const activeWindowTitle = (data.windowTitle && data.windowTitle[lang]) ? data.windowTitle[lang] : data.windowTitle.es;
+                const activeMetrics = (data.metrics && data.metrics[lang]) ? data.metrics[lang] : data.metrics.es;
+
+                if (tmScreenImg) {
+                    tmScreenImg.src = data.image;
+                    tmScreenImg.alt = activeTitle;
+                }
+                if (tmWindowTitle) {
+                    tmWindowTitle.textContent = activeWindowTitle;
+                }
+
+                tmTabs.forEach((tab, i) => {
+                    tab.classList.toggle('active', i === index);
+                });
+
+                tmThumbs.forEach((thumb, i) => {
+                    thumb.classList.toggle('active', i === index);
+                });
+
+                if (tmMetricsContainer) {
+                    const labelText = lang === 'en' ? 'Live Evidence:' : 'Evidencia Real:';
+                    let metricsHtml = `<span class="tm-live-metrics-title" data-i18n="tm_metrics_label">${labelText}</span>`;
+                    activeMetrics.forEach((m, idx) => {
+                        const isAccent = idx < 2;
+                        metricsHtml += `<span class="tm-metric-chip ${isAccent ? 'accent' : ''}">${m.label}: <strong>${m.value}</strong></span>`;
+                    });
+                    tmMetricsContainer.innerHTML = metricsHtml;
+                }
+            }
+
+            tmTabs.forEach((tab, idx) => {
+                tab.addEventListener('click', () => switchTmScreenshot(idx));
+            });
+
+            tmThumbs.forEach((thumb, idx) => {
+                thumb.addEventListener('click', () => switchTmScreenshot(idx));
+            });
+
+            switchTmScreenshot(0);
+
+            // Lightbox Modal
+            const tmLightbox = document.getElementById('tm-lightbox');
+            const tmLightboxImg = document.getElementById('tm-lightbox-img');
+            const tmLightboxCaption = document.getElementById('tm-lightbox-caption');
+            const tmLightboxClose = document.getElementById('tm-lightbox-close');
+
+            function openTmLightbox() {
+                if (!tmLightbox || !tmLightboxImg) return;
+                const lang = getCurrentLanguage();
+                const data = tmScreenshots[tmActiveIndex];
+                const activeTitle = (data.title && data.title[lang]) ? data.title[lang] : data.title.es;
+                tmLightboxImg.src = data.image;
+                tmLightboxImg.alt = activeTitle;
+                if (tmLightboxCaption) {
+                    tmLightboxCaption.textContent = activeTitle;
+                }
+                tmLightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeTmLightbox() {
+                if (!tmLightbox) return;
+                tmLightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            if (tmScreenLink) {
+                tmScreenLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openTmLightbox();
+                });
+            }
+
+            if (tmLightboxClose) {
+                tmLightboxClose.addEventListener('click', closeTmLightbox);
+            }
+
+            if (tmLightbox) {
+                tmLightbox.addEventListener('click', (e) => {
+                    if (e.target === tmLightbox) closeTmLightbox();
+                });
+            }
+
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && tmLightbox && tmLightbox.classList.contains('active')) {
+                    closeTmLightbox();
+                }
+            });
 
             // --- Mobile Menu ---
             const hamburger = document.querySelector('.hamburger');
@@ -3656,6 +5810,31 @@
                 });
             }
 
+
+            // --- Floating Back to Top Button ---
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            if (backToTopBtn) {
+                const checkScrollTop = () => {
+                    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollY > 350) {
+                        backToTopBtn.classList.add('is-visible');
+                    } else {
+                        backToTopBtn.classList.remove('is-visible');
+                    }
+                };
+
+                window.addEventListener('scroll', checkScrollTop, { passive: true });
+                checkScrollTop();
+
+                backToTopBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
             // --- Floating WhatsApp Button Scroll Reveal ---
             const floatingWa = document.getElementById('floatingWhatsapp');
             if (floatingWa) {
@@ -3671,6 +5850,15 @@
             }
         });
     </script>
+
+
+    <!-- Floating Back to Top Button -->
+    <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Subir al inicio" title="Subir al inicio">
+        <svg class="back-to-top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+        <span class="back-to-top-tooltip" data-i18n="back_to_top">Subir al inicio</span>
+    </button>
 
     <!-- Floating WhatsApp Button -->
     <aside class="floating-whatsapp-container" id="floatingWhatsapp" aria-label="Contacto por WhatsApp">
@@ -3691,6 +5879,16 @@
             </div>
         </a>
     </aside>
+
+    <!-- Lightbox Modal for Real System Screenshots -->
+    <div id="tm-lightbox" class="tm-lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de captura real del sistema">
+        <div class="tm-lightbox-content">
+            <button type="button" id="tm-lightbox-close" class="tm-lightbox-close" aria-label="Cerrar vista">&times;</button>
+            <img id="tm-lightbox-img" class="tm-lightbox-img" src="" alt="Captura ampliada">
+            <div id="tm-lightbox-caption" class="tm-lightbox-caption"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
