@@ -775,46 +775,531 @@ html {
             gap: 100px;
         }
 
+        /* ========================================================
+           TECHNOLOGY COLOR THEMES & CARD SYSTEM
+           ======================================================== */
+        .theme-berrys {
+            --card-accent: #a259ff;
+            --card-accent-rgb: 162, 89, 255;
+            --card-glow: rgba(162, 89, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(26, 12, 42, 0.8) 100%);
+        }
+
+        .theme-chambapp {
+            --card-accent: #00d2ff;
+            --card-accent-rgb: 0, 210, 255;
+            --card-glow: rgba(0, 210, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(4, 30, 54, 0.8) 100%);
+        }
+
+        .theme-tickets {
+            --card-accent: #ffb703;
+            --card-accent-rgb: 255, 183, 3;
+            --card-glow: rgba(255, 183, 3, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(38, 26, 8, 0.8) 100%);
+        }
+
+        .theme-abc {
+            --card-accent: #10b981;
+            --card-accent-rgb: 16, 185, 129;
+            --card-glow: rgba(16, 185, 129, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(8, 38, 28, 0.8) 100%);
+        }
+
+        .theme-tgportal {
+            --card-accent: #00e5a3;
+            --card-accent-rgb: 0, 229, 163;
+            --card-glow: rgba(0, 229, 163, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 36, 30, 0.8) 100%);
+        }
+
+        .theme-mudac {
+            --card-accent: #ff6b6b;
+            --card-accent-rgb: 255, 107, 107;
+            --card-glow: rgba(255, 107, 107, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(42, 14, 20, 0.8) 100%);
+        }
+
+        .theme-opg {
+            --card-accent: #f77f00;
+            --card-accent-rgb: 247, 127, 0;
+            --card-glow: rgba(247, 127, 0, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(40, 20, 8, 0.8) 100%);
+        }
+
+        .theme-mindtrain {
+            --card-accent: #8338ec;
+            --card-accent-rgb: 131, 56, 236;
+            --card-glow: rgba(131, 56, 236, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(26, 10, 46, 0.8) 100%);
+        }
+
+        .theme-enm {
+            --card-accent: #e0a96d;
+            --card-accent-rgb: 224, 169, 109;
+            --card-glow: rgba(224, 169, 109, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(36, 25, 14, 0.8) 100%);
+        }
+
+        .theme-reactstudio {
+            --card-accent: #61dafb;
+            --card-accent-rgb: 97, 218, 251;
+            --card-glow: rgba(97, 218, 251, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 28, 48, 0.8) 100%);
+        }
+
+        .theme-boda {
+            --card-accent: #84a98c;
+            --card-accent-rgb: 132, 169, 140;
+            --card-glow: rgba(132, 169, 140, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(16, 32, 22, 0.8) 100%);
+        }
+
+        .theme-minkobe {
+            --card-accent: #dfb15b;
+            --card-accent-rgb: 223, 177, 91;
+            --card-glow: rgba(223, 177, 91, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(38, 30, 12, 0.8) 100%);
+        }
+
+        .theme-iuris {
+            --card-accent: #4361ee;
+            --card-accent-rgb: 67, 97, 238;
+            --card-glow: rgba(67, 97, 238, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(10, 22, 50, 0.8) 100%);
+        }
+
+        .theme-sparsha {
+            --card-accent: #ff70a6;
+            --card-accent-rgb: 255, 112, 166;
+            --card-glow: rgba(255, 112, 166, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(40, 14, 30, 0.8) 100%);
+        }
+
+        .theme-mafelym {
+            --card-accent: #00f0ff;
+            --card-accent-rgb: 0, 240, 255;
+            --card-glow: rgba(0, 240, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 32, 52, 0.8) 100%);
+        }
+
+        /* ========================================================
+           TECHNOLOGY COLOR THEMES & CARD SYSTEM
+           ======================================================== */
+        .theme-berrys {
+            --card-accent: #a259ff;
+            --card-accent-rgb: 162, 89, 255;
+            --card-glow: rgba(162, 89, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(26, 12, 42, 0.8) 100%);
+        }
+
+        .theme-chambapp {
+            --card-accent: #00d2ff;
+            --card-accent-rgb: 0, 210, 255;
+            --card-glow: rgba(0, 210, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(4, 30, 54, 0.8) 100%);
+        }
+
+        .theme-tickets {
+            --card-accent: #ffb703;
+            --card-accent-rgb: 255, 183, 3;
+            --card-glow: rgba(255, 183, 3, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(38, 26, 8, 0.8) 100%);
+        }
+
+        .theme-abc {
+            --card-accent: #10b981;
+            --card-accent-rgb: 16, 185, 129;
+            --card-glow: rgba(16, 185, 129, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(8, 38, 28, 0.8) 100%);
+        }
+
+        .theme-tgportal {
+            --card-accent: #00e5a3;
+            --card-accent-rgb: 0, 229, 163;
+            --card-glow: rgba(0, 229, 163, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 36, 30, 0.8) 100%);
+        }
+
+        .theme-mudac {
+            --card-accent: #ff6b6b;
+            --card-accent-rgb: 255, 107, 107;
+            --card-glow: rgba(255, 107, 107, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(42, 14, 20, 0.8) 100%);
+        }
+
+        .theme-opg {
+            --card-accent: #f77f00;
+            --card-accent-rgb: 247, 127, 0;
+            --card-glow: rgba(247, 127, 0, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(40, 20, 8, 0.8) 100%);
+        }
+
+        .theme-mindtrain {
+            --card-accent: #8338ec;
+            --card-accent-rgb: 131, 56, 236;
+            --card-glow: rgba(131, 56, 236, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(26, 10, 46, 0.8) 100%);
+        }
+
+        .theme-enm {
+            --card-accent: #e0a96d;
+            --card-accent-rgb: 224, 169, 109;
+            --card-glow: rgba(224, 169, 109, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(36, 25, 14, 0.8) 100%);
+        }
+
+        .theme-reactstudio {
+            --card-accent: #61dafb;
+            --card-accent-rgb: 97, 218, 251;
+            --card-glow: rgba(97, 218, 251, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 28, 48, 0.8) 100%);
+        }
+
+        .theme-boda {
+            --card-accent: #84a98c;
+            --card-accent-rgb: 132, 169, 140;
+            --card-glow: rgba(132, 169, 140, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(16, 32, 22, 0.8) 100%);
+        }
+
+        .theme-minkobe {
+            --card-accent: #dfb15b;
+            --card-accent-rgb: 223, 177, 91;
+            --card-glow: rgba(223, 177, 91, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(38, 30, 12, 0.8) 100%);
+        }
+
+        .theme-iuris {
+            --card-accent: #4361ee;
+            --card-accent-rgb: 67, 97, 238;
+            --card-glow: rgba(67, 97, 238, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(10, 22, 50, 0.8) 100%);
+        }
+
+        .theme-sparsha {
+            --card-accent: #ff70a6;
+            --card-accent-rgb: 255, 112, 166;
+            --card-glow: rgba(255, 112, 166, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(40, 14, 30, 0.8) 100%);
+        }
+
+        .theme-mafelym {
+            --card-accent: #00f0ff;
+            --card-accent-rgb: 0, 240, 255;
+            --card-glow: rgba(0, 240, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 32, 52, 0.8) 100%);
+        }
+
+        /* ========================================================
+           TECHNOLOGY COLOR THEMES & CARD SYSTEM
+           ======================================================== */
+        .theme-berrys {
+            --card-accent: #a259ff;
+            --card-accent-rgb: 162, 89, 255;
+            --card-glow: rgba(162, 89, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(26, 12, 42, 0.8) 100%);
+        }
+
+        .theme-chambapp {
+            --card-accent: #00d2ff;
+            --card-accent-rgb: 0, 210, 255;
+            --card-glow: rgba(0, 210, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(4, 30, 54, 0.8) 100%);
+        }
+
+        .theme-tickets {
+            --card-accent: #ffb703;
+            --card-accent-rgb: 255, 183, 3;
+            --card-glow: rgba(255, 183, 3, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(38, 26, 8, 0.8) 100%);
+        }
+
+        .theme-abc {
+            --card-accent: #10b981;
+            --card-accent-rgb: 16, 185, 129;
+            --card-glow: rgba(16, 185, 129, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(8, 38, 28, 0.8) 100%);
+        }
+
+        .theme-tgportal {
+            --card-accent: #00e5a3;
+            --card-accent-rgb: 0, 229, 163;
+            --card-glow: rgba(0, 229, 163, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 36, 30, 0.8) 100%);
+        }
+
+        .theme-mudac {
+            --card-accent: #ff6b6b;
+            --card-accent-rgb: 255, 107, 107;
+            --card-glow: rgba(255, 107, 107, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(42, 14, 20, 0.8) 100%);
+        }
+
+        .theme-opg {
+            --card-accent: #f77f00;
+            --card-accent-rgb: 247, 127, 0;
+            --card-glow: rgba(247, 127, 0, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(40, 20, 8, 0.8) 100%);
+        }
+
+        .theme-mindtrain {
+            --card-accent: #8338ec;
+            --card-accent-rgb: 131, 56, 236;
+            --card-glow: rgba(131, 56, 236, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(26, 10, 46, 0.8) 100%);
+        }
+
+        .theme-enm {
+            --card-accent: #e0a96d;
+            --card-accent-rgb: 224, 169, 109;
+            --card-glow: rgba(224, 169, 109, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(36, 25, 14, 0.8) 100%);
+        }
+
+        .theme-reactstudio {
+            --card-accent: #61dafb;
+            --card-accent-rgb: 97, 218, 251;
+            --card-glow: rgba(97, 218, 251, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 28, 48, 0.8) 100%);
+        }
+
+        .theme-boda {
+            --card-accent: #84a98c;
+            --card-accent-rgb: 132, 169, 140;
+            --card-glow: rgba(132, 169, 140, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(16, 32, 22, 0.8) 100%);
+        }
+
+        .theme-minkobe {
+            --card-accent: #dfb15b;
+            --card-accent-rgb: 223, 177, 91;
+            --card-glow: rgba(223, 177, 91, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(38, 30, 12, 0.8) 100%);
+        }
+
+        .theme-iuris {
+            --card-accent: #4361ee;
+            --card-accent-rgb: 67, 97, 238;
+            --card-glow: rgba(67, 97, 238, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(10, 22, 50, 0.8) 100%);
+        }
+
+        .theme-sparsha {
+            --card-accent: #ff70a6;
+            --card-accent-rgb: 255, 112, 166;
+            --card-glow: rgba(255, 112, 166, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(40, 14, 30, 0.8) 100%);
+        }
+
+        .theme-mafelym {
+            --card-accent: #00f0ff;
+            --card-accent-rgb: 0, 240, 255;
+            --card-glow: rgba(0, 240, 255, 0.3);
+            --card-bg-gradient: linear-gradient(135deg, rgba(17, 34, 64, 0.72) 0%, rgba(6, 32, 52, 0.8) 100%);
+        }
+
+        /* Specific Flagship Berries Paradise Tag & Card Styles */
+        .project-tag.blazor {
+            border-color: #a259ff !important;
+            color: #d4a5ff !important;
+            background: rgba(162, 89, 255, 0.15) !important;
+            box-shadow: 0 0 14px rgba(162, 89, 255, 0.25) !important;
+        }
+
+        .project-tag.threejs {
+            border-color: #00d2ff !important;
+            color: #70e2ff !important;
+            background: rgba(0, 210, 255, 0.12) !important;
+            box-shadow: 0 0 14px rgba(0, 210, 255, 0.22) !important;
+        }
+
+        .project-tag.berry {
+            border-color: #ff3366 !important;
+            color: #ff85a1 !important;
+            background: rgba(255, 51, 102, 0.14) !important;
+            box-shadow: 0 0 14px rgba(255, 51, 102, 0.25) !important;
+        }
+
+        .project-card-blazor {
+            border: 1px solid rgba(162, 89, 255, 0.35) !important;
+            border-radius: 10px !important;
+            padding: 14px !important;
+            background: linear-gradient(135deg, rgba(17, 34, 64, 0.7) 0%, rgba(26, 12, 42, 0.75) 100%) !important;
+            box-shadow: 0 16px 40px -15px rgba(162, 89, 255, 0.22) !important;
+            transition: var(--transition) !important;
+        }
+
+        .project-card-blazor:hover {
+            border-color: rgba(162, 89, 255, 0.65) !important;
+            box-shadow: 0 20px 50px -15px rgba(162, 89, 255, 0.35) !important;
+            transform: translateY(-3px) !important;
+        }
+
+        .project-card-blazor .bp-browser-frame {
+            border-radius: 6px !important;
+            overflow: hidden !important;
+            border: 1px solid rgba(162, 89, 255, 0.3) !important;
+            background: #06121e !important;
+            height: auto !important;
+        }
+
+        .project-card-blazor .bp-browser-bar {
+            border-bottom: 1px solid rgba(162, 89, 255, 0.25) !important;
+        }
+
+        .project-card-blazor .bp-browser-url {
+            color: #d4a5ff !important;
+        }
+
+        .project-card-blazor .bp-browser-url svg {
+            color: #a259ff !important;
+        }
+
+        .project-card-blazor .bp-browser-status {
+            color: #64ffda !important;
+        }
+
+        .bp-chip.chip-blazor {
+            border-color: rgba(162, 89, 255, 0.6) !important;
+            color: #d4a5ff !important;
+        }
+
+        .bp-chip.chip-three {
+            border-color: rgba(0, 210, 255, 0.6) !important;
+            color: #70e2ff !important;
+        }
+
+        .bp-chip.chip-berry {
+            border-color: rgba(255, 51, 102, 0.6) !important;
+            color: #ff85a1 !important;
+        }
+
         .project-card {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             align-items: center;
             position: relative;
+            border: 1px solid rgba(var(--card-accent-rgb, 100, 255, 218), 0.32);
+            border-radius: 12px;
+            padding: 16px;
+            background: var(--card-bg-gradient, linear-gradient(135deg, rgba(17, 34, 64, 0.65) 0%, rgba(10, 25, 47, 0.75) 100%));
+            box-shadow: 0 14px 35px -15px rgba(2, 12, 27, 0.7), 0 0 24px var(--card-glow, rgba(100, 255, 218, 0.12));
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            border-color: rgba(var(--card-accent-rgb, 100, 255, 218), 0.75);
+            box-shadow: 0 20px 50px -15px rgba(2, 12, 27, 0.85), 0 0 35px var(--card-glow, rgba(100, 255, 218, 0.3));
+            transform: translateY(-3px);
         }
 
         .project-image {
             grid-column: 1 / 8;
             grid-row: 1 / -1;
             position: relative;
-            border-radius: 4px;
+            border-radius: 6px;
             overflow: hidden;
-            height: 100%;
+            height: auto !important;
+            align-self: center;
+            background: #06121e;
+        }
+
+        .project-image a {
+            display: block;
+            position: relative;
+            line-height: 0;
         }
 
         .project-image img {
             width: 100%;
-            height: 100%;
+            height: auto !important;
+            display: block;
             object-fit: cover;
-            filter: grayscale(100%) contrast(1) brightness(90%);
-            transition: var(--transition);
-        }
-
-        .project-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(100, 255, 218, 0.2);
+            filter: none !important;
             transition: var(--transition);
         }
 
         .project-card:hover .project-image img {
-            filter: none;
+            transform: scale(1.02);
         }
 
-        .project-card:hover .project-overlay {
-            background-color: transparent;
+        .project-overlay {
+            display: none !important;
+        }
+
+        .bp-browser-frame {
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(var(--card-accent-rgb, 100, 255, 218), 0.35);
+            background: #06121e;
+            height: auto !important;
+            box-shadow: 0 10px 30px rgba(2, 12, 27, 0.6);
+            transition: var(--transition);
+        }
+
+        .bp-browser-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(10, 25, 47, 0.95);
+            border-bottom: 1px solid rgba(var(--card-accent-rgb, 100, 255, 218), 0.22);
+            font-family: var(--font-mono);
+            font-size: 11px;
+        }
+
+        .bp-browser-dots {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-shrink: 0;
+        }
+
+        .bp-browser-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .bp-browser-dot.dot-red { background: #ff5f56; }
+        .bp-browser-dot.dot-yellow { background: #ffbd2e; }
+        .bp-browser-dot.dot-green { background: #27c93f; }
+
+        .bp-browser-url {
+            flex: 1;
+            background: rgba(17, 34, 64, 0.8);
+            padding: 3px 10px;
+            border-radius: 4px;
+            color: var(--card-accent, #64ffda);
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .bp-browser-url svg {
+            flex-shrink: 0;
+            color: var(--card-accent, #64ffda);
+        }
+
+        .bp-browser-url span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .bp-browser-status {
+            color: var(--card-accent, #64ffda);
+            font-size: 10px;
+            font-weight: 700;
+            white-space: nowrap;
+            flex-shrink: 0;
+            text-shadow: 0 0 10px rgba(var(--card-accent-rgb, 100, 255, 218), 0.45);
         }
 
         .project-content {
@@ -824,7 +1309,6 @@ html {
             z-index: 2;
         }
 
-        /* Right Aligned Project */
         .project-card-right .project-image {
             grid-column: 6 / -1;
         }
@@ -835,7 +1319,7 @@ html {
         }
 
         .project-overline {
-            color: var(--accent-color);
+            color: var(--card-accent, var(--accent-color));
             font-family: var(--font-mono);
             font-size: 13px;
             margin-bottom: 10px;
@@ -862,29 +1346,181 @@ html {
             text-transform: uppercase;
             padding: 4px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(100, 255, 218, 0.6);
-            color: var(--accent-color);
-            background: rgba(100, 255, 218, 0.08);
+            border: 1px solid rgba(var(--card-accent-rgb, 100, 255, 218), 0.5);
+            background: rgba(var(--card-accent-rgb, 100, 255, 218), 0.1);
+            color: var(--card-accent, var(--accent-color));
+            box-shadow: 0 0 10px rgba(var(--card-accent-rgb, 100, 255, 218), 0.15);
+            transition: var(--transition);
         }
 
-        .project-tag.react {
-            border-color: #61dafb;
-            color: #61dafb;
-            background: rgba(97, 218, 251, 0.12);
-            box-shadow: 0 0 12px rgba(97, 218, 251, 0.2);
+        .project-description {
+            background-color: rgba(17, 34, 64, 0.9);
+            padding: 22px;
+            border-radius: 6px;
+            border-left: 3px solid var(--card-accent, var(--accent-color));
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .project-card-right .project-description {
+            border-left: none;
+            border-right: 3px solid var(--card-accent, var(--accent-color));
+        }
+
+        .project-btn-visit {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0.45rem 1rem;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 4px;
+            border: 1px solid var(--card-accent, #64ffda);
+            color: #ffffff;
+            background: linear-gradient(135deg, rgba(var(--card-accent-rgb, 100, 255, 218), 0.38) 0%, rgba(17, 34, 64, 0.65) 100%);
+            box-shadow: 0 0 14px rgba(var(--card-accent-rgb, 100, 255, 218), 0.25);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .project-btn-visit:hover {
+            background: linear-gradient(135deg, rgba(var(--card-accent-rgb, 100, 255, 218), 0.6) 0%, rgba(17, 34, 64, 0.85) 100%);
+            border-color: var(--card-accent, #64ffda);
+            color: #ffffff;
+            box-shadow: 0 0 22px rgba(var(--card-accent-rgb, 100, 255, 218), 0.45);
+            transform: translateY(-2px);
+        }
+
+        .project-links a:not(.project-btn-visit):hover svg {
+            stroke: var(--card-accent, var(--accent-color));
+            filter: drop-shadow(0 0 8px rgba(var(--card-accent-rgb, 100, 255, 218), 0.7));
+        }
+
+        .bp-floating-chips {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .bp-chip {
+            padding: 3px 8px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 700;
+            border-radius: 12px;
+            background: rgba(6, 18, 30, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .bp-chip.chip-accent {
+            border-color: var(--card-accent);
+            color: var(--card-accent);
+            background: rgba(6, 18, 30, 0.94);
+            box-shadow: 0 0 12px rgba(var(--card-accent-rgb), 0.35);
+        }
+
+        .project-links a:not(.project-btn-visit):hover svg {
+            stroke: var(--card-accent, var(--accent-color));
+            filter: drop-shadow(0 0 8px rgba(var(--card-accent-rgb, 100, 255, 218), 0.7));
+        }
+
+        .bp-floating-chips {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .bp-chip {
+            padding: 3px 8px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 700;
+            border-radius: 12px;
+            background: rgba(6, 18, 30, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .bp-chip.chip-accent {
+            border-color: var(--card-accent);
+            color: var(--card-accent);
+            background: rgba(6, 18, 30, 0.94);
+            box-shadow: 0 0 12px rgba(var(--card-accent-rgb), 0.35);
+        }
+
+        .project-links a:not(.project-btn-visit):hover svg {
+            stroke: var(--card-accent, var(--accent-color));
+            filter: drop-shadow(0 0 8px rgba(var(--card-accent-rgb, 100, 255, 218), 0.7));
+        }
+
+        .bp-floating-chips {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .bp-chip {
+            padding: 3px 8px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 700;
+            border-radius: 12px;
+            background: rgba(6, 18, 30, 0.88);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .bp-chip.chip-accent {
+            border-color: var(--card-accent);
+            color: var(--card-accent);
+            background: rgba(6, 18, 30, 0.94);
+            box-shadow: 0 0 12px rgba(var(--card-accent-rgb), 0.35);
+        }
+
+        .filter-btn[data-filter="blazor"].active {
+            color: #d4a5ff;
+            background: rgba(162, 89, 255, 0.18);
+            border-color: rgba(162, 89, 255, 0.45);
+            box-shadow: 0 0 15px rgba(162, 89, 255, 0.25);
+        }
+
+        .filter-btn[data-filter="blazor"].active .filter-count {
+            background: rgba(162, 89, 255, 0.3);
+            color: #ffffff;
         }
 
         .project-title {
             font-size: 28px;
             color: var(--white);
-            margin-bottom: 20px;
-        }
-
-        .project-description {
-            background-color: var(--bg-light);
-            padding: 25px;
-            border-radius: 4px;
-            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
             margin-bottom: 20px;
         }
 
@@ -1923,37 +2559,165 @@ html {
                 grid-template-columns: 1fr;
             }
 
+/* --- Universal Mobile Fixes for Project Cards & Navigation --- */
+            .projects-grid {
+                gap: 36px !important;
+            }
+
             .project-card,
-            .project-card-right {
-                display: block;
-                margin-bottom: 50px;
+            .project-card-right,
+            .project-card.project-card-blazor {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 16px !important;
+                padding: 14px !important;
+                border-radius: 12px !important;
+                margin-bottom: 0 !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
             }
 
-            .project-image {
-                grid-column: 1 / -1;
-                height: 250px;
-                margin-bottom: 20px;
+            .project-image,
+            .project-card-right .project-image {
+                width: 100% !important;
+                height: auto !important;
+                margin-bottom: 0 !important;
+                order: 1 !important; /* Screenshot window ALWAYS first on top */
             }
 
-            .project-content {
-                grid-column: 1 / -1;
-                padding: 20px 0;
-                text-align: left;
+            .project-image img {
+                width: 100% !important;
+                height: auto !important;
+                max-height: 280px !important;
+                object-fit: cover !important;
+                display: block !important;
             }
 
-            .project-description {
-                background: transparent;
-                padding: 0;
-                box-shadow: none;
-                color: var(--text-secondary);
+            .bp-browser-bar {
+                padding: 6px 10px !important;
+                gap: 6px !important;
             }
 
-            .project-tech-list {
-                justify-content: flex-start;
+            .bp-browser-dots {
+                gap: 4px !important;
             }
 
-            .project-links {
-                justify-content: flex-start;
+            .bp-browser-dot {
+                width: 7px !important;
+                height: 7px !important;
+            }
+
+            .bp-browser-url {
+                font-size: 10px !important;
+                padding: 2px 7px !important;
+                gap: 4px !important;
+            }
+
+            .bp-browser-url svg {
+                width: 10px !important;
+                height: 10px !important;
+            }
+
+            .bp-browser-status {
+                font-size: 9.5px !important;
+            }
+
+            .bp-floating-chips {
+                bottom: 8px !important;
+                left: 8px !important;
+                right: 8px !important;
+                gap: 5px !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto !important;
+                scrollbar-width: none !important;
+                -webkit-overflow-scrolling: touch !important;
+                padding-bottom: 2px !important;
+            }
+
+            .bp-floating-chips::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            .bp-chip {
+                flex-shrink: 0 !important;
+                font-size: 9.5px !important;
+                padding: 2px 7px !important;
+                white-space: nowrap !important;
+            }
+
+            .project-content,
+            .project-card-right .project-content {
+                width: 100% !important;
+                padding: 0 !important;
+                text-align: left !important;
+                order: 2 !important; /* Content ALWAYS below the image */
+                box-sizing: border-box !important;
+            }
+
+            .project-overline {
+                font-size: 11px !important;
+                margin-bottom: 6px !important;
+                text-align: left !important;
+                display: block !important;
+            }
+
+            .project-tags,
+            .project-card-right .project-tags {
+                justify-content: flex-start !important;
+                gap: 6px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .project-tag {
+                font-size: 10px !important;
+                padding: 3px 8px !important;
+            }
+
+            .project-title {
+                font-size: 20px !important;
+                margin-bottom: 10px !important;
+                line-height: 1.3 !important;
+                text-align: left !important;
+            }
+
+            .project-description,
+            .project-card-right .project-description {
+                background-color: rgba(17, 34, 64, 0.88) !important;
+                padding: 14px 16px !important;
+                border-radius: 6px !important;
+                border-left: 3px solid var(--card-accent, var(--accent-color)) !important;
+                border-right: none !important;
+                box-shadow: 0 6px 18px -8px rgba(2, 12, 27, 0.5) !important;
+                margin-bottom: 14px !important;
+                text-align: left !important;
+            }
+
+            .project-description p {
+                font-size: 13.5px !important;
+                line-height: 1.55 !important;
+                color: var(--text-secondary) !important;
+                margin-bottom: 0 !important;
+            }
+
+            .project-tech-list,
+            .project-card-right .project-tech-list {
+                justify-content: flex-start !important;
+                gap: 8px 12px !important;
+                margin-bottom: 16px !important;
+                font-size: 12px !important;
+            }
+
+            .project-links,
+            .project-card-right .project-links {
+                justify-content: flex-start !important;
+                gap: 12px !important;
+                width: 100% !important;
+                flex-wrap: wrap !important;
+            }
+
+            .project-btn-visit {
+                padding: 0.42rem 0.85rem !important;
+                font-size: 11.5px !important;
             }
 
             .packages-grid {
@@ -3254,14 +4018,14 @@ html {
         <div class="container nav-container">
             <a href="#" class="logo">&lt;Roman/&gt;</a>
             <ul class="nav-links" id="main-nav">
-                <li><a href="#home" class="nav-link" data-i18n="nav_home">01. Inicio</a></li>
-                <li><a href="#software" class="nav-link" data-i18n="nav_software">02. Software</a></li>
-                <li><a href="#mobile" class="nav-link" data-i18n="nav_mobile">03. Mobile</a></li>
-                <li><a href="#work" class="nav-link" data-i18n="nav_work">04. Proyectos</a></li>
-                <li><a href="#about" class="nav-link" data-i18n="nav_about">05. Sobre Mí</a></li>
-                <li><a href="#packages" class="nav-link" data-i18n="nav_packages">06. Paquetes</a></li>
-                <li><a href="#engineering" class="nav-link" data-i18n="nav_engineering">07. Ingeniería</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">08. Contacto</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="nav_home">01. Home</a></li>
+                <li><a href="#work" class="nav-link" data-i18n="nav_work">02. Projects</a></li>
+                <li><a href="#software" class="nav-link" data-i18n="nav_software">03. Software</a></li>
+                <li><a href="#mobile" class="nav-link" data-i18n="nav_mobile">04. Mobile</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">05. About Me</a></li>
+                <li><a href="#packages" class="nav-link" data-i18n="nav_packages">06. Packages</a></li>
+                <li><a href="#engineering" class="nav-link" data-i18n="nav_engineering">07. Engineering</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">08. Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <div class="lang-switch" role="group" aria-label="Idioma / Language">
@@ -3298,17 +4062,18 @@ html {
                 <h2 class="fade-in-up delay-2" data-i18n="hero_role">Software & Web Developer</h2>
                 <div class="hero-capsules fade-in-up delay-2">
                     <span class="hero-capsule" style="border-color: rgba(255, 51, 75, 0.4); color: #ff8595; background: rgba(255, 51, 75, 0.1);" data-i18n="hero_capsule_software">🖥️ Software Empresarial & C#/.NET</span>
+                    <span class="hero-capsule" style="border-color: rgba(162, 89, 255, 0.5); color: #d4a5ff; background: rgba(162, 89, 255, 0.12);" data-i18n="hero_capsule_blazor">🟣 Blazor WebAssembly (.NET 8)</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_1">📱 Apps Android & Multiplataforma</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_2">💻 Aplicaciones Web</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_3">⚡ APIs REST & Backend</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_4">🛒 Marketplaces & Pagos</span>
                     <span class="hero-capsule" data-i18n="hero_capsule_5">📍 Geolocalización & Notificaciones</span>
                 </div>
-                <p class="fade-in-up delay-3" data-i18n="hero_desc">Soy Ingeniero en Sistemas y Licenciado en Tecnologías de la Información. Construyo <strong>software empresarial y soluciones digitales completas</strong>: desde aplicaciones de escritorio de misión crítica con C#/.NET, WPF y protocolos industriales (Modbus, LoRaWAN), hasta plataformas web marketplace y apps móviles conectadas a APIs robustas.</p>
+                <p class="fade-in-up delay-3" data-i18n="hero_desc">Soy Ingeniero en Sistemas y Licenciado en Tecnologías de la Información. Construyo <strong>software empresarial y soluciones digitales completas</strong>: desde aplicaciones de escritorio de misión crítica con C#/.NET, WPF y protocolos industriales (Modbus, LoRaWAN), hasta plataformas web interactivas en Blazor WebAssembly, marketplaces y apps móviles conectadas a APIs robustas.</p>
                 <div class="hero-actions fade-in-up delay-4">
-                    <a href="#software" class="btn-primary" data-i18n="hero_btn_software">Ver Software Empresarial</a>
-                    <a href="#mobile" class="btn-secondary" data-i18n="hero_btn_mobile">Desarrollo Mobile</a>
-                    <a href="#work" class="btn-secondary" data-i18n="hero_btn_projects">Explorar otros proyectos</a>
+                    <a href="#work" class="btn-primary" data-i18n="hero_btn_projects">View Featured Projects</a>
+                    <a href="#software" class="btn-secondary" data-i18n="hero_btn_software">Enterprise Software &amp; C#</a>
+                    <a href="#mobile" class="btn-secondary" data-i18n="hero_btn_mobile">Mobile Development</a>
                 </div>
             </div>
             <div class="hero-visual fade-in delay-2">
@@ -3319,16 +4084,18 @@ html {
   <span class="property">perfil</span>: <span class="string">'Software & Web Developer'</span>,
   <span class="property">capacidades</span>: {
     <span class="property">software</span>: [<span class="string">'C# / .NET'</span>, <span class="string">'WPF'</span>, <span class="string">'Windows Service'</span>, <span class="string">'Modbus RTU'</span>, <span class="string">'LoRaWAN'</span>],
+    <span class="property">blazorWeb</span>: [<span class="string">'Blazor WebAssembly'</span>, <span class="string">'.NET 8 / C#'</span>, <span class="string">'Three.js 3D'</span>],
     <span class="property">mobile</span>: [<span class="string">'Flutter'</span>, <span class="string">'Android Nativo'</span>, <span class="string">'Google Play'</span>],
     <span class="property">web</span>: [<span class="string">'Marketplaces'</span>, <span class="string">'React'</span>, <span class="string">'Vue'</span>, <span class="string">'Paneles Admin'</span>],
     <span class="property">backend</span>: [<span class="string">'APIs REST'</span>, <span class="string">'ASP.NET Core'</span>, <span class="string">'Laravel'</span>, <span class="string">'MySQL / SQL Server'</span>]
   },
   <span class="property">proyectosInsignia</span>: [
     <span class="string">'Total Monitor (Power Quality & IoT Industrial)'</span>,
+    <span class="string">'Berries Paradise (Blazor WebAssembly & Three.js 3D)'</span>,
     <span class="string">'Chambapp (Web + Mobile + API)'</span>
   ],
   <span class="function">enfoque</span>: <span class="keyword">function</span>() {
-    <span class="keyword">return</span> <span class="string">'SOFTWARE EMPRESARIAL ↕ WEB ↕ MOBILE'</span>;
+    <span class="keyword">return</span> <span class="string">'C#/.NET ↕ BLAZOR ↕ MOBILE ↕ FULLSTACK'</span>;
   }
 };</code></pre>
                 </div>
@@ -3347,10 +4114,873 @@ html {
     </header>
 
 
+    <!-- Work Section -->
+    <section id="work" class="section">
+        <div class="container">
+            <h2 class="section-title fade-on-scroll" data-i18n="projects_title">02. Featured Projects</h2>
+
+            <!-- Category Filter Bar -->
+            <div class="projects-filter-wrapper fade-on-scroll">
+                <div class="projects-filter-bar" role="tablist" aria-label="Filtrar proyectos">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                        <span class="filter-name" data-i18n="filter_all">Todos</span>
+                        <span class="filter-count">14</span>
+                    </button>
+                    <button class="filter-btn" data-filter="react" role="tab" aria-selected="false">
+                        <span class="filter-icon" style="color: #61dafb;">⚛</span>
+                        <span class="filter-name">React</span>
+                        <span class="filter-count">5</span>
+                    </button>
+                    <button class="filter-btn" data-filter="corporativo" role="tab" aria-selected="false">
+                        <span class="filter-name" data-i18n="filter_corp">Corporativo &amp; Negocios</span>
+                        <span class="filter-count">9</span>
+                    </button>
+                    <button class="filter-btn" data-filter="sistemas" role="tab" aria-selected="false">
+                        <span class="filter-name" data-i18n="filter_systems">Sistemas &amp; Web Apps</span>
+                        <span class="filter-count">6</span>
+                    </button>
+                    <button class="filter-btn" data-filter="blazor" role="tab" aria-selected="false">
+                        <span class="filter-icon" style="color: #a259ff;">🟣</span>
+                        <span class="filter-name">Blazor / .NET</span>
+                        <span class="filter-count">1</span>
+                    </button>
+                    <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">
+                        <span class="filter-name" data-i18n="filter_mobile">Mobile &amp; APIs</span>
+                        <span class="filter-count">1</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project: Flagship Berries Paradise (Blazor WebAssembly) -->
+                <article class="project-card project-card-blazor fade-on-scroll" data-category="blazor corporativo sistemas">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://berrys.chambapp.com.mx/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_berrys_status">● Live Blazor Wasm</span>
+                        </div>
+                        <a href="https://berrys.chambapp.com.mx/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/berriesparadise/berries-paradise-hero.png" alt="Berries Paradise - Web Platform Blazor WebAssembly and Three.js 3D">
+                            <div class="project-overlay" style="background-color: rgba(162, 89, 255, 0.15);"></div>
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-blazor">🟣 Blazor WebAssembly</span>
+                                <span class="bp-chip chip-three">🌐 Three.js 3D WebGL</span>
+                                <span class="bp-chip chip-berry">🍓 42+ SKUs Retail</span>
+                                <span class="bp-chip">🌍 19+ Countries</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" style="color: #a259ff; display: inline-flex; align-items: center; gap: 6px;" data-i18n="p_berrys_overline">🟣 Flagship Project · Blazor WebAssembly &amp; Three.js 3D</span>
+                        <div class="project-tags">
+                            <span class="project-tag blazor">Blazor .NET 8</span>
+                            <span class="project-tag threejs">Three.js 3D</span>
+                            <span class="project-tag berry">Agro-Export</span>
+                            <span class="project-tag" data-i18n="p_berrys_tag_bilingual">Bilingual (ES/EN)</span>
+                        </div>
+                        <h3 class="project-title" style="color: #ffffff;" data-i18n="p_berrys_title">Berries Paradise: Global Agro-Export</h3>
+                        <div class="project-description" style="border-left: 3px solid #a259ff; background: rgba(17, 34, 64, 0.9);">
+                            <p data-i18n="p_berrys_desc">High-performance interactive web platform built on <strong>Blazor WebAssembly (.NET 8 / C#)</strong> for <strong>Berries Paradise</strong>, an international leader in agro-exporting blueberries, raspberries, blackberries, and strawberries. Features client-side Three.js 3D WebGL acceleration, multi-layered parallax effects, immersive brand video player, bilingual SPA architecture (ES/EN), and global export operations reaching 19+ countries with 42+ SKUs.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Blazor WebAssembly</li>
+                            <li>.NET 8 / C#</li>
+                            <li>Three.js / WebGL</li>
+                            <li>Hero Parallax 3D</li>
+                            <li>CSS Glassmorphism</li>
+                            <li>42+ SKUs &amp; 19+ Countries</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://berrys.chambapp.com.mx/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.45rem 1rem; font-size: 12px; border-color: #a259ff; color: #ffffff; background: linear-gradient(135deg, rgba(162, 89, 255, 0.35) 0%, rgba(100, 255, 218, 0.2) 100%);" data-i18n="p_berrys_live_btn">Visit Blazor Site ↗</a>
+                            <a href="https://berrys.chambapp.com.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visit Berries Paradise" title="Visit https://berrys.chambapp.com.mx/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: chambapp -->
+                <article class="project-card theme-chambapp fade-on-scroll" data-category="mobile sistemas">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://chambapp.com.mx/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_chambapp_status">● Live Marketplace</span>
+                        </div>
+                        <a href="https://chambapp.com.mx/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/chambapp/chambapp-main-real.png" alt="Chambapp Solución Web, Mobile y API">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>📱 Flutter Android</span>
+                                <span class="bp-chip">⚡ Laravel REST API</span>
+                                <span class="bp-chip">📍 Real-time GPS</span>
+                                <span class="bp-chip">💳 Mercado Pago</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_chambapp_overline">📱 End-to-End Solution · Web + Mobile + API</span>
+                        <div class="project-tags">
+                            <span class="project-tag" data-i18n="p_chambapp_tag1">Full Ecosystem</span>
+                            <span class="project-tag">Flutter / Android</span>
+                            <span class="project-tag">Laravel API</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_chambapp_title">Chambapp: Digital Marketplace</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_chambapp_desc">Comprehensive ecosystem combining a client and administrative web platform, an Android mobile app in Flutter with real-time GPS geolocation, and a central Laravel backend/API with Mercado Pago checkout and KYC verification.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Web Marketplace</li>
+                            <li>App Android (Flutter)</li>
+                            <li>REST API</li>
+                            <li>Mercado Pago</li>
+                            <li>GPS & Push</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#mobile" aria-label="View Architecture and Case Study" style="font-family: var(--font-mono); font-size: 13px; color: var(--card-accent, var(--accent-color)); display: inline-flex; align-items: center; gap: 6px;"><span data-i18n="p_chambapp_caselink">View architecture and full case study &rarr;</span></a>
+                            <a href="https://chambapp.com.mx/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_chambapp_btn">Visit Platform ↗</a>
+                            <a href="https://chambapp.com.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Chambapp: Digital Marketplace" title="Visitar https://chambapp.com.mx/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: tickets -->
+                <article class="project-card theme-tickets fade-on-scroll" data-category="sistemas corporativo">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://sistematickets.totalground.com/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_tickets_status">● In Production</span>
+                        </div>
+                        <a href="https://sistematickets.totalground.com" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/tg.png" alt="Sistema Tickets TotalGround">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🎫 Incident Tracker</span>
+                                <span class="bp-chip">⚡ Live SLA Metrics</span>
+                                <span class="bp-chip">🏢 TotalGround Official</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_tickets_overline">⚡ Enterprise Operations · Critical Support</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Ticketing System</span>
+                            <span class="project-tag">SLA & Metrics</span>
+                            <span class="project-tag">TotalGround</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_tickets_title">TotalGround Ticketing System</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_tickets_desc">Comprehensive platform for managing and tracking support and maintenance tickets. Optimizing workflow and incident resolution for TotalGround.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Web App</li>
+                            <li>Sistemas</li>
+                            <li>Gestión de Soporte</li>
+                            <li>Resolución SLA</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://sistematickets.totalground.com" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_tickets_btn">View System ↗</a>
+                            <a href="https://sistematickets.totalground.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar TotalGround Ticketing System" title="Visitar https://sistematickets.totalground.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: abc -->
+                <article class="project-card theme-abc project-card-right fade-on-scroll" data-category="sistemas">
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_abc_overline">🩺 HealthTech · Clinical Management</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Healthcare</span>
+                            <span class="project-tag">Medical Records</span>
+                            <span class="project-tag">Management</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_abc_title">ABC Médica Demo</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_abc_desc">Demonstration system for the healthcare sector (ABCD Médica). Solution focused on medical records and resource management.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Salud Digital</li>
+                            <li>Administración Clínica</li>
+                            <li>Expediente Electrónico</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="http://demo.abcdmedica.com/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_abc_btn">View Demo ↗</a>
+                            <a href="http://demo.abcdmedica.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar ABC Médica Demo" title="Visitar http://demo.abcdmedica.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>http://demo.abcdmedica.com/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_abc_status">● Healthcare Demo</span>
+                        </div>
+                        <a href="http://demo.abcdmedica.com/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Demo ABC Médica">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🩺 Medical Records</span>
+                                <span class="bp-chip">💊 Clinic Portal</span>
+                                <span class="bp-chip">📊 Health Dashboard</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project: tgportal -->
+                <article class="project-card theme-tgportal fade-on-scroll" data-category="corporativo">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://totalground.com/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_tgportal_status">● Official Portal</span>
+                        </div>
+                        <a href="https://totalground.com/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/totalnew.jpg" alt="Portal corporativo Total Ground">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🏢 Official Portal</span>
+                                <span class="bp-chip">⚡ Power & Protection</span>
+                                <span class="bp-chip">🚀 Lead Generation</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_tgportal_overline">🌐 Corporate Portal · Electrical Engineering</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Corporate Portal</span>
+                            <span class="project-tag">SEO & Leads</span>
+                            <span class="project-tag">Engineering</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_tgportal_title">Total Ground Corporate Portal</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_tgportal_desc">Redesign of Total Ground's institutional portal with a focus on services, case studies, and lead generation. Includes SEO architecture, contact forms, and mobile optimization.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Landing Page</li>
+                            <li>SEO Avanzado</li>
+                            <li>UI/UX Industrial</li>
+                            <li>Generación de Prospectos</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://totalground.com/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_tgportal_btn">Visit Portal ↗</a>
+                            <a href="https://totalground.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Total Ground Corporate Portal" title="Visitar https://totalground.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: mudac -->
+                <article class="project-card theme-mudac project-card-right fade-on-scroll" data-category="corporativo react">
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_mudac_overline">🎗️ Social Impact · NGO & Pediatric Health</span>
+                        <div class="project-tags">
+                            <span class="project-tag react">React</span>
+                            <span class="project-tag" data-i18n="p_mudac_tag_social">Social Impact</span>
+                            <span class="project-tag" data-i18n="p_mudac_tag_bilingual">Bilingual</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_mudac_title">MUDAC: Mi Último Deseo, A.C.</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_mudac_desc">Official interactive web portal for Mi Último Deseo, A.C. (MUDAC), a non-profit organization with over 33 years of experience supporting children and youth battling cancer. Built as a bilingual SPA (ES/EN) featuring active donation gateways, assistance programs, capsules of hope, real-time impact metrics, and institutional transparency.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            React
+                            Vite
+                            <li data-i18n="p_mudac_tech_bilingual">Bilingüe (ES / EN)</li>
+                            <li data-i18n="p_mudac_tech_donations">Donaciones</li>
+                            <li data-i18n="p_mudac_tech_transparency">Transparencia</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://www.mudac.org.mx/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_mudac_btn">Visit MUDAC ↗</a>
+                            <a href="https://www.mudac.org.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visitar MUDAC: Mi Último Deseo, A.C." title="Visitar https://www.mudac.org.mx/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://www.mudac.org.mx/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_mudac_status">● Official NGO Site</span>
+                        </div>
+                        <a href="https://www.mudac.org.mx/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/mudac.png" alt="MUDAC - Mi Último Deseo, A.C. Portal Oficial">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🎗️ Social NGO Impact</span>
+                                <span class="bp-chip">💛 Live Donations</span>
+                                <span class="bp-chip">🌐 Bilingual (ES/EN)</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project: opg -->
+                <article class="project-card theme-opg fade-on-scroll" data-category="corporativo">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://opg.free.nf/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_opg_status">● Services Portal</span>
+                        </div>
+                        <a href="https://opg.free.nf/?i=1" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="OPG mantenimiento industrial">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>⚙️ Heavy Maintenance</span>
+                                <span class="bp-chip">📍 Jalisco & Vallarta</span>
+                                <span class="bp-chip">📋 Instant Quote</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_opg_overline">⚙️ Heavy Industry · Maintenance & Machinery</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Industrial</span>
+                            <span class="project-tag">Specialized Services</span>
+                            <span class="project-tag">Jalisco / Vallarta</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_opg_title">OPG Industrial Maintenance</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_opg_desc">Corporate website for industrial maintenance services in Jalisco and Puerto Vallarta. Focused on fast quoting, detailed service catalog, and customer conversion.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Industrial</li>
+                            <li>Landing Page</li>
+                            <li>Cotizador Rápido</li>
+                            <li>Conversión B2B</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://opg.free.nf/?i=1" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_opg_btn">Visit Site ↗</a>
+                            <a href="https://opg.free.nf/?i=1" target="_blank" rel="noopener noreferrer" aria-label="Visitar OPG Industrial Maintenance" title="Visitar https://opg.free.nf/?i=1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: mindtrain -->
+                <article class="project-card theme-mindtrain project-card-right fade-on-scroll" data-category="sistemas">
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_mindtrain_overline">🧠 SaaS Platform · Fiction & Worldbuilding</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Narrative SaaS</span>
+                            <span class="project-tag">Immersive UI</span>
+                            <span class="project-tag">Creators</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_mindtrain_title">MindTrain</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_mindtrain_desc">Platform designed for narrative creators to organize ideas, build world lore, and structure characters and plots through an immersive visual experience.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>SaaS</li>
+                            <li>UI Inmersiva</li>
+                            <li>Estructura Narrativa</li>
+                            <li>Visual Canvas</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://mindtrain.com.mx/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_mindtrain_btn">Visit MindTrain ↗</a>
+                            <a href="https://mindtrain.com.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visitar MindTrain" title="Visitar https://mindtrain.com.mx/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://mindtrain.com.mx/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_mindtrain_status">● SaaS Platform</span>
+                        </div>
+                        <a href="https://mindtrain.com.mx/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/Mind.png" alt="MindTrain plataforma narrativa">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🧠 Fiction Writers</span>
+                                <span class="bp-chip">📖 Lore & Worlds</span>
+                                <span class="bp-chip">✨ Immersive Canvas</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project: enm -->
+                <article class="project-card theme-enm fade-on-scroll" data-category="corporativo">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://enm.com.mx/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_enm_status">● B2B Catalog</span>
+                        </div>
+                        <a href="https://enm.com.mx/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/enm.jpg" alt="Equipamiento Nacional en Mobiliario">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🪑 Office Furniture</span>
+                                <span class="bp-chip">🏢 Wholesale Catalog</span>
+                                <span class="bp-chip">📦 Nationwide Delivery</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_enm_overline">🪑 Corporate Furniture · B2B Solutions</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Furniture</span>
+                            <span class="project-tag">B2B Equipment</span>
+                            <span class="project-tag">Corporate</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_enm_title">ENM Equipment</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_enm_desc">Comprehensive equipment and furniture solutions for corporate spaces, focusing on functionality, durability, and professional delivery.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Mobiliario</li>
+                            <li>Equipamiento</li>
+                            <li>Corporativo</li>
+                            <li>Catálogo B2B</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://enm.com.mx/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_enm_btn">Visit Site ↗</a>
+                            <a href="https://enm.com.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visitar ENM Equipment" title="Visitar https://enm.com.mx/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: reactstudio -->
+                <article class="project-card theme-reactstudio project-card-right fade-on-scroll" data-category="react">
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_reactstudio_overline">⚛️ Modern Frontend · React SPA & Interactive UI</span>
+                        <div class="project-tags">
+                            <span class="project-tag react">React</span>
+                            <span class="project-tag">Single Page App</span>
+                            <span class="project-tag">Dark UI</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_reactstudio_title">React Studio</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_reactstudio_desc">Modern digital product landing page featuring dark UI, compelling storytelling, and high-conversion value propositions. Engineered as a fast SPA for fluid navigation.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>SPA</li>
+                            <li>UI/UX Oscura</li>
+                            <li>Componentes Modulares</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://roman00120.github.io/react-studio/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_reactstudio_btn">View React Studio ↗</a>
+                            <a href="https://roman00120.github.io/react-studio/" target="_blank" rel="noopener noreferrer" aria-label="Visitar React Studio" title="Visitar https://roman00120.github.io/react-studio/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://roman00120.github.io/react-studio/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_reactstudio_status">● Live React SPA</span>
+                        </div>
+                        <a href="https://roman00120.github.io/react-studio/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/Screenshot_1.jpg" alt="React Studio landing page">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>⚛️ React 18 SPA</span>
+                                <span class="bp-chip">⚡ Micro-Animations</span>
+                                <span class="bp-chip">🎨 Dark Glassmorphism</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project: boda -->
+                <article class="project-card theme-boda fade-on-scroll" data-category="sistemas">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://isaysimon.gt.tc/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_boda_status">● Interactive RSVP</span>
+                        </div>
+                        <a href="https://isaysimon.gt.tc/?i=1" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/Boda10.jpg" alt="Invitaciones de Boda">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>💌 Interactive RSVP</span>
+                                <span class="bp-chip">⏳ Live Countdown</span>
+                                <span class="bp-chip">📸 Polaroid Gallery</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_boda_overline">💌 Interactive Experience · Weddings & Events</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Web Invitation</span>
+                            <span class="project-tag">Interactive RSVP</span>
+                            <span class="project-tag">Countdown</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_boda_title">Digital Wedding Invitations</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_boda_desc">Interactive and responsive digital wedding invitation website. Crafted with an elegant sage green and beige palette, featuring a live countdown timer, animated timeline itinerary, dress code with Pinterest moodboards, polaroid-style gallery, and an interactive RSVP form.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>HTML5</li>
+                            <li>Vanilla CSS</li>
+                            <li>JS / Interactivo</li>
+                            <li>Galería Polaroid</li>
+                            <li>RSVP Form</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://isaysimon.gt.tc/?i=1" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_boda_btn">View Invitation ↗</a>
+                            <a href="https://isaysimon.gt.tc/?i=1" target="_blank" rel="noopener noreferrer" aria-label="Visitar Digital Wedding Invitations" title="Visitar https://isaysimon.gt.tc/?i=1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: minkobe -->
+                <article class="project-card theme-minkobe project-card-right fade-on-scroll" data-category="corporativo">
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_minkobe_overline">🏡 Luxury Real Estate · Immersive Masterplan</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Luxury Real Estate</span>
+                            <span class="project-tag">GSAP Animations</span>
+                            <span class="project-tag">Valle de Bravo</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_minkobe_title">Minkobe El Entorno</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_minkobe_desc">Ultra-premium website for a luxury residential masterplan in Valle de Bravo. Designed with a sophisticated immersive aesthetic, featuring fluid GSAP & ScrollTrigger animations, high-end responsive layout, interactive sections, and embedded video for a distinctive digital journey.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Real Estate</li>
+                            <li>GSAP / ScrollTrigger</li>
+                            <li>Premium Landing</li>
+                            <li>Video Inmersivo</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://demo.minkobe.com/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_minkobe_btn">View Masterplan ↗</a>
+                            <a href="https://demo.minkobe.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Minkobe El Entorno" title="Visitar https://demo.minkobe.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://demo.minkobe.com/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_minkobe_status">● Luxury Real Estate</span>
+                        </div>
+                        <a href="https://demo.minkobe.com/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/Screenshot_5.jpg" alt="Minkobe El Entorno desarrollo residencial">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🏡 Luxury Masterplan</span>
+                                <span class="bp-chip">✨ GSAP & ScrollTrigger</span>
+                                <span class="bp-chip">🌲 Valle de Bravo</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project: iuris -->
+                <article class="project-card theme-iuris fade-on-scroll" data-category="react corporativo">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://iuriscorporativo.com/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_iuris_status">● Law Firm</span>
+                        </div>
+                        <a href="https://iuriscorporativo.com/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/iuris-total.png" alt="Iuris Total Bufete Jurídico y Abogados Integrales">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>⚖️ Legal Firm</span>
+                                <span class="bp-chip">🏛️ Corporate Counsel</span>
+                                <span class="bp-chip">🛡️ Legal Protection</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_iuris_overline">⚖️ Legal Sector · Law Firm & Corporate Counsel</span>
+                        <div class="project-tags">
+                            <span class="project-tag react">React</span>
+                            <span class="project-tag">Legal & Tax</span>
+                            <span class="project-tag">Corporate</span>
+                            <span class="project-tag">Lead Generation</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_iuris_title">Iuris Total: Law Firm</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_iuris_desc">Corporate lead-generation web platform for legal firm Iuris Total (Abogados Integrales S.C.). Designed with an imposing, elegant dark glassmorphism aesthetic, showcasing practice areas, comprehensive counsel, and instant consultation channels.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>Glassmorphism Sobrio</li>
+                            <li>Derecho Corporativo</li>
+                            <li>Conversión de Leads</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://iuriscorporativo.com/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_iuris_btn">Visit Law Firm ↗</a>
+                            <a href="https://iuriscorporativo.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Iuris Total: Law Firm" title="Visitar https://iuriscorporativo.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: sparsha -->
+                <article class="project-card theme-sparsha project-card-right fade-on-scroll" data-category="react corporativo">
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_sparsha_overline">🌸 Health, Beauty & Organic Wellness</span>
+                        <div class="project-tags">
+                            <span class="project-tag react">React</span>
+                            <span class="project-tag">Spa &amp; Wellness</span>
+                            <span class="project-tag">Online Booking</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_sparsha_title">Sparsha: Therapeutics & Aesthetics</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_sparsha_desc">Modern and harmonious web platform for a wellness, massage therapy, and aesthetic clinic. Features an organic layout with smooth curves, relaxing color harmony, full treatment catalog, and conversion-optimized appointment scheduling.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>UI/UX Bienestar</li>
+                            <li>Diseño Orgánico</li>
+                            <li>Catálogo de Terapias</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://demo.sparsha.com.mx/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_sparsha_btn">Visit Sparsha ↗</a>
+                            <a href="https://demo.sparsha.com.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Sparsha: Therapeutics & Aesthetics" title="Visitar https://demo.sparsha.com.mx/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://demo.sparsha.com.mx/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_sparsha_status">● Clinic & Spa</span>
+                        </div>
+                        <a href="https://demo.sparsha.com.mx/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/sparsha.png" alt="Sparsha Terapéuticos y Estéticos Bienestar">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🌸 Spa & Wellness</span>
+                                <span class="bp-chip">💆 Therapy & Massage</span>
+                                <span class="bp-chip">📅 Online Booking</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project: mafelym -->
+                <article class="project-card theme-mafelym fade-on-scroll" data-category="react corporativo sistemas">
+                    <div class="project-image bp-browser-frame">
+                        <div class="bp-browser-bar">
+                            <div class="bp-browser-dots">
+                                <span class="bp-browser-dot dot-red"></span>
+                                <span class="bp-browser-dot dot-yellow"></span>
+                                <span class="bp-browser-dot dot-green"></span>
+                            </div>
+                            <div class="bp-browser-url">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>https://mafelym.com/</span>
+                            </div>
+                            <span class="bp-browser-status" data-i18n="p_mafelym_status">● IT Infrastructure</span>
+                        </div>
+                        <a href="https://mafelym.com/" target="_blank" rel="noopener noreferrer" style="display: block; position: relative;">
+                            <img src="images/mafelym.png" alt="Mafelym Soluciones Tecnológicas">
+                            <div class="bp-floating-chips">
+                                <span class="bp-chip chip-accent".strip()>🌐 IT Infrastructure</span>
+                                <span class="bp-chip">📡 Networks & Telecom</span>
+                                <span class="bp-chip">🏢 Nationwide Coverage</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-overline" data-i18n="p_mafelym_overline">🌐 Enterprise IT & Infrastructure</span>
+                        <div class="project-tags">
+                            <span class="project-tag react">React</span>
+                            <span class="project-tag">IT Infrastructure</span>
+                            <span class="project-tag">Telecom</span>
+                            <span class="project-tag">Enterprise B2B</span>
+                        </div>
+                        <h3 class="project-title" data-i18n="p_mafelym_title">Mafelym: Tech Solutions</h3>
+                        <div class="project-description">
+                            <p data-i18n="p_mafelym_desc">High-impact corporate web portal focusing on enterprise tech solutions, network infrastructure, telecommunications, and institutional equipment. Engineered with trust metrics (10+ years, nationwide coverage), dynamic product catalog, and lead-generation architecture.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>Soluciones TI</li>
+                            <li>Infraestructura Red</li>
+                            <li>Catálogo Corporativo</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://mafelym.com/" target="_blank" rel="noopener noreferrer" class="project-btn-visit" data-i18n="p_mafelym_btn">Visit Mafelym ↗</a>
+                            <a href="https://mafelym.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Mafelym: Tech Solutions" title="Visitar https://mafelym.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Software Empresarial Section: TOTAL MONITOR -->
     <section id="software" class="section software-showcase">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="software_section_title">02. Software Empresarial &amp; SCADA</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="software_section_title">03. Enterprise Software &amp; SCADA</h2>
 
             <div class="software-lead-card tm-lead-card">
                 <span class="software-lead-badge" data-i18n="tm_lead_badge">⚡ Proyecto Insignia · Power Quality Platform v2.0</span>
@@ -3724,7 +5354,7 @@ html {
     <!-- Mobile Section -->
     <section id="mobile" class="section mobile-showcase">
         <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="mobile_section_title">03. Desarrollo Mobile</h2>
+            <h2 class="section-title fade-on-scroll" data-i18n="mobile_section_title">04. Mobile Development</h2>
 
             <div class="mobile-lead-card">
                 <span class="mobile-lead-badge" data-i18n="mobile_lead_badge">📱 Proyecto Insignia · Arquitectura Completa</span>
@@ -3868,518 +5498,6 @@ html {
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section">
-        <div class="container">
-            <h2 class="section-title fade-on-scroll" data-i18n="projects_title">04. Otros Proyectos Web &amp; Sistemas</h2>
-
-            <!-- Category Filter Bar -->
-            <div class="projects-filter-wrapper fade-on-scroll">
-                <div class="projects-filter-bar" role="tablist" aria-label="Filtrar proyectos">
-                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
-                        <span class="filter-name" data-i18n="filter_all">Todos</span>
-                        <span class="filter-count">14</span>
-                    </button>
-                    <button class="filter-btn" data-filter="react" role="tab" aria-selected="false">
-                        <span class="filter-icon" style="color: #61dafb;">⚛</span>
-                        <span class="filter-name">React</span>
-                        <span class="filter-count">5</span>
-                    </button>
-                    <button class="filter-btn" data-filter="corporativo" role="tab" aria-selected="false">
-                        <span class="filter-name" data-i18n="filter_corp">Corporativo &amp; Negocios</span>
-                        <span class="filter-count">9</span>
-                    </button>
-                    <button class="filter-btn" data-filter="sistemas" role="tab" aria-selected="false">
-                        <span class="filter-name" data-i18n="filter_systems">Sistemas &amp; Web Apps</span>
-                        <span class="filter-count">6</span>
-                    </button>
-                    <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">
-                        <span class="filter-name" data-i18n="filter_mobile">Mobile &amp; APIs</span>
-                        <span class="filter-count">1</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1: Flagship Chambapp -->
-                <article class="project-card fade-on-scroll" data-category="mobile sistemas" style="border: 1px solid rgba(100, 255, 218, 0.28); border-radius: 8px; padding: 12px; background: rgba(17, 34, 64, 0.35);">
-                    <a href="#mobile" class="project-image">
-                        <img src="images/chambapp/chambapp-main-real.png" alt="Chambapp Solución Web, Mobile y API">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_chambapp_overline">Solución Integral · Web + Mobile + API</span>
-                        <div class="project-tags">
-                            <span class="project-tag" data-i18n="p_chambapp_tag1">Ecosistema Completo</span>
-                            <span class="project-tag">Flutter / Android</span>
-                            <span class="project-tag">Laravel API</span>
-                        </div>
-                        <h3 class="project-title" data-i18n="p_chambapp_title">Chambapp: Marketplace Digital</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_chambapp_desc">Ecosistema integral que combina plataforma web para clientes y administración, aplicación móvil Android en Flutter con geolocalización GPS en tiempo real y backend/API central en Laravel con checkout Mercado Pago y verificación KYC.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Web Marketplace</li>
-                            <li>App Android (Flutter)</li>
-                            <li>REST API</li>
-                            <li>Mercado Pago</li>
-                            <li>GPS &amp; Push</li>
-                        </ul>
-                        <div class="project-links" style="display: flex; align-items: center; justify-content: flex-end; gap: 16px;">
-                            <a href="#mobile" aria-label="Ver Arquitectura y Caso Completo" style="font-family: var(--font-mono); font-size: 13px; color: var(--accent-color); display: inline-flex; align-items: center; gap: 6px;">
-                                <span data-i18n="p_chambapp_caselink">Ver arquitectura y caso completo &rarr;</span>
-                            </a>
-                            <a href="https://chambapp.com.mx/" target="_blank" aria-label="Visitar Chambapp" title="Visitar https://chambapp.com.mx/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card fade-on-scroll" data-category="sistemas corporativo">
-                    <a href="https://sistematickets.totalground.com" target="_blank" class="project-image">
-                        <img src="images/tg.png" alt="Sistema Tickets TotalGround">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_tickets_title">Sistema Tickets TotalGround</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_tickets_desc">Plataforma integral para la gestión y seguimiento de tickets de soporte y mantenimiento. Optimizando el flujo de trabajo y la resolución de incidentes para TotalGround.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Web App</li>
-                            <li>Sistemas</li>
-                            <li>Gestión</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://sistematickets.totalground.com" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card project-card-right fade-on-scroll" data-category="sistemas">
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_abc_title">Demo ABC Médica</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_abc_desc">Sistema demostrativo para el sector médico (ABCD Médica). Solución enfocada en la administración de recursos o expedientes médicos.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Salud</li>
-                            <li>Administración</li>
-                            <li>Demo</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="http://demo.abcdmedica.com/" target="_blank" aria-label="External Link"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                    <a href="http://demo.abcdmedica.com/" target="_blank" class="project-image">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Demo ABC Médica">
-                        <div class="project-overlay"></div>
-                    </a>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card fade-on-scroll" data-category="corporativo">
-                    <a href="https://totalground.com/" target="_blank" class="project-image">
-                        <img src="images/totalnew.jpg"
-                            alt="Portal corporativo Total Ground">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_tgportal_title">Portal Corporativo Total Ground</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_tgportal_desc">Redise&ntilde;o del portal institucional de Total Ground con enfoque en servicios, casos de &eacute;xito y captaci&oacute;n de leads. Incluye estructura SEO, formularios de contacto y optimizaci&oacute;n para dispositivos m&oacute;viles.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Landing Page</li>
-                            <li>SEO</li>
-                            <li>UI/UX</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://totalground.com/" target="_blank" aria-label="External Link"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="project-card project-card-right fade-on-scroll" data-category="corporativo react">
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_mudac_overline">Proyecto Social · ONG &amp; Salud</span>
-                        <div class="project-tags">
-                            <span class="project-tag react">React</span>
-                            <span class="project-tag" data-i18n="p_mudac_tag_social">Impacto Social</span>
-                            <span class="project-tag" data-i18n="p_mudac_tag_bilingual">Bilingüe</span>
-                        </div>
-                        <h3 class="project-title" data-i18n="p_mudac_title">MUDAC: Mi Último Deseo, A.C.</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_mudac_desc">Portal web oficial e interactivo para Mi &Uacute;ltimo Deseo, A.C. (MUDAC), asociaci&oacute;n con m&aacute;s de 33 a&ntilde;os de trayectoria acompa&ntilde;ando a ni&ntilde;as, ni&ntilde;os y j&oacute;venes con c&aacute;ncer. Desarrollado como SPA biling&uuml;e (ES/EN) con sistema de donaciones activas, programas asistenciales, c&aacute;psulas de esperanza, m&eacute;tricas de impacto y transparencia institucional en tiempo real.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>Vite</li>
-                            <li data-i18n="p_mudac_tech_bilingual">Bilingüe (ES / EN)</li>
-                            <li data-i18n="p_mudac_tech_donations">Donaciones</li>
-                            <li data-i18n="p_mudac_tech_transparency">Transparencia</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://www.mudac.org.mx/" target="_blank" rel="noopener noreferrer" aria-label="Visitar sitio oficial MUDAC"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                    <a href="https://www.mudac.org.mx/" target="_blank" rel="noopener noreferrer" class="project-image">
-                        <img src="images/mudac.png"
-                            alt="MUDAC - Mi Último Deseo, A.C. Portal Oficial">
-                        <div class="project-overlay"></div>
-                    </a>
-                </article>
-
-                <!-- Project 5 -->
-                <article class="project-card fade-on-scroll" data-category="corporativo">
-                    <a href="https://opg.free.nf/?i=1" target="_blank" class="project-image">
-                        <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="OPG mantenimiento industrial">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_opg_title">OPG Mantenimiento Industrial</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_opg_desc">Página corporativa para servicios de mantenimiento industrial en Jalisco y Puerto Vallarta. Enfocada en cotización rápida, detalle de servicios y conversión de clientes.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Industrial</li>
-                            <li>Landing Page</li>
-                            <li>Servicios</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://opg.free.nf/?i=1" target="_blank" aria-label="External Link"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 6 -->
-                <article class="project-card project-card-right fade-on-scroll" data-category="sistemas">
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_mindtrain_title">MindTrain</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_mindtrain_desc">Plataforma enfocada en creadores narrativos para organizar ideas, construir universos y estructurar personajes y tramas con una experiencia visual inmersiva.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>SaaS</li>
-                            <li>UI Inmersiva</li>
-                            <li>Narrativa</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://mindtrain.com.mx/" target="_blank" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                    <a href="https://mindtrain.com.mx/" target="_blank" class="project-image">
-                        <img src="images/Mind.png"
-                            alt="MindTrain plataforma narrativa">
-                        <div class="project-overlay"></div>
-                    </a>
-                </article>
-
-                <!-- Project 7 -->
-                <article class="project-card fade-on-scroll" data-category="corporativo">
-                    <a href="https://enm.com.mx/" target="_blank" class="project-image">
-                        <img src="images/enm.jpg"
-                            alt="Equipamiento Nacional en Mobiliario">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_enm_overline">Producto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_enm_title">ENM Equipamiento</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_enm_desc">Solución integral de equipamiento y mobiliario para espacios corporativos, con enfoque en funcionalidad, durabilidad y entrega profesional.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Mobiliario</li>
-                            <li>Equipamiento</li>
-                            <li>Corporativo</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://enm.com.mx/" target="_blank" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 8 -->
-                <article class="project-card project-card-right fade-on-scroll" data-category="react">
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <div class="project-tags">
-                            <span class="project-tag react">React</span>
-                        </div>
-                        <h3 class="project-title" data-i18n="p_reactstudio_title">React Studio</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_reactstudio_desc">Landing moderna enfocada en producto digital con UI oscura, narrativa clara y bloques de valor para conversión. Construida como SPA para navegación fluida.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>SPA</li>
-                            <li>UI/UX</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://roman00120.github.io/react-studio/" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                    <a href="https://roman00120.github.io/react-studio/" target="_blank" class="project-image">
-                        <img src="images/Screenshot_1.jpg"
-                            alt="React Studio landing page">
-                        <div class="project-overlay"></div>
-                    </a>
-                </article>
-
-                <!-- Project 9 -->
-                <article class="project-card fade-on-scroll" data-category="sistemas">
-                    <a href="https://isaysimon.gt.tc/?i=1" target="_blank" class="project-image">
-                        <img src="images/Boda10.jpg" alt="Invitaciones de Boda">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_boda_overline">Proyecto Invitaciones</span>
-                        <h3 class="project-title" data-i18n="p_boda_title">Invitaciones de Boda</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_boda_desc">Sitio web interactivo y responsivo para invitación de boda digital. Diseñado con una paleta de color verde salvia y beige, cuenta con temporizador de cuenta regresiva, itinerario animado tipo línea de tiempo, código de vestimenta con integración a Pinterest, galería de fotos estilo polaroid y un formulario RSVP interactivo.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>HTML5</li>
-                            <li>Vanilla CSS</li>
-                            <li>JS / Interactivo</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://isaysimon.gt.tc/?i=1" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 10 -->
-                <article class="project-card project-card-right fade-on-scroll" data-category="corporativo">
-                    <div class="project-content">
-                        <span class="project-overline">Proyecto Destacado</span>
-                        <h3 class="project-title" data-i18n="p_minkobe_title">Minkobe El Entorno</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_minkobe_desc">Sitio web premium para un desarrollo residencial de lujo en Valle de Bravo. Diseñado con una estética sofisticada e inmersiva, cuenta con animaciones fluidas con GSAP y ScrollTrigger, maquetación adaptativa de alta gama, secciones interactivas y video integrado para una experiencia digital única.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Real Estate</li>
-                            <li>GSAP / ScrollTrigger</li>
-                            <li>Premium Landing</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://demo.minkobe.com/" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                    <a href="https://demo.minkobe.com/" target="_blank" class="project-image">
-                        <img src="images/Screenshot_5.jpg"
-                            alt="Minkobe El Entorno desarrollo residencial">
-                        <div class="project-overlay"></div>
-                    </a>
-                </article>
-
-                <!-- Project 11 -->
-                <article class="project-card fade-on-scroll" data-category="react corporativo">
-                    <a href="https://iuriscorporativo.com/" target="_blank" class="project-image">
-                        <img src="images/iuris-total.png" alt="Iuris Total Bufete Jurídico y Abogados Integrales">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_iuris_overline">Proyecto Destacado · Legal &amp; Corporativo</span>
-                        <div class="project-tags">
-                            <span class="project-tag react">React</span>
-                            <span class="project-tag">Legal</span>
-                            <span class="project-tag">Corporativo</span>
-                            <span class="project-tag">Landing Page</span>
-                        </div>
-                        <h3 class="project-title" data-i18n="p_iuris_title">Iuris Total: Bufete Jur&iacute;dico</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_iuris_desc">Plataforma web corporativa y de captaci&oacute;n para la firma legal Iuris Total (Abogados Integrales S.C.). Dise&ntilde;ada con una presencia sobria, elegante e imponente con estilo glassmorphism oscuro, destaca &aacute;reas de pr&aacute;ctica, asesor&iacute;a integral, prevenci&oacute;n y soluci&oacute;n legal con canales de contacto r&aacute;pido.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>Glassmorphism</li>
-                            <li>Dise&ntilde;o Corporativo</li>
-                            <li>Conversi&oacute;n &amp; Leads</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://iuriscorporativo.com/" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 12 -->
-                <article class="project-card project-card-right fade-on-scroll" data-category="react corporativo">
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_sparsha_overline">Salud, Belleza &amp; Bienestar</span>
-                        <div class="project-tags">
-                            <span class="project-tag react">React</span>
-                            <span class="project-tag">Spa &amp; Wellness</span>
-                            <span class="project-tag">Agenda de Citas</span>
-                        </div>
-                        <h3 class="project-title" data-i18n="p_sparsha_title">Sparsha: Terap&eacute;uticos &amp; Est&eacute;ticos</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_sparsha_desc">Sitio web moderno y armonioso para cl&iacute;nica de bienestar, masajes, terapias y tratamientos est&eacute;ticos. Presenta un dise&ntilde;o org&aacute;nico con curvas suaves, paleta relajante y elegante, cat&aacute;logo de servicios, equipo especializado y llamados a la acci&oacute;n optimizados para agendar citas.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>UI/UX Bienestar</li>
-                            <li>Dise&ntilde;o Org&aacute;nico</li>
-                            <li>Servicios &amp; Citas</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://demo.sparsha.com.mx/" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                    <a href="https://demo.sparsha.com.mx/" target="_blank" class="project-image">
-                        <img src="images/sparsha.png"
-                            alt="Sparsha Terapéuticos y Estéticos Bienestar">
-                        <div class="project-overlay"></div>
-                    </a>
-                </article>
-
-                <!-- Project 13 -->
-                <article class="project-card fade-on-scroll" data-category="react corporativo sistemas">
-                    <a href="https://mafelym.com/" target="_blank" class="project-image">
-                        <img src="images/mafelym.png" alt="Mafelym Soluciones Tecnológicas">
-                        <div class="project-overlay"></div>
-                    </a>
-                    <div class="project-content">
-                        <span class="project-overline" data-i18n="p_mafelym_overline">Infraestructura &amp; Tecnolog&iacute;a IT</span>
-                        <div class="project-tags">
-                            <span class="project-tag react">React</span>
-                            <span class="project-tag">Tecnolog&iacute;a</span>
-                            <span class="project-tag">Infraestructura</span>
-                            <span class="project-tag">B2B</span>
-                        </div>
-                        <h3 class="project-title" data-i18n="p_mafelym_title">Mafelym: Soluciones Tecnol&oacute;gicas</h3>
-                        <div class="project-description">
-                            <p data-i18n="p_mafelym_desc">Portal web corporativo de alto impacto visual enfocado en soluciones tecnol&oacute;gicas, infraestructura de red, telecomunicaciones y equipamiento para empresas e instituciones. Desarrollado con m&eacute;tricas de respaldo (10+ a&ntilde;os, cobertura nacional), cat&aacute;logo de productos y arquitectura orientada a la generaci&oacute;n de prospectos.</p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>Soluciones TI</li>
-                            <li>Infraestructura</li>
-                            <li>Cat&aacute;logo Corporativo</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://mafelym.com/" target="_blank"
-                                aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="feather feather-external-link">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <!-- About / Skills Section -->
     <section id="about" class="section bg-dim">
         <div class="container">
@@ -4399,7 +5517,9 @@ html {
                                 <span class="skills-category-badge" data-i18n="skills_soft_badge" style="color: var(--tm-red); border-color: rgba(255, 51, 75, 0.35); background: rgba(255, 51, 75, 0.1);">C# / .NET &amp; IoT Industrial</span>
                             </div>
                             <ul class="skills-items-list skills-items-list-wide" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
-                                <li>C# &amp; Ecosistema .NET</li>
+                                <li>C# &amp; Ecosistema .NET 8</li>
+                                <li>Blazor WebAssembly (SPA)</li>
+                                <li>Three.js 3D &amp; WebGL</li>
                                 <li>WPF (Windows Presentation Foundation)</li>
                                 <li>Windows Services &amp; Daemons</li>
                                 <li>Modbus RTU / RS485 (Serial)</li>
@@ -4682,15 +5802,15 @@ html {
             const translations = {
                 es: {
                     nav_home: "01. Inicio",
-                    nav_software: "02. Software",
-                    nav_mobile: "03. Mobile",
-                    nav_work: "04. Proyectos",
+                    nav_work: "02. Proyectos",
+                    nav_software: "03. Software",
+                    nav_mobile: "04. Mobile",
                     nav_about: "05. Sobre Mí",
                     nav_packages: "06. Paquetes",
                     nav_engineering: "07. Ingeniería",
                     nav_contact: "08. Contacto",
                                         // Total Monitor & Software Positioning
-                    software_section_title: "02. Software Empresarial & SCADA",
+                    software_section_title: "03. Software Empresarial & SCADA",
                     tm_brand_owner: "Desarrollado para <strong>Total Ground</strong> · An Electrical Company",
                     tm_prob_tag1: "Infraestructura Eléctrica Crítica",
                     tm_prob_tag2: "Distorsión Armónica (THD)",
@@ -4734,14 +5854,14 @@ html {
                     tm_thumb_3: "4. Login de Acceso",
                     tm_thumb_4: "5. Splash & Enlace",
                     tm_dev_author_sub: "Roman Velasco Moctezuma · Ingeniero en Sistemas & Licenciado en TI",
-                    mobile_section_title: "03. Desarrollo Mobile",
-                    projects_title: "04. Otros Proyectos Web & Sistemas",
+                    mobile_section_title: "04. Desarrollo Mobile",
+                    projects_title: "02. Proyectos Destacados",
                     about_title: "05. Sobre Mí & Habilidades",
                     packages_title: "06. Paquetes",
                     eng_title: "07. Ingeniería Web & Software",
                     contact_subtitle: "08. ¿Qué sigue?",
                     hero_capsule_software: "🖥️ Software Empresarial & C#/.NET",
-                    hero_btn_software: "Ver Software Empresarial",
+                    hero_btn_software: "Software Empresarial & C#",
                     skills_soft_title: "🖥️ Software Empresarial & Desktop",
                     skills_soft_badge: "C# / .NET & IoT Industrial",
                     tm_lead_badge: "⚡ Proyecto Insignia · Power Quality Platform v2.0",
@@ -4795,6 +5915,7 @@ html {
                     meta_desc: "Portafolio de Roman Velasco Moctezuma, Web & Mobile Developer especializado en aplicaciones móviles Android y multiplataforma, desarrollo web, APIs REST y soluciones completas frontend + backend.",
                     hero_subtitle: "Hola, mi nombre es",
                     hero_role: "Web & Mobile Developer",
+                    hero_capsule_blazor: "🟣 Blazor WebAssembly (.NET 8)",
                     hero_capsule_1: "📱 Apps Android & Multiplataforma",
                     hero_capsule_2: "💻 Aplicaciones Web",
                     hero_capsule_3: "⚡ APIs REST & Backend",
@@ -4802,9 +5923,8 @@ html {
                     hero_capsule_5: "📍 Geolocalización & Notificaciones",
                     hero_desc: "Soy Ingeniero en Sistemas y Licenciado en Tecnologías de la Información. Construyo <strong>soluciones digitales completas</strong>: desde aplicaciones móviles en Android y multiplataforma con Flutter, hasta plataformas web marketplace y backends con APIs robustas que conectan todo el ecosistema.",
                     hero_btn_mobile: "Ver Desarrollo Mobile",
-                    hero_btn_projects: "Explorar otros proyectos",
-                    mobile_section_title: "02. Desarrollo Mobile",
-                    mobile_lead_badge: "📱 Proyecto Insignia · Arquitectura Completa",
+                    hero_btn_projects: "Ver Proyectos Destacados",
+                                        mobile_lead_badge: "📱 Proyecto Insignia · Arquitectura Completa",
                     mobile_case_headline: "Desarrollo Web + Aplicación Mobile + Backend/API",
                     mobile_visit_btn: "Visitar Plataforma ↗",
                     chambapp_lead_desc: "<strong>Chambapp</strong> es una plataforma marketplace bajo demanda concebida y desarrollada como un <strong>ecosistema digital completo</strong>. No es solamente un sitio web: integra una <strong>plataforma web</strong> para gestión y contratación, una <strong>aplicación móvil Android</strong> desarrollada con Flutter para operación en campo, y un <strong>backend/API REST robusto</strong> que centraliza pagos, geolocalización, notificaciones y verificación de identidad.",
@@ -4827,8 +5947,7 @@ html {
                     feat_push_desc: "Sistema multicanal de alertas inmediatas: avisos push para nuevas solicitudes de chamba, recordatorios de citas agendadas, actualizaciones de estatus y mensajería transaccional.",
                     feat_sec_title: "Seguridad, KYC & Panel Admin",
                     feat_sec_desc: "Verificación de identidad oficial con Didit KYC para profesionales verificados, sistema de auditoría, panel administrativo para soporte y resolución de disputas.",
-                    projects_title: "03. Otros Proyectos Web & Sistemas",
-                    filter_all: "Todos",
+                                        filter_all: "Todos",
                     filter_corp: "Corporativo & Negocios",
                     filter_systems: "Sistemas & Web Apps",
                     filter_mobile: "Mobile & APIs",
@@ -4841,6 +5960,57 @@ html {
                     p_mudac_tech_donations: "Donaciones",
                     p_mudac_tech_transparency: "Transparencia",
 
+                    p_berrys_overline: "🟣 Proyecto Insignia · Blazor WebAssembly & Three.js 3D",
+                    p_berrys_title: "Berries Paradise: Agroexportación Global",
+                    p_berrys_tag_bilingual: "Bilingüe (ES/EN)",
+                    p_berrys_desc: "Plataforma web interactiva de alto rendimiento desarrollada en <strong>Blazor WebAssembly (.NET 8 / C#)</strong> para <strong>Berries Paradise</strong>, empresa líder en agroexportación internacional de arándanos, frambuesas, zarzamoras y fresas. Integra aceleración gráfica 3D interactiva con Three.js en el cliente, efectos de paralaje multicapa, reproductor de video de marca inmersivo, arquitectura SPA bilingüe (ES/EN) y catálogo de exportación global con 42+ SKUs distribuidos a más de 19 países.",
+                    p_berrys_live_btn: "Visitar Sitio Blazor ↗",
+
+                    p_featured_overline: "Proyecto Destacado",
+                    p_berrys_overline: "🟣 Proyecto Insignia · Blazor WebAssembly & Three.js 3D",
+                    p_chambapp_overline: "📱 Solución Integral · Web + Mobile + API",
+                    p_tickets_overline: "⚡ Gestión Empresarial · Soporte Crítico",
+                    p_abc_overline: "🩺 HealthTech · Gestión Hospitalaria",
+                    p_tgportal_overline: "🌐 Portal Institucional · Ingeniería Eléctrica",
+                    p_mudac_overline: "🎗️ Proyecto Social · ONG & Salud Infantil",
+                    p_opg_overline: "⚙️ Sector Industrial · Mantenimiento & Maquinaria",
+                    p_mindtrain_overline: "🧠 Plataforma SaaS · Ficción & Worldbuilding",
+                    p_enm_overline: "🪑 Mobiliario Corporativo · Soluciones B2B",
+                    p_reactstudio_overline: "⚛️ Frontend Moderno · React SPA & UI Interactiva",
+                    p_boda_overline: "💌 Experiencia Interactiva · Bodas & Eventos",
+                    p_minkobe_overline: "🏡 Real Estate de Lujo · Masterplan Inmersivo",
+                    p_iuris_overline: "⚖️ Sector Legal · Bufete & Asesoría Integral",
+                    p_sparsha_overline: "🌸 Salud, Belleza & Bienestar Orgánico",
+                    p_mafelym_overline: "🌐 Infraestructura & Tecnología Empresarial",
+                    p_berrys_status: "● Live Blazor Wasm",
+                    p_chambapp_status: "● Live Marketplace",
+                    p_chambapp_btn: "Visitar Plataforma ↗",
+                    p_tickets_status: "● En Producción",
+                    p_tickets_btn: "Ver Sistema ↗",
+                    p_abc_status: "● Demo Salud",
+                    p_abc_btn: "Ver Demo ↗",
+                    p_tgportal_status: "● Portal Oficial",
+                    p_tgportal_btn: "Visitar Portal ↗",
+                    p_mudac_status: "● Sitio Oficial ONG",
+                    p_mudac_btn: "Visitar MUDAC ↗",
+                    p_opg_status: "● Portal Servicios",
+                    p_opg_btn: "Visitar Sitio ↗",
+                    p_mindtrain_status: "● Plataforma SaaS",
+                    p_mindtrain_btn: "Visitar MindTrain ↗",
+                    p_enm_status: "● Catálogo B2B",
+                    p_enm_btn: "Visitar Sitio ↗",
+                    p_reactstudio_status: "● Live React SPA",
+                    p_reactstudio_btn: "Ver React Studio ↗",
+                    p_boda_status: "● Invitación Web",
+                    p_boda_btn: "Ver Invitación ↗",
+                    p_minkobe_status: "● Luxury Real Estate",
+                    p_minkobe_btn: "Ver Masterplan ↗",
+                    p_iuris_status: "● Firma Jurídica",
+                    p_iuris_btn: "Visitar Bufete ↗",
+                    p_sparsha_status: "● Clínica & Spa",
+                    p_sparsha_btn: "Visitar Sparsha ↗",
+                    p_mafelym_status: "● Infraestructura TI",
+                    p_mafelym_btn: "Visitar Mafelym ↗",
                     p_chambapp_overline: "Solución Integral · Web + Mobile + API",
                     p_chambapp_tag1: "Ecosistema Completo",
                     p_chambapp_title: "Chambapp: Marketplace Digital",
@@ -4876,8 +6046,7 @@ html {
                     p_mafelym_title: "Mafelym: Soluciones Tecnológicas",
                     p_mafelym_desc: "Portal web corporativo de alto impacto visual enfocado en soluciones tecnológicas, infraestructura de red, telecomunicaciones y equipamiento para empresas e instituciones. Desarrollado con métricas de respaldo (10+ años, cobertura nacional), catálogo de productos y arquitectura orientada a la generación de prospectos.",
 
-                    about_title: "04. Sobre Mí & Habilidades",
-                    about_p1: "¡Hola! Mi nombre es <strong>Roman Velasco Moctezuma</strong> y me especializo en construir soluciones digitales integrales y de alto rendimiento. Cuento con formación académica de doble titulación: <strong>Ingeniería en Sistemas en el ITESO</strong> y <strong>Licenciatura en Tecnologías de la Información en la UDG</strong>.",
+                                        about_p1: "¡Hola! Mi nombre es <strong>Roman Velasco Moctezuma</strong> y me especializo en construir soluciones digitales integrales y de alto rendimiento. Cuento con formación académica de doble titulación: <strong>Ingeniería en Sistemas en el ITESO</strong> y <strong>Licenciatura en Tecnologías de la Información en la UDG</strong>.",
                     about_p2: "Desarrollo software robusto tanto para empresas consolidadas como <a href=\"https://totalground.com/\" target=\"_blank\">TotalGround</a> y <a href=\"http://demo.abcdmedica.com/\" target=\"_blank\">ABCD Médica</a>, como para plataformas y startups digitales de alta complejidad como <a href=\"https://chambapp.com.mx/\" target=\"_blank\"><strong>Chambapp</strong></a>.",
                     about_p3: "Mi propuesta de valor es clara: <strong>no me limito al desarrollo web</strong>. Domino la ingeniería integral que une la experiencia web, la aplicación móvil nativa/multiplataforma y el backend/API que hace funcionar todo el sistema de manera segura y sincronizada.",
                     skills_mob_title: "📱 Desarrollo Mobile",
@@ -4888,8 +6057,7 @@ html {
                     skills_web_badge: "Frontend & UI/UX",
                     skills_full_title: "🧩 Soluciones Completas",
                     skills_full_badge: "Frontend + Backend",
-                    packages_title: "05. Paquetes",
-                    packages_subtitle: "Paquetes transparentes para el desarrollo de sitios web y aplicaciones a la medida. Precios en MXN y ajustables según el alcance final.",
+                                        packages_subtitle: "Paquetes transparentes para el desarrollo de sitios web y aplicaciones a la medida. Precios en MXN y ajustables según el alcance final.",
                     pkg_esencial_title: "Esencial",
                     pkg_esencial_note: "Pago único - landing page optimizada para WhatsApp",
                     pkg_esencial_cta: "Solicitar paquete",
@@ -4910,8 +6078,7 @@ html {
                     pkg_store3_note: "Pago único - e-commerce avanzado y automatizado",
                     pkg_store3_cta: "Hablar de Tienda Pro",
                     pkg_disclaimer: "No incluye comisiones de pasarelas de pago, costos de dominios, hosting ni apps de terceros.",
-                    eng_title: "06. Ingeniería Web & Software",
-                    eng_intro: "Trabajo con enfoque de ingeniería para que tus plataformas y aplicaciones vendan mejor, carguen rápido y sean fáciles de mantener. Sin complicarte con términos técnicos innecesarios.",
+                                        eng_intro: "Trabajo con enfoque de ingeniería para que tus plataformas y aplicaciones vendan mejor, carguen rápido y sean fáciles de mantener. Sin complicarte con términos técnicos innecesarios.",
                     eng_card1_title: "Resultados De Negocio",
                     eng_card1_desc: "Plataformas orientadas a captar más clientes con estructura clara, embudos efectivos y conversión directa a ventas o contratación.",
                     eng_card2_title: "Calidad Técnica",
@@ -4920,8 +6087,7 @@ html {
                     eng_card3_desc: "No solo entrego código: te acompaño en el despliegue a producción, preparación para Google Play y evolución de tus aplicaciones.",
                     eng_cta_text: "<strong>¿Necesitas una web, una aplicación móvil o una solución integral con backend?</strong> Agendamos una llamada corta para revisar tu proyecto y definir la mejor arquitectura.",
                     eng_cta_btn: "Agendar Diagnóstico",
-                    contact_subtitle: "07. ¿Qué sigue?",
-                    contact_title: "Ponte en Contacto",
+                                        contact_title: "Ponte en Contacto",
                     contact_desc: "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas o oportunidades para construir tu próximo sitio web, aplicación móvil o sistema integral. Si tienes alguna pregunta, ¡escríbeme!",
                     contact_btn: "Di Hola (WhatsApp)",
                     footer_credit: "Diseñado & Construido por Roman Velasco Moctezuma",
@@ -4932,15 +6098,15 @@ html {
                 },
                 en: {
                     nav_home: "01. Home",
-                    nav_software: "02. Software",
-                    nav_mobile: "03. Mobile",
-                    nav_work: "04. Projects",
+                    nav_work: "02. Projects",
+                    nav_software: "03. Software",
+                    nav_mobile: "04. Mobile",
                     nav_about: "05. About Me",
                     nav_packages: "06. Packages",
                     nav_engineering: "07. Engineering",
                     nav_contact: "08. Contact",
                                         // Total Monitor & Software Positioning
-                    software_section_title: "02. Software Empresarial & SCADA",
+                    software_section_title: "03. Enterprise Software & SCADA",
                     tm_brand_owner: "Desarrollado para <strong>Total Ground</strong> · An Electrical Company",
                     tm_prob_tag1: "Infraestructura Eléctrica Crítica",
                     tm_prob_tag2: "Distorsión Armónica (THD)",
@@ -4984,14 +6150,14 @@ html {
                     tm_thumb_3: "4. Login de Acceso",
                     tm_thumb_4: "5. Splash & Enlace",
                     tm_dev_author_sub: "Roman Velasco Moctezuma · Ingeniero en Sistemas & Licenciado en TI",
-                    mobile_section_title: "03. Desarrollo Mobile",
-                    projects_title: "04. Otros Proyectos Web & Sistemas",
-                    about_title: "05. Sobre Mí & Habilidades",
-                    packages_title: "06. Paquetes",
-                    eng_title: "07. Ingeniería Web & Software",
-                    contact_subtitle: "08. ¿Qué sigue?",
+                    mobile_section_title: "04. Mobile Development",
+                    projects_title: "02. Featured Projects",
+                    about_title: "05. About Me & Skills",
+                    packages_title: "06. Packages",
+                    eng_title: "07. Web & Software Engineering",
+                    contact_subtitle: "08. What's next?",
                     hero_capsule_software: "🖥️ Software Empresarial & C#/.NET",
-                    hero_btn_software: "Ver Software Empresarial",
+                    hero_btn_software: "Software Empresarial & C#",
                     skills_soft_title: "🖥️ Software Empresarial & Desktop",
                     skills_soft_badge: "C# / .NET & IoT Industrial",
                     tm_lead_badge: "⚡ Proyecto Insignia · Power Quality Platform v2.0",
@@ -5045,16 +6211,16 @@ html {
                     meta_desc: "Portfolio of Roman Velasco Moctezuma, Web & Mobile Developer specializing in Android and cross-platform mobile apps, web engineering, REST APIs, and fullstack solutions.",
                     hero_subtitle: "Hi, my name is",
                     hero_role: "Web & Mobile Developer",
+                    hero_capsule_blazor: "🟣 Blazor WebAssembly (.NET 8)",
                     hero_capsule_1: "📱 Android & Cross-Platform Apps",
                     hero_capsule_2: "💻 Web Applications",
                     hero_capsule_3: "⚡ REST APIs & Backend",
                     hero_capsule_4: "🛒 Marketplaces & Payments",
                     hero_capsule_5: "📍 Geolocation & Notifications",
                     hero_desc: "I am a Systems Engineer and Information Technology Graduate. I build <strong>complete digital solutions</strong>: from native Android and cross-platform apps in Flutter to marketplace web platforms and high-performance backends with robust APIs connecting the entire ecosystem.",
-                    hero_btn_mobile: "View Mobile Development",
-                    hero_btn_projects: "Explore other projects",
-                    mobile_section_title: "02. Mobile Development",
-                    mobile_lead_badge: "📱 Flagship Project · End-to-End Architecture",
+                    hero_btn_mobile: "Mobile Development",
+                    hero_btn_projects: "View Featured Projects",
+                                        mobile_lead_badge: "📱 Flagship Project · End-to-End Architecture",
                     mobile_case_headline: "Web Development + Mobile Application + Backend/API",
                     mobile_visit_btn: "Visit Platform ↗",
                     chambapp_lead_desc: "<strong>Chambapp</strong> is an on-demand marketplace platform designed and built as a <strong>complete digital ecosystem</strong>. It is not just a website: it integrates a <strong>web platform</strong> for management and hiring, an <strong>Android mobile app</strong> built with Flutter for on-site operations, and a <strong>robust backend/REST API</strong> centralizing payments, geolocation, notifications, and identity verification.",
@@ -5077,8 +6243,7 @@ html {
                     feat_push_desc: "Multi-channel instant alert system: push notifications for new job inquiries, scheduled appointment reminders, status updates, and transactional messaging.",
                     feat_sec_title: "Security, KYC & Admin Panel",
                     feat_sec_desc: "Official ID verification with Didit KYC for verified workers, full audit logging, and administrative backoffice for support and dispute handling.",
-                    projects_title: "03. Other Web & Systems Projects",
-                    filter_all: "All",
+                                        filter_all: "All",
                     filter_corp: "Corporate & Business",
                     filter_systems: "Systems & Web Apps",
                     filter_mobile: "Mobile & APIs",
@@ -5091,6 +6256,57 @@ html {
                     p_mudac_tech_donations: "Donations",
                     p_mudac_tech_transparency: "Transparency",
 
+                    p_berrys_overline: "🟣 Flagship Project · Blazor WebAssembly & Three.js 3D",
+                    p_berrys_title: "Berries Paradise: Global Agro-Export",
+                    p_berrys_tag_bilingual: "Bilingual (ES/EN)",
+                    p_berrys_desc: "High-performance interactive web platform built on <strong>Blazor WebAssembly (.NET 8 / C#)</strong> for <strong>Berries Paradise</strong>, an international leader in agro-exporting blueberries, raspberries, blackberries, and strawberries. Features client-side Three.js 3D WebGL acceleration, multi-layered parallax effects, immersive brand video player, bilingual SPA architecture (ES/EN), and global export operations reaching 19+ countries with 42+ SKUs.",
+                    p_berrys_live_btn: "Visit Blazor Site ↗",
+
+                    p_featured_overline: "Featured Project",
+                    p_berrys_overline: "🟣 Flagship Project · Blazor WebAssembly & Three.js 3D",
+                    p_chambapp_overline: "📱 End-to-End Solution · Web + Mobile + API",
+                    p_tickets_overline: "⚡ Enterprise Operations · Critical Support",
+                    p_abc_overline: "🩺 HealthTech · Clinical Management",
+                    p_tgportal_overline: "🌐 Corporate Portal · Electrical Engineering",
+                    p_mudac_overline: "🎗️ Social Impact · NGO & Pediatric Health",
+                    p_opg_overline: "⚙️ Heavy Industry · Maintenance & Machinery",
+                    p_mindtrain_overline: "🧠 SaaS Platform · Fiction & Worldbuilding",
+                    p_enm_overline: "🪑 Corporate Furniture · B2B Solutions",
+                    p_reactstudio_overline: "⚛️ Modern Frontend · React SPA & Interactive UI",
+                    p_boda_overline: "💌 Interactive Experience · Weddings & Events",
+                    p_minkobe_overline: "🏡 Luxury Real Estate · Immersive Masterplan",
+                    p_iuris_overline: "⚖️ Legal Sector · Law Firm & Corporate Counsel",
+                    p_sparsha_overline: "🌸 Health, Beauty & Organic Wellness",
+                    p_mafelym_overline: "🌐 Enterprise IT & Infrastructure",
+                    p_berrys_status: "● Live Blazor Wasm",
+                    p_chambapp_status: "● Live Marketplace",
+                    p_chambapp_btn: "Visit Platform ↗",
+                    p_tickets_status: "● In Production",
+                    p_tickets_btn: "View System ↗",
+                    p_abc_status: "● Healthcare Demo",
+                    p_abc_btn: "View Demo ↗",
+                    p_tgportal_status: "● Official Portal",
+                    p_tgportal_btn: "Visit Portal ↗",
+                    p_mudac_status: "● Official NGO Site",
+                    p_mudac_btn: "Visit MUDAC ↗",
+                    p_opg_status: "● Services Portal",
+                    p_opg_btn: "Visit Site ↗",
+                    p_mindtrain_status: "● SaaS Platform",
+                    p_mindtrain_btn: "Visit MindTrain ↗",
+                    p_enm_status: "● B2B Catalog",
+                    p_enm_btn: "Visit Site ↗",
+                    p_reactstudio_status: "● Live React SPA",
+                    p_reactstudio_btn: "View React Studio ↗",
+                    p_boda_status: "● Interactive RSVP",
+                    p_boda_btn: "View Invitation ↗",
+                    p_minkobe_status: "● Luxury Real Estate",
+                    p_minkobe_btn: "View Masterplan ↗",
+                    p_iuris_status: "● Law Firm",
+                    p_iuris_btn: "Visit Law Firm ↗",
+                    p_sparsha_status: "● Clinic & Spa",
+                    p_sparsha_btn: "Visit Sparsha ↗",
+                    p_mafelym_status: "● IT Infrastructure",
+                    p_mafelym_btn: "Visit Mafelym ↗",
                     p_chambapp_overline: "End-to-End Solution · Web + Mobile + API",
                     p_chambapp_tag1: "Full Ecosystem",
                     p_chambapp_title: "Chambapp: Digital Marketplace",
@@ -5126,8 +6342,7 @@ html {
                     p_mafelym_title: "Mafelym: Tech Solutions",
                     p_mafelym_desc: "High-impact corporate web portal focusing on enterprise tech solutions, network infrastructure, telecommunications, and B2B equipment. Features proven credibility metrics (10+ years, nationwide reach), equipment catalog, and a lead-focused structure.",
 
-                    about_title: "04. About Me & Skills",
-                    about_p1: "Hello! My name is <strong>Roman Velasco Moctezuma</strong> and I specialize in building high-performance, full-cycle digital solutions. I hold a dual academic background: <strong>Systems Engineering at ITESO</strong> and a <strong>Bachelor's in Information Technology at UDG</strong>.",
+                                        about_p1: "Hello! My name is <strong>Roman Velasco Moctezuma</strong> and I specialize in building high-performance, full-cycle digital solutions. I hold a dual academic background: <strong>Systems Engineering at ITESO</strong> and a <strong>Bachelor's in Information Technology at UDG</strong>.",
                     about_p2: "I engineer robust software for established companies like <a href=\"https://totalground.com/\" target=\"_blank\">TotalGround</a> and <a href=\"http://demo.abcdmedica.com/\" target=\"_blank\">ABCD Médica</a>, as well as complex tech startups like <a href=\"https://chambapp.com.mx/\" target=\"_blank\"><strong>Chambapp</strong></a>.",
                     about_p3: "My value proposition is distinct: <strong>I don't limit myself to web development</strong>. I master the full engineering stack connecting the web experience, native/cross-platform mobile apps, and the backend/API powering the entire system securely and seamlessly.",
                     skills_mob_title: "📱 Mobile Development",
@@ -5138,8 +6353,7 @@ html {
                     skills_web_badge: "Frontend & UI/UX",
                     skills_full_title: "🧩 End-to-End Solutions",
                     skills_full_badge: "Frontend + Backend",
-                    packages_title: "05. Packages",
-                    packages_subtitle: "Transparent packages for custom website and application development. Prices in MXN and tailored to project scope.",
+                                        packages_subtitle: "Transparent packages for custom website and application development. Prices in MXN and tailored to project scope.",
                     pkg_esencial_title: "Essential",
                     pkg_esencial_note: "One-time payment - high-converting WhatsApp landing page",
                     pkg_esencial_cta: "Request package",
@@ -5160,8 +6374,7 @@ html {
                     pkg_store3_note: "One-time payment - automated enterprise e-commerce",
                     pkg_store3_cta: "Discuss Store Pro",
                     pkg_disclaimer: "Does not include payment gateway processing fees, domain registrations, hosting, or third-party paid subscriptions.",
-                    eng_title: "06. Web & Software Engineering",
-                    eng_intro: "I apply an engineering-first approach so your platforms and apps convert better, load blazing fast, and remain effortless to maintain—without confusing technical jargon.",
+                                        eng_intro: "I apply an engineering-first approach so your platforms and apps convert better, load blazing fast, and remain effortless to maintain—without confusing technical jargon.",
                     eng_card1_title: "Business Results",
                     eng_card1_desc: "Platforms built to acquire more clients through clear structure, effective sales funnels, and direct conversion to sales or contracts.",
                     eng_card2_title: "Technical Excellence",
@@ -5170,8 +6383,7 @@ html {
                     eng_card3_desc: "I don't just deliver code: I guide you through production deployment, Google Play Store readiness, and continuous app evolution.",
                     eng_cta_text: "<strong>Need a website, a mobile app, or an end-to-end solution with backend?</strong> Let's schedule a brief call to evaluate your project and define the best architecture.",
                     eng_cta_btn: "Schedule Architecture Call",
-                    contact_subtitle: "07. What's next?",
-                    contact_title: "Get In Touch",
+                                        contact_title: "Get In Touch",
                     contact_desc: "I am always open to discussing new projects, creative ideas, or opportunities to build your next website, mobile app, or integrated system. Feel free to reach out!",
                     contact_btn: "Say Hello (WhatsApp)",
                     footer_credit: "Designed & Built by Roman Velasco Moctezuma",

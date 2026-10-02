@@ -51,10 +51,24 @@ Plataforma marketplace bajo demanda desarrollada como un ecosistema integral:
 
 ---
 
-### 💼 3. Catálogo Web Interactivo (14+ Proyectos)
+### 🫐 3. Berries Paradise · Plataforma Digital en Blazor WebAssembly
+> **Cliente:** Berries Paradise · Cultivadas con Propósito  
+> **Tecnologías:** Blazor WebAssembly (.NET 8 / C#) · Three.js 3D (WebGL) · CSS Glassmorphism · Hero Parallax · Multilingual (ES/EN)  
+> **Sitio Web:** [berrys.chambapp.com.mx](https://berrys.chambapp.com.mx/)
+
+Plataforma web interactiva de última generación desarrollada en **Blazor WebAssembly (.NET 8 / C#)** para Berries Paradise, empresa líder en agroexportación internacional de arándanos, frambuesas, zarzamoras y fresas:
+- **C# Nativo en el Navegador (WASM):** Ejecución de alto rendimiento sin dependencia de servidores para el renderizado de UI, con gestión de estados tipada y navegación fluida.
+- **Gráficos 3D Interactivos (Three.js & WebGL):** Renderizado tridimensional de frutos con iluminación fotográfica y cinemática orbital.
+- **Escala de Agroexportación Internacional:** Catálogo con 42+ SKUs para retail, presencia en 19+ países de exportación y selección de genética premium.
+- **Experiencia Inmersiva:** Fondos de cultivo con efectos de paralaje multicapa y reproductor de video de marca integrado.
+
+---
+
+### 💼 4. Catálogo Web Interactivo (15+ Proyectos)
 El portafolio integra un sistema de filtrado dinámico en tiempo real que permite explorar mis proyectos por categoría tecnológica:
+- **Blazor / .NET:** Aplicaciones web interactivas con C# compilado a WebAssembly en el navegador y gráficos 3D (Three.js).
 - **React:** Aplicaciones interactivas como React Studio y herramientas dinámicas.
-- **Corporativo & Negocios:** Portales empresariales como el *Portal Corporativo Total Ground*, *MUDAC (Mi Último Deseo A.C.)*, *OPG Mantenimiento Industrial*, *ENM Equipamiento*, entre otros.
+- **Corporativo & Negocios:** Portales empresariales como el *Portal Corporativo Total Ground*, *Berries Paradise*, *MUDAC (Mi Último Deseo A.C.)*, *OPG Mantenimiento Industrial*, *ENM Equipamiento*, entre otros.
 - **Sistemas & Web Apps:** Herramientas operativas como el *Sistema de Tickets Total Ground*, *Demo ABC Médica*, *MindTrain* e invitaciones interactivas.
 - **Mobile & APIs:** Proyectos multiplataforma y arquitecturas de microservicios.
 
@@ -72,7 +86,7 @@ Ambas versiones cuentan con conmutador dinámico de idiomas (Switch ES / EN) en 
 
 ## 🎨 Características Técnicas & UX/UI
 
-- **Paleta de Colores Curada:** Fondo Dark Navy (`#0a192f` / `#112240`), tipografías técnicas (`JetBrains Mono` y `Space Grotesk`) y acentos de color Neón (`#64ffda`, `#61dafb`).
+- **Paleta de Colores Curada:** Fondo Dark Navy (`#0a192f` / `#112240`), tipografías técnicas (`JetBrains Mono` y `Space Grotesk`) y acentos de color Neón (`#64ffda`, `#61dafb`, `#a259ff`).
 - **Cursor Magnético Interactivo:** Cursor personalizado reactivo con retardo cinético follower; optimizado con detección inteligente `@media (pointer: coarse)` para desactivarse limpiamente en pantallas táctiles y dispositivos móviles.
 - **Animaciones Scroll Reveal:** Efectos visuales de aparición y transformaciones dinámicas impulsadas por la API nativa `IntersectionObserver`.
 - **Componentes Glassmorphism:** Barra de navegación superior y tarjetas con efectos de desenfoque de fondo (`backdrop-filter: blur()`).
@@ -91,13 +105,12 @@ Portafolio/
 └── images/                    # Recursos visuales y assets del portafolio
     ├── icons8-dev-16.png      # Favicon del sitio
     ├── tg.png, abc.png, ...   # Miniaturas de proyectos web
+    ├── berriesparadise/       # Assets y capturas reales de Berries Paradise (Blazor Wasm)
+    │   ├── berries-paradise-hero.png
+    │   ├── berries-logo.png
+    │   └── berries-landscape.webp
     ├── chambapp/              # Assets y capturas de Chambapp
     └── totalmonitor/          # Evidencia y capturas reales de Total Monitor v2.0
-        ├── totalmonitor-dashboard-modbus.jpg
-        ├── totalmonitor-dashboard-lorawan.jpg
-        ├── totalmonitor-harmonics.jpg
-        ├── totalmonitor-login.jpg
-        └── totalmonitor-splash.jpg
 ```
 
 ---
@@ -107,6 +120,7 @@ Portafolio/
 | Área | Tecnologías |
 | :--- | :--- |
 | **Software Empresarial & Desktop** | C# / .NET, WPF (XAML), Windows Services, Multi-threading |
+| **Web Apps & Blazor** | Blazor WebAssembly (.NET 8 / C#), Three.js 3D (WebGL), Parallax, Glassmorphism |
 | **IoT & Protocolos Industriales** | Modbus RTU / RS485, LoRaWAN, The Things Network (TTN), Comunicación Serial (COM) |
 | **Desarrollo Mobile** | Flutter, Dart, Android SDK, Geolocalización GPS, Push Notifications |
 | **Desarrollo Web & Frontend** | HTML5 Semántico, CSS3 (Variables, Flexbox, Grid, Keyframes), JavaScript (ES6+), React |
